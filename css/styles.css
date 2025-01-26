@@ -275,13 +275,12 @@ hr{
     height: 21px;
 }
 
-.zoom{
-    transform: scale(1);
-    transition: transform 0.3s ease-in-out; 
+.zoom {
+    transition: transform 0.4s ease-in-out; /* Animation fluide lors du zoom */
 }
 
-.zoom :hover {
-    transform: scale(1.1);
+.zoom:hover {
+    transform: scale(1.1); /* Zoom sur l'image au survol */
 }
 .img-charte{
     padding-top: 50px;
@@ -303,7 +302,7 @@ hr{
 
 .masonry {
     column-count: 3; 
-    column-gap: 20px;
+    column-gap: 30px;
     padding:60px 0px ;
 }
 .item {
@@ -359,3 +358,10 @@ hr{
     align-self: center;
 }
 
+.link{
+    width: 20px;
+    height: 20px;
+}
+.shadow-img{
+    box-shadow: 0px 2px 4px #000000;
+}

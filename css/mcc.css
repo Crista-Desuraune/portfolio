@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    padding:0%;
+    background-color: #ffffff;
+}
+
+main{
+    height: auto;
+    font-family: Roboto Mono;
+    color: rgb(0, 0, 0);
+    padding-top: 60px;
+}
+.flex{
+    display: flex;
+    gap: 40px;
+    max-width: 1000px;
+    margin-inline: auto;
+}
+.nav{
+    max-width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.nav a{
+    text-decoration: none;
+    color: #bb986d;
+}
+.nav a:hover{
+    color: #a08059 ;
+}
+.contenu{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 760px;
+    margin-inline: auto;
+}
+#mention{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: left;
+}
+#conf{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: justify;
+}
+#cond{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    text-align: justify;
+}
+
+h1,h2, a{
+    font-family: Jacques Francois;
+}

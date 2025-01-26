@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview A3</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/caroussel.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <header class="banniere-others">
+        <section class="container-header">
+            <div class="logo-crista">
+                <img src="/images/logo-crista-14-janv.png" alt="logo-crista" title="Logo" >
+            </div>
+            <div class="header-nav">
+                <nav >
+                    <ul class="menu">
+                        <li><a href="/html/index.html">Accueil</a></li>
+                        <li>
+                            <a href="/html/présentation.html">Présentation</a>
+                            <ul class="sous-menu">
+                                <li><a href="/html/sous-presentation/quisuisje.html">Qui suis-je?</a></li>
+                                <li><a href="/html/sous-presentation/parcours.html">Mon Parcours</a></li>
+                                <li><a href="/html/sous-presentation/charte.html">Ma charte graphique</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="/html/porfolio.html">Mes projets</a>
+                            <ul class="sous-menu">
+                                <li><a href="bde.html">Projet BDE</a></li>
+                                <li><a href="ces.html">Projet Club Eco Saint Sever</a></li>
+                                <li><a href="htmlcss.html">Projet Html/Css</a></li>
+                                <li><a href="python.html">Projet Python</a></li>
+                                <li><a href="interviewaA3.html">Interview d'un professionnel</a></li>
+                                <li><a href="dessins.html">Mes dessins</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/html/cv_crista.html">Mon CV</a></li>
+                        <li><a href="/html/contact.html">Me contacter</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="presentation">
+            <h1>INTERVIEW D'UN PROFESSIONNEL  <br>DE L'UNE DES SPECIALISATION EN ACTIVITE</h1>
+            <p>Il nous a été demandé d'interviewer une personne qui travaille dans le domaine que l'on souhaite intégrer dans le futur.
+                N'ayant pas de contact dans le millieu du développement web j'ai donc interviewer une personne en 3ème année du
+                bachelor chef de projet digitaux à la Normandie Web School qui à une alternance intéressante.
+            </p>
+        </section>
+
+        <div id="carrousel">
+			<div id="container">
+			</div>
+			<img src="/images/fleche-droite.png" alt="fleche-gauche" class="bouton" id="d" />
+			<img src="/images/fleche-gauche.png" alt="fleche-gauche" class="bouton" id="g" />
+		</div>
+        <script>
+            document.body.onload=function(){
+                nbr=8;
+                p=0;
+                container=document.getElementById("container");
+                g=document.getElementById("g");
+                d=document.getElementById("d");
+                container.style.width=(600*nbr)+"px";
+                for(i=1;i<=nbr;i++){
+                    div=document.createElement("div");
+                    div.className="photo";
+                    div.style.backgroundImage="url('/images/rachid/rachid"+i+".jpg')";
+                    container.appendChild(div);
+                }
+                afficherMasquer();
+            }
+            d.onclick=function(){
+                if(p>-nbr+1)
+                    p--;
+                container.style.transform="translate("+p*600+"px)";
+                container.style.transition="all 0.5s ease";
+                afficherMasquer();
+            }
+            g.onclick=function(){
+                if(p<0)
+                    p++;
+                container.style.transform="translate("+p*600+"px)";
+                container.style.transition="all 0.5s ease";
+                afficherMasquer();
+            }
+            function afficherMasquer(){
+                if(p==-nbr+1)
+                    d.style.visibility="hidden";
+                else
+                    d.style.visibility="visible";
+                if(p==0)
+                    g.style.visibility="hidden";
+                else
+                    g.style.visibility="visible";
+            }
+        </script>
+        <section>
+            <div class="switch-page-case">
+                <a href="python.html" class="switch-page">
+                    <img src="/images/fleche-gauche.png" alt="fleche-gauche" title="flèche gauche">
+                    Précedent
+                </a>
+                <a href="dessins.html" class="switch-page">
+                    Suivant
+                    <img src="/images/fleche-droite.png" alt="fleche-droite" title="fleche-droite">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

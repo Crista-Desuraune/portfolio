@@ -1,0 +1,95 @@
+header{
+    font-family: Jacques Francois;
+}
+.banniere-index{
+    background: url('/images/banniere3.png') no-repeat;
+    height: 737px;
+}
+.banniere-others{
+    background: url('/images/banniere3.png') no-repeat;
+    height: 130px;
+}
+.menu li{
+    position: relative;
+}
+.menu a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 55px 20px;
+} 
+.menu a:hover{
+    color: #bb986d;
+}
+nav ul{
+    display: flex;    
+    gap: 50px;
+    list-style: none;
+}
+.sous-menu{
+    display: none;
+    position: absolute;
+    left: 0;
+    top:100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    min-width: 150px;
+    background: rgb(0, 0, 0, 0.6);
+    
+}
+
+.sous-menu li {
+    border-bottom: 1px solid #ffffff;
+}
+.sous-menu a {
+    padding: 10px 15px;
+    
+}
+.sous-menu ul{
+    display: none;
+}
+.sous-menu a:hover {
+    background: rgb(0, 0, 0, 0.6);
+    color: white;
+}
+
+.menu li:hover .sous-menu {
+    display: block;
+}
+.container-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background: rgb(0, 0, 0, 0.6);
+    height: 130px;
+}
+.container-header img{
+    width: 125px;
+    height: auto;
+}
+.ban{
+    height: 607px;
+    align-content:center;
+}
+
+.middle-ban{
+    justify-self: center;
+    align-self: center;
+    padding: 10px;
+    text-shadow:  0 0 1em black, 0 0 0.2em black;
+}
+.middle-ban h1{
+    font-weight: 700;
+    color: white;
+    font-size: 52px;
+    
+}
+.middle-ban p{
+    font-weight: 500;
+    color: white;
+    font-size: 36px;
+    justify-self: center;
+}

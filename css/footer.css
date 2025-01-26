@@ -1,0 +1,62 @@
+footer{
+    background-color: #bb986d;
+    margin-top: 50px;
+    font-family: Jacques Francois;
+}
+
+.f-haut{
+    display: flex;
+    height: auto;
+    gap:50px;
+    padding:0px 150px ;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+.f-haut img{
+    width: 100px;
+    height: auto;
+}
+.f-logo{
+    align-self: center;
+}
+.f-haut-navigation{
+    display: flex;
+    gap: 20px;
+}
+.f-haut-nav{
+    padding-right: 20px;
+    border-right: 2px solid #000000;
+}
+.f-haut-nav a{
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+}
+.f-haut-nav a:hover{
+    color: #be1622;
+}
+.lien{
+    display: flex;
+    gap: 10px;
+}
+
+.lien img{
+    width: 20px;
+    height: auto;
+    padding-top: 8px;
+}
+.f-bas{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+.f-bas a{
+    color: #be1622;
+}
+.f-bas a:hover{
+    color: #a94545;
+}
+

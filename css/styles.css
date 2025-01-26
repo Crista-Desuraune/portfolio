@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0%;
+    padding:0%;
+    background-color: #ffffff;
+}
+
+main{
+    height: 1000px;
+    height: auto;
+    max-width: 980px;
+    margin-inline: auto;
+    font-family: Roboto Mono;
+    color: rgb(0, 0, 0);
+    padding-top: 60px;
+}
+
+.cv{
+    color: #000000;
+}
+.en-tete{
+    text-align: center;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-content: center;
+}
+.en-tete h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+.en-tete p{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tete-bouton a,
+.container h2{
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: white;
+    padding: 5px;
+    gap: 10px;
+    background-color: #bdd790;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.icone {
+    display: flex;
+    gap: 8px;
+}
+.icone img{
+    width: 16px;
+    height: 16px;
+}
+.columns {
+    display: flex;
+    gap: 50px;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.cv .container{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container ul,
+.container ol{
+    padding-left: 50px;
+}
+
+.frame{ 
+    width: auto;
+    height: auto;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 70px 0px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.case{
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    background-color: #dad8d8;
+    box-shadow: 0px 2px 4px #000000;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.case a{
+    border: 1px solid;
+    border-radius: 4px;
+    border-color: rgb(0, 0, 0);
+    padding: 7px;
+    background-color: #be1622;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+    align-self: center;
+    margin-bottom: 24px;
+    align-content: end;
+}
+.case a:hover{
+    background-color: #a94545;
+}
+.corps{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000000;
+    height: auto;
+}
+.corps .top-text{
+    justify-self: center;
+    text-align: center;
+}
+.dim{
+    height: 150px;
+    width: 300px;
+    background-color: #b2a9a9;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    align-content: center;
+    text-align: center;
+
+}
+.corps img{
+    height: 80px;
+    width: auto;
+    align-self: center;
+}
+.top-text{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 24px;
+    padding-right: 32px;
+    padding-bottom: 24px;
+    padding-left: 32px;
+    height: auto;
+    color: black;
+}
+.top-text h2{
+    font-family: Jacques Francois;
+}
+.top-text p{
+    font-family: Roboto Mono;
+    font-size: 14px;
+    height: auto;
+    align-content: center;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    text-overflow: ellipsis;
+    margin: 5px;
+}
+.top-text span,
+.presentation span{
+    font-weight: bold;
+}
+.presentation h1{
+    font-family: Jacques Francois;
+    text-align: center;
+}
+.presentation p{
+    font-family: Roboto Mono;
+    text-align: center;
+}
+
+.presentation{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    color: #000000;
+}
+
+.columns-articles h1{
+    font-family: Jacques François;
+}
+.columns-articles {
+    display: flex;
+    gap: 80px;
+    padding: 60px 0px;
+    align-items: center;
+}
+.columns-articles img{
+    width: 400px;
+    height: auto;
+}
+.espace{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.space{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-family: Jacques Francois;
+}
+.switch-page-case{
+    height: 50px;
+    border-radius: 12px;
+    background-color: #DCEDBE;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.switch-page{
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+hr{
+    height: 3px;
+    background-color: #000000;
+}
+.switch-page-case-suivant{
+    height: 50px;
+    border-radius: 12px;
+    background-color: #DCEDBE;
+    margin-top: 20px;
+    justify-items:flex-end;
+}
+
+.switch-page-case-precedent{
+    height: 50px;
+    border-radius: 12px;
+    background-color: #DCEDBE;
+    margin-top: 20px;
+    justify-items:flex-start;
+}
+
+.switch-page-case a,
+.switch-page-case-suivant a,
+.switch-page-case-precedent a{
+    font-family: Jacques Francois;
+    color: #000000;
+    padding: 12px 28px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.switch-page-case img,
+.switch-image{
+    height: 21px;
+}
+
+.zoom{
+    transform: scale(1);
+    transition: transform 0.3s ease-in-out; 
+}
+
+.zoom :hover {
+    transform: scale(1.1);
+}
+.img-charte{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.img-charte img{
+    width: 980px;
+}
+
+.etre{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: Roboto Mono;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-size: 16px;
+}
+
+.masonry {
+    column-count: 3; 
+    column-gap: 20px;
+    padding:60px 0px ;
+}
+.item {
+    margin-bottom: 20px;
+    break-inside: avoid; 
+}
+.item img {
+    width: 300px;
+    display: block;
+    border-radius: 8px;
+}
+
+.frame-ces{
+    padding: 60px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.container-ces-20{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.column-ces{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.w{
+    width: 470px;
+    height: auto;
+}
+.h{
+    height: 470px;
+    width: auto;
+}
+.column-ces-car{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+.column-ces-car p{
+    width: 350px;
+}
+.moodboard{
+    height:auto ;
+    width: 750px;
+    align-self: center;
+}
+.affiche{
+    height: 470px;
+    width: auto;
+    align-self: center;
+}
+

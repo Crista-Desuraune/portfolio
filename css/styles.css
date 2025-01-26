@@ -365,3 +365,16 @@ hr{
 .shadow-img{
     box-shadow: 0px 2px 4px #000000;
 }
+
+.info{
+    background-color: rgb(190, 22, 34);
+    width: 980px;
+    height: auto;
+    border-radius: 8px;
+    display:grid;
+    grid-template-columns: 2;
+    padding:80px 50px ;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}   

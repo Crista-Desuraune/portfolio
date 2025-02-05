@@ -2,11 +2,11 @@ header{
     font-family: Jacques Francois;
 }
 .banniere-index{
-    background: url('/images/banniere3.png') no-repeat;
+    background: url('images/banniere3.png') no-repeat;
     height: 737px;
 }
 .banniere-others{
-    background: url('/images/banniere3.png') no-repeat;
+    background: url('images/banniere3.png') no-repeat;
     height: 130px;
 }
 .menu li{

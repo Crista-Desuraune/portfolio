@@ -399,9 +399,23 @@ hr{
     font-family: Jacques Francois;
 }
 .qrcode{
-    justify-content: baseline;
+
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
 }
 .qrcode img{
     width: 200px;
     height: auto;
+}
+.espace-qr p{
+    justify-self: center;
+}
+
+.container h6{
+    text-align: right;
+    align-self: center;
+    margin: 0%;
+    padding: 0%;
+    color: #be1622;
 }

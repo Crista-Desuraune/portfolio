@@ -70,7 +70,7 @@ document.body.onload=function(){
     for(i=1;i<=nbr;i++){
         div=document.createElement("div");
         div.className="photoces";
-        div.style.backgroundImage="url('/images/ces/ces"+i+".png')";
+        div.style.backgroundImage="url('../images/ces/ces"+i+".png')";
         container.appendChild(div);
     }
     afficherMasquer();

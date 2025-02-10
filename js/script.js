@@ -60,7 +60,7 @@
 //     else
 //         d.style.visibility="visible";
 // }
-document.body.onload=function(){
+function carrousselces(){
     nbr=12;
     p=0;
     container=document.getElementById("containerces");
@@ -99,3 +99,7 @@ function afficherMasquer(){
     else
         g.style.visibility="visible";
 }
+
+window.addEventListener("DOMContentLoaded", function (){
+    carrousselces()
+});

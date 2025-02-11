@@ -75,6 +75,21 @@ function carrousselces(){
     }
     afficherMasquer();
 }
+function carroussel(){
+    nbr=8;
+    p=0;
+    container=document.getElementById("container");
+    g=document.getElementById("g");
+    d=document.getElementById("d");
+    container.style.width=(600*nbr)+"px";
+    for(i=1;i<=nbr;i++){
+        div=document.createElement("div");
+        div.className="photo";
+        div.style.backgroundImage="url('../images/rachid/rachid"+i+".jpg')";
+        container.appendChild(div);
+    }
+    afficherMasquer();
+}
 d.onclick=function(){
     if(p>-nbr+1)
         p--;
@@ -102,4 +117,5 @@ function afficherMasquer(){
 
 window.addEventListener("DOMContentLoaded", function (){
     carrousselces()
+    carroussel()
 });

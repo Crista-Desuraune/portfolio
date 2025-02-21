@@ -419,3 +419,11 @@ hr{
     padding: 0%;
     color: #be1622;
 }
+
+@media (max-width: 788px) {
+    .frame{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+}

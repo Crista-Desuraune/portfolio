@@ -93,3 +93,15 @@ nav ul{
     font-size: 36px;
     justify-self: center;
 }
+
+@media (max-width: 788px) {
+    .banniere-index{
+        background: url('../images/banniere3.png') no-repeat;
+        
+        height: 400px;
+    }
+    .banniere-others{
+        background: url('../images/banniere3.png') no-repeat;
+        width: auto;
+    }
+}

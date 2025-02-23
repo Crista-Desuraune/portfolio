@@ -63,3 +63,19 @@ footer{
 
 }
 
+@media (max-width: 788px) {
+
+    .f-haut{
+        flex-direction: column;
+        gap: 30px;
+        padding: 30px;
+        justify-self: self-start;
+    }
+    .f-bas{
+        flex-direction: column;
+    }
+    .f-logo{
+        align-self: flex-start;
+    }
+}
+

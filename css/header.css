@@ -1,15 +1,26 @@
 header{
     font-family: Jacques Francois;
 }
-.banniere-index{
+/* .banniere-index{
     background: url('../images/banniere3.png') no-repeat;
-    height: 737px;
-    width: auto;
+    
+} */
+/* .banniere-index {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url("../images/banniere3.png") no-repeat;
+    background-size: cover; 
+} */
+.banniere-index img{
+    height: auto;
+    width: 100%;
+    position: relative;
 }
 .banniere-others{
     background: url('../images/banniere3.png') no-repeat;
     height: 130px;
-    width: auto;
+    width: 100%;
 }
 .menu li{
     position: relative;
@@ -60,6 +71,9 @@ nav ul{
     display: block;
 }
 .container-header{
+    position: absolute;
+    top: 0%;
+    left: 0%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -67,6 +81,7 @@ nav ul{
     padding-bottom: 25px;
     background: rgb(0, 0, 0, 0.6);
     height: 130px;
+    width: 100%;
 }
 .container-header img{
     width: 125px;
@@ -97,13 +112,10 @@ nav ul{
 }
 
 @media (max-width: 788px) {
-    .banniere-index{
-        background: url('../images/banniere3.png') no-repeat;
-        width: 500px;
-        height: auto;
-    }
+
     .banniere-others{
         background: url('../images/banniere3.png') no-repeat;
-        width: auto;
+        width: 50%;
+        height: 130px;
     }
 }

@@ -4,10 +4,12 @@ header{
 .banniere-index{
     background: url('../images/banniere3.png') no-repeat;
     height: 737px;
+    width: auto;
 }
 .banniere-others{
     background: url('../images/banniere3.png') no-repeat;
     height: 130px;
+    width: auto;
 }
 .menu li{
     position: relative;
@@ -97,8 +99,8 @@ nav ul{
 @media (max-width: 788px) {
     .banniere-index{
         background: url('../images/banniere3.png') no-repeat;
-        
-        height: 400px;
+        width: 500px;
+        height: auto;
     }
     .banniere-others{
         background: url('../images/banniere3.png') no-repeat;

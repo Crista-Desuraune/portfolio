@@ -77,5 +77,9 @@ footer{
     .f-logo{
         align-self: flex-start;
     }
+    .f-haut-navigation{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 

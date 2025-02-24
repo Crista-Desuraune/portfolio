@@ -12,10 +12,17 @@ header{
     background-image: url("../images/banniere3.png") no-repeat;
     background-size: cover; 
 } */
-.banniere-index img{
+.banniere-pc{
     height: auto;
     width: 100%;
     position: relative;
+    display: block;
+}
+.banniere-tel{
+    height: auto;
+    width: 100%;
+    position: relative;
+    display: none;
 }
 .banniere-others{
     background: url('../images/banniere3.png') no-repeat;
@@ -88,6 +95,7 @@ nav ul{
     height: auto;
 }
 .ban{
+    position: absolute;
     height: 607px;
     align-content:center;
 }
@@ -115,7 +123,12 @@ nav ul{
 }
 
 @media (max-width: 788px) {
-
+    .banniere-pc{
+        display: none;
+    }
+    .banniere-tel{
+        display: block;
+    }
     .header-nav{
         display: none;
     }
@@ -132,5 +145,10 @@ nav ul{
         width: 32px;
         height: auto;
         cursor: pointer;
+    }
+    .ban{
+        height: auto;
+        top:130px;
+        align-content: center;
     }
 }

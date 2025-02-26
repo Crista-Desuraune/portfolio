@@ -12,6 +12,9 @@ header{
     background-image: url("../images/banniere3.png") no-repeat;
     background-size: cover; 
 } */
+.banniere-index{
+
+}
 .banniere-pc{
     height: auto;
     width: 100%;
@@ -28,6 +31,57 @@ header{
     background: url('../images/banniere3.png') no-repeat;
     height: 130px;
     width: 100%;
+}
+.burger-icon span {
+    display: none;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+/* Sidenav menu */
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+}
+
+  /* Sidenav menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #111;
+}
+
+.sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+  /* Active class */
+.sidenav.active {
+    left: 0;
+}
+  /* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
 }
 .menu li{
     position: relative;
@@ -118,9 +172,7 @@ nav ul{
     font-size: 36px;
     justify-self: center;
 }
-.burger{
-    display: none;
-}
+
 
 @media (max-width: 788px) {
     .banniere-pc{
@@ -134,21 +186,30 @@ nav ul{
     }
     .container-header{
         height: 85px;
-        justify-content: space-between;
+        justify-content: flex-start;
         padding:0px 40px ;
     }
     .logo-crista img{
         width: 75px;
     }
-    .burger{
+    .ban{display: none;}
+    
+    .burger-icon span {
         display: block;
-        width: 32px;
-        height: auto;
-        cursor: pointer;
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
     }
-    .ban{
-        height: auto;
-        top:130px;
-        align-content: center;
+    .sidenav{
+        display: block;
+        position: absolute;
+        height: 100%;
+    };
+    .sous-menu{
+        display: none;
+    }
+    nav ul{
+        display: none;
     }
 }

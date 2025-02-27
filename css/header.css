@@ -1,56 +1,45 @@
 header{
     font-family: Jacques Francois;
 }
-/* .banniere-index{
-    background: url('../images/banniere3.png') no-repeat;
-    
-} */
-/* .banniere-index {
-    position: relative;
-    width: 100%;
-    height: auto;
-    background-image: url("../images/banniere3.png") no-repeat;
-    background-size: cover; 
-} */
-.banniere-index{
 
+.tel{
+    display: none;
 }
 .banniere-pc{
     height: auto;
     width: 100%;
+    top: 0px;
+    left: 0px;
     position: relative;
     display: block;
 }
 .banniere-tel{
     height: auto;
     width: 100%;
+    top: 0px;
+    left: 0px;
     position: relative;
     display: none;
 }
-.banniere-others{
-    background: url('../images/banniere3.png') no-repeat;
-    height: 130px;
-    width: 100%;
-}
+
+
 .burger-icon span {
     display: none;
     width: 35px;
     height: 5px;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     margin: 6px 0;
 }
-/* Sidenav menu */
 .sidenav {
-    display: none;
     height: 100%;
     width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -250px;
-    background-color: #e8e8e8;
+    right: -250px;
+    background-color: #8ba1dd;
     padding-top: 60px;
-    transition: left 0.5s ease;
+    transition: right 0.5s ease;
 }
 
   /* Sidenav menu links */
@@ -58,13 +47,13 @@ header{
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #ffffff;
     display: block;
     transition: 0.3s;
 }
 
 .sidenav a:hover {
-    color: #111;
+    color: #02005f;
 }
 
 .sidenav ul {
@@ -74,8 +63,9 @@ header{
 }
   /* Active class */
 .sidenav.active {
-    left: 0;
+    right: 0;
 }
+
   /* Close btn */
 .sidenav .close {
     position: absolute;
@@ -144,6 +134,13 @@ nav ul{
     height: 130px;
     width: 100%;
 }
+.left{
+    display: flex;
+    padding-left: 40px;
+}
+.logo-crista{
+    left: 40px;
+}
 .logo-crista img{
     width: 125px;
     height: auto;
@@ -173,7 +170,6 @@ nav ul{
     justify-self: center;
 }
 
-
 @media (max-width: 788px) {
     .banniere-pc{
         display: none;
@@ -181,13 +177,21 @@ nav ul{
     .banniere-tel{
         display: block;
     }
-    .header-nav{
-        display: none;
+    .tel{
+        display: block;
+        position: absolute;
+    }
+    .desktop{
+        display:none;
     }
     .container-header{
         height: 85px;
         justify-content: flex-start;
-        padding:0px 40px ;
+        /* padding:0px 40px ; */
+        padding-top: 0px;
+        padding-bottom: 0px;
+        width: 100%;
+        gap: 20px;
     }
     .logo-crista img{
         width: 75px;
@@ -196,20 +200,10 @@ nav ul{
     
     .burger-icon span {
         display: block;
+        position: relative;
         width: 35px;
         height: 5px;
-        background-color: white;
+        background-color: rgb(255, 255, 255);
         margin: 6px 0;
-    }
-    .sidenav{
-        display: block;
-        position: absolute;
-        height: 100%;
-    };
-    .sous-menu{
-        display: none;
-    }
-    nav ul{
-        display: none;
     }
 }

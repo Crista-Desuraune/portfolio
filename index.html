@@ -7,80 +7,102 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/footer.css">
-    <script src="../js/script.js" defer></script>
+    <script src="../js/test.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="banniere-index">
-        <img class="banniere-pc" src="images/banniere3.png" alt="ban">
-        <img class="banniere-tel" src="images/banniere-big.png" alt="ban">
-        <div class="">
-            <section >
-                <a href="#" id="openBtn">
-                    <span class="burger-icon">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </span>
-                </a>
-                <div class="container-header">
-                    <div class="logo-crista">
-                        <img src="images/logo-crista-14-janv.png" alt="logo-crista" title="Logo" >
-                    </div>
-                    
-                    <div id="mySidenav" class="header-nav sidenav">
-                        <a id="closeBtn" href="#" class="close">×</a>
-                        <nav>
-                            <ul class="menu">
-                                <li><a href="index.html">Accueil</a></li>
-                                <li>
-                                    <a href="html/présentation.html">Présentation</a>
-                                    <ul class="sous-menu">
-                                        <li><a href="html/quisuisje.html">Qui suis-je?</a></li>
-                                        <li><a href="html/parcours.html">Mon Parcours</a></li>
-                                        <li><a href="html/charte.html">Ma charte graphique</a></li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="html/porfolio.html">Mes projets</a>
-                                    <ul class="sous-menu">
-                                        <li><a href="html/bde.html">Projet BDE</a></li>
-                                        <li><a href="html/ces.html">Projet Club Eco Saint Sever</a></li>
-                                        <li><a href="html/htmlcss.html">Projet Html/Css</a></li>
-                                        <li><a href="html/python.html">Projet Python</a></li>
-                                        <li><a href="html/interviewaA3.html">Interview d'un professionnel</a></li>
-                                        <li><a href="html/dessins.html">Mes dessins</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="html/cv_crista.html">Mon CV</a></li>
-                                <li><a href="html/contact.html">Me contacter</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+    <header>
+        <div class="desktop">
+            <img class="banniere-pc" src="images/banniere3.png" alt="ban">
+            <img class="banniere-tel" src="images/banniere-big.png" alt="ban">
+            <section class="container-header">
+                <div class="logo-crista">
+                    <img src="images/logo-crista-14-janv.png" alt="logo-crista" title="Logo" >
                 </div>
-                
+                <div class="header-nav">
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li>
+                                <a href="html/présentation.html">Présentation</a>
+                                <ul class="sous-menu">
+                                    <li><a href="html/quisuisje.html">Qui suis-je?</a></li>
+                                    <li><a href="html/parcours.html">Mon Parcours</a></li>
+                                    <li><a href="html/charte.html">Ma charte graphique</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="html/porfolio.html">Mes projets</a>
+                                <ul class="sous-menu">
+                                    <li><a href="html/bde.html">Projet BDE</a></li>
+                                    <li><a href="html/ces.html">Projet Club Eco Saint Sever</a></li>
+                                    <li><a href="html/htmlcss.html">Projet Html/Css</a></li>
+                                    <li><a href="html/python.html">Projet Python</a></li>
+                                    <li><a href="html/interviewaA3.html">Interview d'un professionnel</a></li>
+                                    <li><a href="html/dessins.html">Mes dessins</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="html/cv_crista.html">Mon CV</a></li>
+                            <li><a href="html/contact.html">Me contacter</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </section>
-            <section class="ban">
-                <div class="middle-ban">
-                    <h1>Crista Desuraune-Cocu</h1>
-                    <p>Accueil</p>
+        </div>
+        <div class="tel">
+            <img class="banniere-pc" src="images/banniere3.png" alt="ban">
+            <img class="banniere-tel" src="images/banniere-big.png" alt="ban">
+            
+            <section class="container-header">
+                <div class="left">
+                    <div class="logo-crista">
+                        <img src="../images/logo-crista-14-janv.png" alt="logo-crista" title="Logo" >
+                    </div>
+                    <a href="#" id="openBtn">
+                        <span class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </a>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a id="closeBtn" href="#" class="close">×</a>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="html/présentation.html">Présentation</a></li>
+                        <li><a href="html/porfolio.html">Mes projets</a></li>
+                        <li><a href="html/cv_crista.html">Mon CV</a></li>
+                        <li><a href="html/contact.html">Me contacter</a></li>
+                    </ul>
                 </div>
             </section>
         </div>
         
-        <section class="">
-
+        
+        <section class="ban">
+            <div class="middle-ban">
+                <h1>Crista Desuraune-Cocu</h1>
+                <p>Accueil</p>
+            </div>
         </section>
+        
+        
+        
+    </header>
+    <main>
         <section class="actualites">
             <img src="" alt="">
             <div>
                 
             </div>
         </section>
-    </header>
-    <main></main>
+        <section class="">
+
+        </section>
+    </main>
     <footer>
         <section class="f-haut">
             <div class="f-logo">

@@ -10,42 +10,71 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <script src="../js/test.js" defer></script>
 </head>
 <body>
-    <header class="banniere-others">
-        <section class="container-header">
-            <div class="logo-crista">
-                <img src="../images/logo-crista-14-janv.png" alt="logo-crista" title="Logo" >
-            </div>
-            <div class="header-nav">
-                <nav >
-                    <ul class="menu">
+    <header>
+        <div class="desktop banniere-pc">
+            <section class="container-header">
+                <div class="logo-crista">
+                    <img src="../images/logo-crista-14-janv.png" alt="logo-crista" title="Logo" >
+                </div>
+                <div class="header-nav">
+                    <nav >
+                        <ul class="menu">
+                            <li><a href="../index.html">Accueil</a></li>
+                            <li>
+                                <a href="présentation.html">Présentation</a>
+                                <ul class="sous-menu">
+                                    <li><a href="quisuisje.html">Qui suis-je?</a></li>
+                                    <li><a href="parcours.html">Mon Parcours</a></li>
+                                    <li><a href="charte.html">Ma charte graphique</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="porfolio.html">Mes projets</a>
+                                <ul class="sous-menu">
+                                    <li><a href="bde.html">Projet BDE</a></li>
+                                    <li><a href="ces.html">Projet Club Eco Saint Sever</a></li>
+                                    <li><a href="htmlcss.html">Projet Html/Css</a></li>
+                                    <li><a href="python.html">Projet Python</a></li>
+                                    <li><a href="interviewaA3.html">Interview d'un professionnel</a></li>
+                                    <li><a href="dessins.html">Mes dessins</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="cv_crista.html">Mon CV</a></li>
+                            <li><a href="contact.html">Me contacter</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </div>
+        <div class="tel banniere-tel">
+            <section class="container-header">
+                <div class="left">
+                    <a href="#" id="openBtn">
+                        <span class="burger-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </a>
+                    <div class="logo-crista">
+                        <img src="../images/logo-crista-14-janv.png" alt="logo-crista" title="Logo" >
+                    </div>
+                </div>
+                <div id="mySidenav" class="sidenav">
+                    <a id="closeBtn" href="#" class="close">×</a>
+                    <ul>
                         <li><a href="../index.html">Accueil</a></li>
-                        <li>
-                            <a href="présentation.html">Présentation</a>
-                            <ul class="sous-menu">
-                                <li><a href="quisuisje.html">Qui suis-je?</a></li>
-                                <li><a href="parcours.html">Mon Parcours</a></li>
-                                <li><a href="charte.html">Ma charte graphique</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="porfolio.html">Mes projets</a>
-                            <ul class="sous-menu">
-                                <li><a href="bde.html">Projet BDE</a></li>
-                                <li><a href="ces.html">Projet Club Eco Saint Sever</a></li>
-                                <li><a href="htmlcss.html">Projet Html/Css</a></li>
-                                <li><a href="python.html">Projet Python</a></li>
-                                <li><a href="interviewaA3.html">Interview d'un professionnel</a></li>
-                                <li><a href="dessins.html">Mes dessins</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="présentation.html">Présentation</a></li>
+                        <li><a href="porfolio.html">Mes projets</a></li>
                         <li><a href="cv_crista.html">Mon CV</a></li>
                         <li><a href="contact.html">Me contacter</a></li>
                     </ul>
-                </nav>
-            </div>
-        </section>
+                </div>
+            </section>
+        </div>
     </header>
     <main class="cv">
         <section class="en-tete">
@@ -131,16 +160,6 @@
                         <li>visiter des lieux culturels</li>
                     </ol>
                 </section>
-                <section class="qrcode">
-                    <div class="espace-qr">
-                        <img src="../images/qrcodelinkedin.png" alt="qrcodelinkedin" title="qrcode linkedin">
-                        <p>Lien LinkedIn</p>
-                    </div>
-                    <div class="espace-qr">
-                        <img src="../images/qrcodegithub.png" alt="qrcodegithub" title="QR code GitHub">
-                        <p>Lien GitHub</p>
-                    </div>
-                </section>
             </div>
             <div class="column">
                 <div>
@@ -159,6 +178,11 @@
                         </div>
 
                         <div>
+                            <h6>2023 - 2025</h6>
+                            <h4>DIPLOME DU BAFA(brevet d'aptitude aux fonctions d'animateur)</h4>
+                            <p>Céméa - Brémontier-Merval/Darnétal</p>
+                        </div>
+                        <div>
                             <h6>2021 - 2024</h6>
                             <h4>BACCALAURÉAT GÉNÉRAL NSI ET LLCE </h4>
                             <p>Lycée Delamare Deboutteville - Forges-les-Eaux</p>
@@ -170,7 +194,7 @@
                         <h2>Expériences professionnelles</h2>
                         
                         <div>
-                            <h6>13 Janvier 2025 - En cours</h6>
+                            <h6>13 Janvier 2025 - 14 Février 2025</h6>
                             <h4>PROJET HANDISUP</h4>  
                             <p>Normandie Web School - Rouen</p>
                             <ul>
@@ -205,15 +229,12 @@
                         </div>
 
                         <div>
-                            <h6>21 octobre 2023 - 25 avril 2024</h6>
-                            <h4>BAFA 1 & BAFA 2 </h4>
-                            <p>Céméa - Château de Brémontier Merval </p>
+                            <h6>2023 - 2025</h6>
+                            <h4>ANIMATRICE</h4>
                             <p>Crèches Liberty - Gournay-en-Bray </p>
                             <ul>
+                                <li>Accueil des enfants en centre de loisirs</li>
                                 <li>Animation des enfants de 3 à 12 ans </li>
-                                <li>Mise en pratique des activités/jeux </li>
-                                <li>Apprentissage des besoins des enfants par tranche d’âge.</li>
-                                <li>Assurer la sécurité pendant les jeux.</li>
                             </ul>
                         </div>
 
@@ -229,6 +250,16 @@
                 </div>
             </div>
         </div>
+        <section class="qrcode">
+            <div class="espace-qr">
+                <img src="../images/qrcodelinkedin.png" alt="qrcodelinkedin" title="qrcode linkedin">
+                <p>Lien LinkedIn</p>
+            </div>
+            <div class="espace-qr">
+                <img src="../images/qrcodegithub.png" alt="qrcodegithub" title="QR code GitHub">
+                <p>Lien GitHub</p>
+            </div>
+        </section>
         <section class="bouton-telecharger">
             <a href="../images/cv-crista-desuraunecocu.pdf" download class="download-bouton">Télécharger le CV</a>
         </section>

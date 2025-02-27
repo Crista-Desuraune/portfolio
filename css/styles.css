@@ -11,7 +11,7 @@ body{
 }
 
 main{
-    height: 1000px;
+
     height: auto;
     max-width: 980px;
     margin-inline: auto;
@@ -276,11 +276,11 @@ hr{
 }
 
 .zoom {
-    transition: transform 0.4s ease-in-out; /* Animation fluide lors du zoom */
+    transition: transform 0.4s ease-in-out; 
 }
 
 .zoom:hover {
-    transform: scale(1.1); /* Zoom sur l'image au survol */
+    transform: scale(1.1); 
 }
 .img-charte{
     padding-top: 50px;
@@ -399,9 +399,9 @@ hr{
     font-family: Jacques Francois;
 }
 .qrcode{
-
+    padding-top: 20px;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     align-self: center;
 }
 .qrcode img{
@@ -426,5 +426,45 @@ hr{
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         
+    }
+    main{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .columns-articles{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .img-charte{
+        text-align: center;
+    }
+    .img-charte img{
+        width: 350px;
+    }
+    .zoom:hover{
+        transform: scale(1.0); 
+    }
+    .item img{
+        width: 100%;
+    }
+    .column-ces{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .w{
+        width: 370px;
+    }
+    .moodboard{
+        width: 370px;
+    }
+    .columns{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .qrcode{
+        gap: 10px;
+    }
+    .qrcode img{
+        width: 150px;
     }
 }

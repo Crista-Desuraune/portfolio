@@ -6,22 +6,28 @@ header{
     display: none;
 }
 .banniere-pc{
-    height: auto;
+    display: block;
+    background: url('../images/banniere3.png') no-repeat;
+    height: 130px;
+}
+.banniere-pc-index{
     width: 100%;
     top: 0px;
     left: 0px;
-    position: relative;
+
     display: block;
 }
 .banniere-tel{
-    height: auto;
-    width: 100%;
     top: 0px;
     left: 0px;
-    position: relative;
     display: none;
 }
-
+.banniere-tel-index{
+    top: 0px;
+    left: 0px;
+    display: none;
+    width: 100%;
+}
 
 .burger-icon span {
     display: none;
@@ -36,10 +42,10 @@ header{
     position: fixed;
     z-index: 1;
     top: 0;
-    right: -250px;
+    left: -250px;
     background-color: #8ba1dd;
     padding-top: 60px;
-    transition: right 0.5s ease;
+    transition: left 0.5s ease;
 }
 
   /* Sidenav menu links */
@@ -63,7 +69,7 @@ header{
 }
   /* Active class */
 .sidenav.active {
-    right: 0;
+    left: 0;
 }
 
   /* Close btn */
@@ -137,10 +143,10 @@ nav ul{
 .left{
     display: flex;
     padding-left: 40px;
+    gap: 30px;
+    align-items: baseline;
 }
-.logo-crista{
-    left: 40px;
-}
+
 .logo-crista img{
     width: 125px;
     height: auto;
@@ -176,10 +182,16 @@ nav ul{
     }
     .banniere-tel{
         display: block;
+        background: url('../images/banniere3.png') no-repeat;
+        height: 85px;
+    }
+    .banniere-tel-index{
+        display: block;
     }
     .tel{
         display: block;
-        position: absolute;
+        position: sticky;
+        top: 0px;
     }
     .desktop{
         display:none;

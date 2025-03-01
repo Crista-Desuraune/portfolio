@@ -425,7 +425,7 @@ hr{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
-        
+
     }
     main{
         padding-left: 30px;
@@ -466,5 +466,12 @@ hr{
     }
     .qrcode img{
         width: 150px;
+    }
+    .column-ces-car{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .column-ces-car p{
+        width: auto;
     }
 }

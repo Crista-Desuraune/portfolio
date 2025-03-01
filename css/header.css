@@ -1,34 +1,43 @@
 header{
     font-family: Jacques Francois;
 }
-
+.body-others{
+    padding-top: 130px;
+}
+.body-index{
+    padding-top: 0px;
+}
 .tel{
     display: none;
 }
+.desktop{
+    display: block;
+}
+
 .banniere-pc{
     display: block;
     background: url('../images/banniere3.png') no-repeat;
+    background-size: cover;
     height: 130px;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+}    
 .banniere-pc-index{
     width: 100%;
-    top: 0px;
-    left: 0px;
-
     display: block;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .banniere-tel{
-    top: 0px;
-    left: 0px;
     display: none;
 }
 .banniere-tel-index{
-    top: 0px;
-    left: 0px;
     display: none;
-    width: 100%;
 }
-
 .burger-icon span {
     display: none;
     width: 35px;
@@ -128,7 +137,9 @@ nav ul{
     display: block;
 }
 .container-header{
-    position: absolute;
+    z-index: 100;
+    display: block;
+    position: fixed;
     top: 0%;
     left: 0%;
     display: flex;
@@ -136,9 +147,12 @@ nav ul{
     align-items: center;
     padding-top: 25px;
     padding-bottom: 25px;
-    background: rgb(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0, 0.6);
     height: 130px;
     width: 100%;
+}
+.container-header-tel{
+    display: none;
 }
 .left{
     display: flex;
@@ -152,14 +166,20 @@ nav ul{
     height: auto;
 }
 .ban{
-    position: absolute;
     height: 607px;
     align-content:center;
 }
+.ban img{
+    height: 200px;
+    width: auto;
+    border-radius: 100%;
+}
 
 .middle-ban{
+    display: flex;
+    gap: 30px;
     justify-self: center;
-    align-self: center;
+    align-items: center;
     padding: 10px;
     text-shadow:  0 0 1em black, 0 0 0.2em black;
 }
@@ -177,43 +197,72 @@ nav ul{
 }
 
 @media (max-width: 788px) {
-    .banniere-pc{
-        display: none;
-    }
-    .banniere-tel{
-        display: block;
-        background: url('../images/banniere3.png') no-repeat;
-        height: 85px;
-    }
-    .banniere-tel-index{
-        display: block;
-    }
     .tel{
         display: block;
-        position: sticky;
-        top: 0px;
     }
     .desktop{
         display:none;
     }
-    .container-header{
+    .banniere-pc{
+        display: none;
+    }
+    .banniere-pc-index{
+        display: none;
+    }
+    .banniere-tel{
+        display: block;
+        width: 100%;
+        position: fixed;
+        background: url('../images/banniere-big.png') no-repeat;
+        background-size: cover;
         height: 85px;
+        
+        top: 0;
+        left: 0;
+        height: 85px;
+        z-index: 1;
+    }
+    .banniere-tel-index{
+        display: block;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        position: absolute;
+    }
+    
+    .container-header{
+        display: none;
+    }
+    .container-header-tel{
+        z-index: 100;
+        display: block;
+        position: fixed;
+        top: 0%;
+        left: 0%;
+        display: flex;
         justify-content: flex-start;
-        /* padding:0px 40px ; */
+        align-items: center;
         padding-top: 0px;
         padding-bottom: 0px;
+        background: rgb(0, 0, 0, 0.6);
+        height: 85px;
         width: 100%;
-        gap: 20px;
+    }
+    .body-others{
+        padding-top: 85px;
+    }
+    .body-index{
+        padding-top: 0px;
     }
     .logo-crista img{
         width: 75px;
     }
-    .ban{display: none;}
     
     .burger-icon span {
         display: block;
         position: relative;
-        width: 35px;
+        width: 33px;
         height: 5px;
         background-color: rgb(255, 255, 255);
         margin: 6px 0;

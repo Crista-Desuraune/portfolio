@@ -108,6 +108,42 @@ function carrouselces() {
 
     afficherMasquerCes();
 }
+function carrouselcesTel() {
+    let nbr = 12;
+    let p = 0;
+    let container = document.getElementById("containercestel");
+    let gcestel = document.getElementById("gcestel");
+    let dcestel = document.getElementById("dcestel");
+
+    container.style.width = (300 * nbr) + "px";
+    for (let i = 1; i <= nbr; i++) {
+        let div = document.createElement("div");
+        div.className = "photoces";
+        div.style.backgroundImage = "url('../images/ces/ces" + i + ".png')";
+        container.appendChild(div);
+    }
+
+    function afficherMasquerCesTel() {
+        dcestel.style.visibility = (p == -nbr + 1) ? "hidden" : "visible";
+        gcestel.style.visibility = (p == 0) ? "hidden" : "visible";
+    }
+
+    dcestel.onclick = function () {
+        if (p > -nbr + 1) p--;
+        container.style.transform = "translate(" + p * 300 + "px)";
+        container.style.transition = "all 0.5s ease";
+        afficherMasquerCesTel();
+    }
+
+    gcestel.onclick = function () {
+        if (p < 0) p++;
+        container.style.transform = "translate(" + p * 300 + "px)";
+        container.style.transition = "all 0.5s ease";
+        afficherMasquerCesTel();
+    }
+
+    afficherMasquerCesTel();
+}
 
 // window.addEventListener("DOMContentLoaded", function () {
 //     carrouselces();
@@ -118,3 +154,4 @@ function carrouselces() {
 window.addEventListener("DOMContentLoaded", carrouselces);
 window.addEventListener("DOMContentLoaded", carrousel);
 window.addEventListener("DOMContentLoaded", carrousseltel);
+window.addEventListener("DOMContentLoaded", carrouselcesTel);

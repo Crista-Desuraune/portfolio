@@ -34,6 +34,12 @@
 	width: 570px;
 	height: 321px;
 }
+#carrouselcestel{
+	display: none;
+}
+#containercestel{
+	display: none;
+}
 .photo{
 	width: 600px;
 	height: 600px;
@@ -120,6 +126,28 @@
 	transition:all 0.3s ease;
 }
 
+
+#gcestel{
+	left: 5px;
+	opacity:0.4;
+	transition:all 0.3s ease;
+}
+#dcestel{
+	right: 5px;
+	opacity:0.4;
+	transition:all 0.3s ease;
+}
+#gcestel:hover{
+	transform: scale(1.1);
+	opacity:1;
+	transition:all 0.3s ease;
+}
+#dcestel:hover{
+	transform:scale(1.1);
+	opacity:1;
+	transition:all 0.3s ease;
+}
+
 @media (max-width: 788px) {
 	.photo{
 		width: 300px;
@@ -147,5 +175,31 @@
 	}
 	#container{
 		display: none;
+	}
+	#carrouselcestel{
+		display: block;
+		width: 300px;
+		height: 169px;
+		border:solid 4px #FFF;
+		box-shadow:0 0 14px rgba(0,0,0,0.3);
+		position:relative;
+		overflow:hidden;
+		justify-self: center;
+		margin: 10px;
+	}
+	#containercestel{
+		display: block;
+		width: 300px;
+		height: 169px;
+	}
+	#carrouselces{
+		display: none;
+	}
+	#containerces{
+		display: none;
+	}
+	.photoces{
+		width: 300px;
+		height: 169px;
 	}
 }

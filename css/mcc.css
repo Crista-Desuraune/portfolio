@@ -23,7 +23,7 @@ main{
     margin-inline: auto;
 }
 .nav{
-    max-width: 200px;
+    width: 200px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -63,4 +63,22 @@ main{
 
 h1,h2, a{
     font-family: Jacques Francois;
+}
+
+@media (max-width: 788px) {
+    main{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .flex{
+        display: block;
+    }
+    .nav{
+        display: block;
+        width: auto;
+    }
+    .nav a{
+        border-right: 2px solid #a08059;
+        padding-right: 10px;
+    }
 }

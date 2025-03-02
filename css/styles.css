@@ -110,7 +110,8 @@ main{
     flex-direction: column;
     gap: 24px;
 }
-.case a{
+.case a,
+.btn-index{
     border: 1px solid;
     border-radius: 4px;
     border-color: rgb(0, 0, 0);
@@ -118,11 +119,12 @@ main{
     background-color: #be1622;
     color: rgb(255, 255, 255);
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
     text-decoration: none;
     width: 80px;
     align-self: center;
+    height: 40px;
     margin-bottom: 24px;
     align-content: end;
 }
@@ -201,6 +203,26 @@ main{
     gap: 12px;
     align-items: center;
     color: #000000;
+}
+.presentation-index{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    color: #000000;
+    padding-bottom: 60px;
+}
+
+.presentation-index h1{
+    font-family: Jacques Francois;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 700;
+}
+.presentation-index p{
+    font-family: Roboto Mono;
+    text-align: center;
+    font-size: 22px;
 }
 
 .columns-articles h1{
@@ -420,6 +442,23 @@ hr{
     color: #be1622;
 }
 
+.propos{
+    display: flex;
+    gap: 50px;
+    padding-bottom: 50px;
+}
+.btn-index{
+    align-self: flex-start;
+    width: auto;
+    margin-top: 24px;
+}
+.competences{
+    border:4px solid #8ba1dd;
+    border-radius: 8px;
+    height: auto;
+}
+
+
 @media (max-width: 788px) {
     .frame{
         display: grid;
@@ -472,6 +511,10 @@ hr{
         gap: 10px;
     }
     .column-ces-car p{
+        width: auto;
+    }
+    .btn-index{
+        align-self: flex-end;
         width: auto;
     }
 }

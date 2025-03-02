@@ -357,6 +357,14 @@ hr{
     width: 470px;
     height: auto;
 }
+.w-440{
+    width: 440px;
+    height: auto;
+}
+.h-200{
+    height: 200px;
+    width: auto;
+}
 .h{
     height: 470px;
     width: auto;
@@ -452,10 +460,47 @@ hr{
     width: auto;
     margin-top: 24px;
 }
+.acquis{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
 .competences{
-    border:4px solid #8ba1dd;
+    border:3px solid #8ba1dd;
     border-radius: 8px;
+    box-shadow: 1px 1px 30px #8ba1dd;
     height: auto;
+    padding:40px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.competences img{
+    height: 100px;
+}
+.langage{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+.compt-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap:20px;
+    justify-items: center;
+}
+.compt-img p{
+    justify-self: center;
+}
+.border{
+    border:3px solid #8ba1dd;
+    border-radius: 8px;
+    box-shadow: 1px 1px 30px #8ba1dd;
+    height: auto;
+    padding:40px;
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -516,5 +561,12 @@ hr{
     .btn-index{
         align-self: flex-end;
         width: auto;
+    }
+    .competences{
+        flex-direction: column;
+    }
+    .w-150{
+        width: 300px;
+        height: auto;
     }
 }

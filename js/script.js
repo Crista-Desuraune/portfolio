@@ -115,7 +115,7 @@ function carrouselcesTel() {
     let gcestel = document.getElementById("gcestel");
     let dcestel = document.getElementById("dcestel");
 
-    container.style.width = (300 * nbr) + "px";
+    container.style.width = (320 * nbr) + "px";
     for (let i = 1; i <= nbr; i++) {
         let div = document.createElement("div");
         div.className = "photoces";
@@ -130,14 +130,14 @@ function carrouselcesTel() {
 
     dcestel.onclick = function () {
         if (p > -nbr + 1) p--;
-        container.style.transform = "translate(" + p * 300 + "px)";
+        container.style.transform = "translate(" + p * 320 + "px)";
         container.style.transition = "all 0.5s ease";
         afficherMasquerCesTel();
     }
 
     gcestel.onclick = function () {
         if (p < 0) p++;
-        container.style.transform = "translate(" + p * 300 + "px)";
+        container.style.transform = "translate(" + p * 320 + "px)";
         container.style.transition = "all 0.5s ease";
         afficherMasquerCesTel();
     }
@@ -155,3 +155,4 @@ window.addEventListener("DOMContentLoaded", carrouselces);
 window.addEventListener("DOMContentLoaded", carrousel);
 window.addEventListener("DOMContentLoaded", carrousseltel);
 window.addEventListener("DOMContentLoaded", carrouselcesTel);
+

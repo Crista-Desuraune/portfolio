@@ -24,7 +24,7 @@ header{
     left: 0;
     width: 100%;
     z-index: 1;
-}    
+} 
 .banniere-pc-index{
     width: 100%;
     display: block;
@@ -32,6 +32,7 @@ header{
     left: 0;
     z-index: 1;
 }
+
 .banniere-tel{
     display: none;
 }
@@ -115,15 +116,21 @@ nav ul{
     list-style: none;
     min-width: 150px;
     background: rgb(0, 0, 0, 0.6);
-    
 }
-
+body.dark-mode .sous-menu{
+    background: rgb(255, 255, 255, 0.4);
+}
 .sous-menu li {
     border-bottom: 1px solid #ffffff;
 }
+body.dark-mode .sous-menu li{
+    border-bottom: 1px solid #000000;
+}
 .sous-menu a {
     padding: 10px 15px;
-    
+}
+body.dark-mode .sous-menu a{
+    color: black;
 }
 .sous-menu ul{
     display: none;
@@ -131,6 +138,9 @@ nav ul{
 .sous-menu a:hover {
     background: rgb(0, 0, 0, 0.6);
     color: white;
+}
+body.dark-mode .sous-menu a{
+    color: black;
 }
 
 .menu li:hover .sous-menu {
@@ -202,6 +212,17 @@ nav ul{
     align-items: flex-end;
 }
 
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+button img {
+    width: 30px; /* Ajuste la taille de l'image */
+    height: auto;
+}
 @media (max-width: 788px) {
     .tel{
         display: block;

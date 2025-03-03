@@ -9,9 +9,12 @@ body{
     padding:0%;
     background-color: #ffffff;
 }
+body.dark-mode{
+    background-color:#030303;
+    color:#f5f7fa;
+}
 
 main{
-
     height: auto;
     max-width: 980px;
     margin-inline: auto;
@@ -19,7 +22,9 @@ main{
     color: rgb(0, 0, 0);
     padding-top: 60px;
 }
-
+body.dark-mode main{
+    color:#f5f7fa;
+}
 .cv{
     color: #000000;
 }
@@ -33,11 +38,11 @@ main{
     gap: 20px;
     align-content: center;
 }
-.en-tete h1{
+.top h1{
     font-size: 48px;
     font-weight: 700;
 }
-.en-tete p{
+.top p{
     font-size: 24px;
     font-weight: 400;
 }
@@ -47,20 +52,25 @@ main{
     flex-direction: column;
     gap: 10px;
 }
-
+.tete-bouton{
+    height: auto;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
 .tete-bouton a,
 .container h2{
     border: 1px solid;
     border-radius: 4px;
     border-color: white;
     padding: 5px;
-    gap: 10px;
     background-color: #bdd790;
     color: rgb(0, 0, 0);
     font-weight: 500;
     font-size: 14px;
     text-align: center;
     text-decoration: none;
+    height: auto;
 }
 
 .icone {
@@ -110,6 +120,9 @@ main{
     flex-direction: column;
     gap: 24px;
 }
+body.dark-mode .case{
+    background-color:#4d4d4d
+}
 .case a,
 .btn-index{
     border: 1px solid;
@@ -149,7 +162,10 @@ main{
     border-top-right-radius: 8px;
     align-content: center;
     text-align: center;
+}
 
+body.dark-mode .dim{
+    background-color:#1f2325;
 }
 .corps img{
     height: 80px;
@@ -166,6 +182,9 @@ main{
     padding-left: 32px;
     height: auto;
     color: black;
+}
+body.dark-mode .top-text{
+    color: #f5f7f5;
 }
 .top-text h2{
     font-family: Jacques Francois;
@@ -204,6 +223,10 @@ main{
     align-items: center;
     color: #000000;
 }
+body.dark-mode .presentation{
+    color:#f5f7fa;
+}
+
 .presentation-index{
     display: flex;
     flex-direction: column;
@@ -211,6 +234,9 @@ main{
     align-items: center;
     color: #000000;
     padding-bottom: 60px;
+}
+body.dark-mode .presentation-index{
+    color:#f5f7fa;
 }
 
 .presentation-index h1{
@@ -233,10 +259,6 @@ main{
     gap: 80px;
     padding: 60px 0px;
     align-items: center;
-}
-.columns-articles img{
-    width: 470px;
-    height: auto;
 }
 .espace{
     display: flex;
@@ -534,10 +556,10 @@ hr{
         gap: 20px;
     }
     .w{
-        width: 370px;
+        width: 350px;
     }
     .moodboard{
-        width: 370px;
+        width: 350px;
     }
     .columns{
         flex-direction: column;
@@ -569,5 +591,13 @@ hr{
     }
     .info{
         grid-template-columns: repeat(1,1fr);
+    }
+    .tete-bouton{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .tete-bouton a{
+        text-align: center;
+        align-self: center;
     }
 }

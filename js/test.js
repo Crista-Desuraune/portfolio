@@ -34,4 +34,24 @@ toggleButton.addEventListener("click", () => {
     }
 });
 
-console.log()
+const darkModeButton = document.getElementById("dark-mode-toggle");
+
+if (!darkModeButton) {
+    console.log("❌ Bouton non trouvé !");
+} else {
+    console.log("✅ Bouton trouvé !");
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const darkModeButton = document.getElementById("dark-mode-toggle");
+
+    if (darkModeButton) {
+        darkModeButton.addEventListener("click", () => {
+            console.log("✅ Clic détecté !");
+        });
+    }
+});
+
+function testClick() {
+    console.log("✅ Clic détecté !");
+}

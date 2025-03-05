@@ -222,6 +222,14 @@ button img {
     width: 30px;
     height: auto;
 }
+#dark-mode-toggle {
+    position: relative;
+    z-index: 9999;
+    background: red; /* Pour bien voir le bouton */
+}
+#dark-mode-toggle {
+    pointer-events: all !important;
+}
 
 @media (max-width: 788px) {
     .tel{

@@ -17,7 +17,6 @@ function closeNav() {
 //     }
 
 const toggleButton = document.getElementById("dark-mode-toggle");
-const icon = document.getElementById("dark-mode-icon");
 const body = document.body;
 
 if (localStorage.getItem("darkMode") === "enabled") {
@@ -34,24 +33,19 @@ toggleButton.addEventListener("click", () => {
     }
 });
 
-const darkModeButton = document.getElementById("dark-mode-toggle");
+const toggleButtonTel = document.getElementById("dark-mode-toggle-mobile");
+const bodyTel = document.body;
 
-if (!darkModeButton) {
-    console.log("❌ Bouton non trouvé !");
-} else {
-    console.log("✅ Bouton trouvé !");
-}
+if (localStorage.getItem("darkMode") === "enabled") {
+    bodyTel.classList.add("dark-mode");
+    }
 
-document.addEventListener("DOMContentLoaded", () => {
-    const darkModeButton = document.getElementById("dark-mode-toggle");
+toggleButtonTel.addEventListener("click", () => {
+    bodyTel.classList.toggle("dark-mode");
 
-    if (darkModeButton) {
-        darkModeButton.addEventListener("click", () => {
-            console.log("✅ Clic détecté !");
-        });
+    if (bodyTel.classList.contains("dark-mode")) {
+        localStorage.setItem("darkMode", "enabled");
+    } else {
+        localStorage.setItem("darkMode", "disabled");
     }
 });
-
-function testClick() {
-    console.log("✅ Clic détecté !");
-}

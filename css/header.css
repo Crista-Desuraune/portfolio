@@ -13,7 +13,9 @@ header{
 .desktop{
     display: block;
 }
-
+/* --------------------------------------------
+            BANNIERE
+----------------------------------------------*/
 .banniere-pc{
     display: block;
     background: url('../images/banniere3.png') no-repeat;
@@ -39,6 +41,9 @@ header{
 .banniere-tel-index{
     display: none;
 }
+/* --------------------------------------------
+            MENU BURGER
+----------------------------------------------*/
 .burger-icon span {
     display: none;
     width: 35px;
@@ -57,8 +62,9 @@ header{
     padding-top: 60px;
     transition: left 0.5s ease;
 }
-
-  /* Sidenav menu links */
+body.dark-mode .sidenav{
+    background-color: #02005f;
+}
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -67,28 +73,33 @@ header{
     display: block;
     transition: 0.3s;
 }
-
+body.dark-mode .sidenav a{
+    color: #8ba1dd;
+}
 .sidenav a:hover {
     color: #02005f;
 }
-
+body.dark-mode .sidenav a:hover{
+    color: #ffffff;
+}
 .sidenav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
-  /* Active class */
 .sidenav.active {
     left: 0;
 }
-
-  /* Close btn */
 .sidenav .close {
     position: absolute;
     top: 0;
     right: 25px;
     font-size: 36px;
 }
+
+/* --------------------------------------------
+            HEADER NAVIGATION
+----------------------------------------------*/
 .menu li{
     position: relative;
 }
@@ -142,7 +153,6 @@ body.dark-mode .sous-menu a{
 body.dark-mode .sous-menu a{
     color: black;
 }
-
 .menu li:hover .sous-menu {
     display: block;
 }
@@ -174,6 +184,9 @@ body.dark-mode .sous-menu a{
     width: 125px;
     height: auto;
 }
+/* --------------------------------------------
+            CRISTA DSRN CC PORFOLIO + PHOTO
+----------------------------------------------*/
 .ban{
     position: absolute;
     top: 200px;
@@ -186,7 +199,6 @@ body.dark-mode .sous-menu a{
     width: auto;
     border-radius: 100%;
 }
-
 .middle-ban{
     display: flex;
     gap: 30px;
@@ -199,7 +211,6 @@ body.dark-mode .sous-menu a{
     font-weight: 700;
     color: white;
     font-size: 52px;
-    
 }
 .middle-ban p{
     font-weight: 500;
@@ -210,7 +221,9 @@ body.dark-mode .sous-menu a{
 .ban-right{
     align-items: flex-end;
 }
-
+/* --------------------------------------------
+            BOUTON DARK MODE
+----------------------------------------------*/
 button {
     background: none;
     border: none;
@@ -222,14 +235,9 @@ button img {
     width: 30px;
     height: auto;
 }
-#dark-mode-toggle {
-    position: relative;
-    z-index: 9999;
-    background: red; /* Pour bien voir le bouton */
-}
-#dark-mode-toggle {
-    pointer-events: all !important;
-}
+/* --------------------------------------------
+            RESPONSIVE
+----------------------------------------------*/
 
 @media (max-width: 788px) {
     .tel{
@@ -283,7 +291,6 @@ button img {
         padding-bottom: 0px;
         background: rgb(0, 0, 0, 0.6);
         height: 85px;
-
     }
     .body-others{
         padding-top: 85px;
@@ -304,12 +311,20 @@ button img {
         margin: 6px 0;
     }
     .ban{
+        top: 130px;
+        height: 200px;
+    }
+    .ban img{
         display: none;
+    }
+    .middle-ban h1{
+        font-size: 32px;
+    }
+    .middle-ban p{
+        font-size: 28px;
+        align-self: center;
     }
     .container-header-tel button{
         justify-self: right;
-    }
-    button {
-        justify-items: flex-end;
     }
 }

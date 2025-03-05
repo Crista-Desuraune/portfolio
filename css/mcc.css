@@ -9,13 +9,23 @@ body{
     padding:0%;
     background-color: #ffffff;
 }
-
+body.dark-mode{
+    background-color:#030303;
+    color:#f5f7fa;
+}
 main{
     height: auto;
     font-family: Roboto Mono;
     color: rgb(0, 0, 0);
     padding-top: 60px;
 }
+body.dark-mode main{
+    background-color:#030303;
+    color:#f5f7fa;
+}
+/* --------------------------------------------
+            NAV PARTIES MENTIONS
+----------------------------------------------*/
 .flex{
     display: flex;
     gap: 40px;

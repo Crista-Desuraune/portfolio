@@ -7,7 +7,9 @@ footer{
 body.dark-mode footer{
     background-color: #a08059;
 }
-
+/* --------------------------------------------
+            PARTIE DU HAUT (nav+logo)
+----------------------------------------------*/
 .f-haut{
     display: flex;
     height: auto;
@@ -55,6 +57,9 @@ body.dark-mode .f-haut{
     height: auto;
     padding-top: 8px;
 }
+/* --------------------------------------------
+            PARTIE DU bas (copyright+mentions légales)
+----------------------------------------------*/
 .f-bas{
     height: 80px;
     display: flex;
@@ -79,7 +84,9 @@ body.dark-mode .f-bas a{
 body.dark-mode .f-bas a:hover{
     color: #b90000;
 }
-
+/* --------------------------------------------
+            RESPONSIVE
+----------------------------------------------*/
 @media (max-width: 788px) {
 
     .f-haut{

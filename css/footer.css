@@ -4,6 +4,10 @@ footer{
     font-family: Jacques Francois;
 }
 
+body.dark-mode footer{
+    background-color: #a08059;
+}
+
 .f-haut{
     display: flex;
     height: auto;
@@ -12,6 +16,10 @@ footer{
     padding-top: 50px;
     padding-bottom: 25px;
     margin-inline: auto;
+    color: rgb(0, 0, 0);
+}
+body.dark-mode .f-haut{
+    background-color: #a08059;
 }
 .f-haut img{
     width: 150px;
@@ -54,13 +62,22 @@ footer{
     align-items: center;
     gap: 8px;
     background-color: #a08059;
+    color: rgb(0, 0, 0);
+}
+body.dark-mode .f-bas{
+    background-color: #735c40;
 }
 .f-bas a{
     color: #be1622;
 }
+body.dark-mode .f-bas a{
+    color: #ffffff;
+}
 .f-bas a:hover{
     color: #a94545;
-
+}
+body.dark-mode .f-bas a:hover{
+    color: #b90000;
 }
 
 @media (max-width: 788px) {
@@ -76,6 +93,7 @@ footer{
         padding: 15px;
         height: auto;
     }
+    f
     .f-logo{
         align-self: flex-start;
     }

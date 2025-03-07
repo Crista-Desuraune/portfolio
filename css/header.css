@@ -311,17 +311,18 @@ button img {
         margin: 6px 0;
     }
     .ban{
-        top: 130px;
+        top: 110px;
         height: 200px;
     }
     .ban img{
         display: none;
     }
     .middle-ban h1{
-        font-size: 32px;
+        font-size: 28px;
+        text-align: center;
     }
     .middle-ban p{
-        font-size: 28px;
+        font-size: 24px;
         align-self: center;
     }
     .container-header-tel button{

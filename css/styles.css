@@ -509,6 +509,11 @@ details p{
     padding:40px;
     display: flex;
     justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    text-align: center;
     gap: 50px;
 }
 .competences img{
@@ -518,16 +523,34 @@ details p{
     display: flex;
     flex-direction: column;
     gap: 30px;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
     align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
 }
 .compt-img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap:20px;
+    justify-content: center;
     justify-items: center;
+    justify-self: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
 }
 .compt-img img{
+    justify-content: center;
+    justify-items: center;
     justify-self: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
 }
 
 /* --------------------------------------------

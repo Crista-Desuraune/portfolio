@@ -1,0 +1,53 @@
+{
+    "primary": [
+      {
+        "label": "A propos de moi",
+        "description": "Programme et animation",
+        "url": "/a-propos"
+      },
+      {
+        "label": "Mes projets",
+        "url": "/projects"
+      },
+      {
+        "label": "Mon CV",
+        "url": "/cv"
+      },
+      {
+        "label": "Me Contacter",
+        "url": "/contact"
+      }
+    ],
+    "footer": [
+      {
+        "label": "Retour en haut de la page",
+        "url": "#top-page"
+      },
+      {
+        "label": "Accueil",
+        "url": "/"
+      },
+      {
+        "label": "A propos de moi",
+        "description": "Programme et animation",
+        "url": "/a-propos"
+      },
+      {
+        "label": "Mes projets",
+        "url": "/projects"
+      },
+      {
+        "label": "Mon CV",
+        "url": "/cv"
+      },
+      {
+        "label": "Me Contacter",
+        "url": "/contact"
+      },
+      {
+            "label": "Mentions légales et politique",
+            "url": "/mentions-legales"
+      }
+    ]
+}
+  

@@ -1,1 +1,22 @@
 @import "tailwindcss";
+
+@theme {
+    /* Fonts */
+    --font-heading: 'Jacques Francois', serif;
+    --font-base: 'Roboto Mono Variable', monospace;
+  
+    /* Colors */
+    --color-primary: #be1622;
+    --color-primary-accent: #780000;
+    --color-primary-foreground: ##FDF0D5;
+    --color-secondary: #adbdff;
+    --color-secondary-accent: #003049;
+    --color-secondary-foreground: ##FDF0D5;
+  
+    --color-background: var(--color-neutral-50);
+    --color-background-accent: #fdf0d5;
+    --color-background-dark: #080B0F;
+  
+    --color-foreground: ##080B0F;
+    --color-foreground-light: #a1acad;
+  }

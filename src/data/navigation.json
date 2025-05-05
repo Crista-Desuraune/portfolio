@@ -1,8 +1,11 @@
 {
     "primary": [
+        {
+            "label": "Accueil",
+            "url": "/"
+        },
       {
         "label": "A propos de moi",
-        "description": "Programme et animation",
         "url": "/a-propos"
       },
       {
@@ -45,8 +48,8 @@
         "url": "/contact"
       },
       {
-            "label": "Mentions légales et politique",
-            "url": "/mentions"
+        "label": "Mentions légales et politique",
+        "url": "/mentions"
       }
     ]
 }

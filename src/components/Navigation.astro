@@ -1,25 +1,25 @@
 ---
-import siteConfig from '../data/navigation.json';
-const { primary } = siteConfig;
+import config from '../data/navigation.json';
+import NavLink from './NavLink.astro';
+
+const { primary } = config;
 
 type LinkPrimaryType = {
   url: string;
   label: string;
 };
 ---
-<nav class="absolute inset-x-4 top-full z-2 lg:static">
+<nav class="inset-x-4">
   <div
-    class="top-10 hidden flex-col gap-10 rounded-2xl border border-gray-300 bg-neutral-50 px-4 py-8 text-center md:p-0 lg:flex lg:flex-row lg:gap-10 lg:border-none"
+    class="text-primary-foreground flex flex-row gap-10"
   >
     {
         primary &&
         primary.map((item: LinkPrimaryType) => (
-            <a
-            class="hover:text-foreground-accent text-foreground block cursor-pointer text-base leading-7 underline"
-            href={item.url}
-            >
-            {item.label}
-            </a>
+            <NavLink
+                url={item.url}
+                title={item.label}
+            />
         ))
     }
   </div>

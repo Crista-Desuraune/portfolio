@@ -22,23 +22,23 @@ const {
 
 // Styles de base
 const baseStyles =
-  'cursor-pointer font-base text-xl block text-center w-full no-underline';
+  'cursor-pointer font-base bold text-lg block text-center rounded w-auto no-underline';
 
 // Styles des variantes
 const variants = {
-  default: 'bg-foreground text-background hover:bg-foreground/90 rounded',
+  default: 'bg-background text-foreground hover:bg-primary-foreground border',
   primary:
-    'bg-primary text-primary-foreground hover:bg-primary/90 mb-4 rounded',
+    'bg-primary text-primary-foreground text-lg hover:bg-primary-accent hover:text-secondary-foreground',
   secondary:
-    'bg-secondary text-secondary-foreground hover:bg-secondary/90 rounded',
+    'bg-secondary text-foreground hover:bg-secondary-accent hover:text-secondary-foreground', 
 };
 
 // Styles des tailles
 const sizes = {
   small:
-    'px-5 py-2.5 max-w-80' /* dimensions pour les boutons de style default/verts*/,
-  medium: 'p-5',
-  large: '',
+    'px-5 py-2 ',
+  medium: 'px-5 py-2.5',
+  large: 'px-5 py-2.5',
 };
 
 // Définition du composant en fonction du type de lien

@@ -13,9 +13,9 @@ import Header from '../components/Header.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body>
-		<main>
-			<Header />
+	<body class="bg-background text-foreground">
+		<Header />
+		<main class="mx-auto grid max-w-5xl">
 			<slot />
 		</main>
 		

@@ -1,17 +1,17 @@
 ---
 import Button from '../components/ui/Button.astro';
+const { cardsTitle, cardsDescription, cardsUrl } = Astro.props;
 ---
-<div class="rounded-lg bg-secondary p-4 w-64 h-92 font-base">
-    <h2 class="text-foreground text-lg font-bold">Cards</h2>
-    <Button variant="primary" size="small">
-		Voir
-	</Button>
-</div>
+<div class=" flex flex-col gap-4 rounded-lg bg-background p-5 w-auto font-base border-1 drop-shadow-lg/20 border-primary-accent text-center">
+  <div class="bg-primary-accent w-full h-32 rounded-lg">
 
-<div class="rounded-lg bg-secondary-accent p-4 w-64 h-92 font-heading">
-    <h2 class="text-primary-foreground text-lg font-bold">Cards</h2>
-    <Button variant="default" size="small">
-		Voir
-	</Button>
+  </div>
+  <h2 class="text-foreground text-2xl font-bold font-heading"> {cardsTitle}</h2>
 
+  <p class="font-base text-md line-clamp-2">
+    {cardsDescription}
+  </p>
+  <Button variant="primary" size="small" class="mt-auto self-center" aria-label=`Voir le projet ${cardsTitle}` href={cardsUrl}>
+    Voir
+  </Button>
 </div>

@@ -21,6 +21,99 @@
         "url": "/contact"
       }
     ],
+    "posts": {
+      "last" : [
+        {
+          "label": "Site Fleurs et Jardins, le Vaudreuil",
+          "description": "Refonte du site Fleurs et jardins du Vaudreuil en Astro.JS et TailwindCSS.",
+          "url": "/posts/fleurs-jardins"
+        },
+        {
+          "label": "Site Portfolio",
+          "description": "Création d'un site web portfolio en HTLM/CSS et JS.",
+          "url": "/posts/portfolio"
+        },
+        {
+          "label": "Handisup",
+          "description": "Création d'un site WordPress pour une association qui accompagnent les jeunes en situation de Handicap dans les études supérieur.",
+          "url": "/posts/handisup"
+        }
+      ],
+      "about" : [
+        {
+          "label": "Qui suis-je ?",
+          "description": "Qui suis-je? Découvrez la personne que je suis dans cette présentation.",
+          "url": "/posts/qui-suis-je"
+        },
+        {
+          "label": "Mon parcours",
+          "description": "Découvrez mon parcours jusqu'ici! Quels sont mes formations, mes expériences qui m'ont amené à aujourd'hui.",
+          "url": "/posts/parcours"
+        },
+        {
+          "label": "Ma charte graphique",
+          "description": "Découvrez l'univers visuel sur lequel s'appuie mon portfolio. Logo, couleurs et typographies qui reflètent mon identité.",
+          "url": "/posts/charte"
+        }
+      ],
+      "projects" : [
+        {
+          "label": "Site Fleurs et Jardins, le Vaudreuil",
+          "description": "Refonte du site Fleurs et jardins du Vaudreuil en Astro.JS et TailwindCSS.",
+          "url": "/posts/fleurs-jardins"
+        },
+        {
+          "label": "Site Portfolio",
+          "description": "Création d'un site web portfolio en HTLM/CSS et JS.",
+          "url": "/posts/portfolio"
+        },
+        {
+          "label": "Handisup",
+          "description": "Création d'un site WordPress pour une association qui accompagnent les jeunes en situation de Handicap dans les études supérieur.",
+          "url": "/posts/handisup"
+        },
+        {
+          "label": "Club Eco Saint Sever",
+          "description": "Découvrez toute l'identité visuel créée pour une association de quatier.",
+          "url": "/posts/ces"
+        },
+        {
+          "label": "SoundSpire",
+          "description": "Création d'un site web type blog en HTLM/CSS et JS.",
+          "url": "/posts/soundspire"
+        },
+        {
+          "label": "Nexcent",
+          "description": "Reproduction une maquette Figma en HTML/CSS au pixel perfect.",
+          "url": "/posts/nexcent"
+        },
+        {
+          "label": "Événement BDE",
+          "description": "création d'un événement pour le BDE de la Normandie Web School.",
+          "url": "/posts/bde"
+        },
+        {
+          "label": "Quartier Turtle",
+          "description": "Création d'une illustration d'un quartier avec la bibliothèque Turtle de Pyhton.",
+          "url": "/posts/quartier-turtle"
+        },
+        {
+          "label": "Labyrinthe",
+          "description": "Création d'un mini jeu avec Python",
+          "url": "/posts/labyrinthe"
+        },
+        {
+          "label": "Mes dessins",
+          "description": "Découvrez ma passion pour le dessin.",
+          "url": "/posts/dessins"
+        },
+        {
+          "label": "Interview avec un développeur",
+          "description": "Découvrez cette interview d'un année 3 à la Normandie Web School sur un metier du monde professionnel.",
+          "url": "/posts/interview"
+        }
+      ]
+    },
     "footer": [
       {
         "label": "Retour en haut de la page",

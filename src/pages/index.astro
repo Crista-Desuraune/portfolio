@@ -1,42 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Button from '../components/ui/Button.astro';
 import Cards from '../components/Cards.astro';
 import config from '../data/navigation.json';
-
-const { last } = config.posts;
-
-type LinkLastType = {
-	label: string;
-	description: string;
-  url: string;
-
-};
+const { last, projects, about } = config.posts;
 ---
 
 <Layout>
-	<div class="grid grid-cols-3 gap-5 py-2.5">
-		{
-			last &&
-			last.map((item: LinkLastType) => (
-				<Cards
-					cardsTitle={item.label}
-					cardsDescription={item.description}
-					cardsUrl={item.url}
-					
-				/>
-			))
-		}
-	</div>
-
-	<Button variant="secondary" size="small">
-		secondary Button
-	</Button>
-	<Button variant="primary" size="small">
-		Primary Button
-	</Button>
-	<Button variant="default" size="small">
-		Default Button
-	</Button>
-	
+	<Cards id={last}/>
 </Layout>

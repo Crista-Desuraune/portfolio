@@ -1,11 +1,37 @@
 ---
 import  Navigation  from './Navigation.astro';
 ---
-<div class="bg-background-dark/50 w-screen font-heading py-2 mx-auto flex items-center justify-between px-15">
-    <a href="/">
-        <img class="w-32" src="/images/logo-crista-275.png" alt="logo-crista">
-    </a>
-    
-    <Navigation />
-    <img class="w-10" src="/images/dark-mode.png" alt="dark-mode">
-</div>
+<header id="main-header" class="fixed transition-transform duration-750 z-100">
+    <div class="w-screen relative top-0 h-23 overflow-hidden">
+        <img src="/images/banniere.png" alt="banniere" class="w-screen ">
+        <div class="bg-background-dark/50 w-screen font-heading py-2 mx-auto flex items-center justify-between px-15 absolute top-0">
+        
+            <a href="/">
+                <img class="w-32" src="/images/logo-crista-275.png" alt="logo-crista">
+            </a>
+            
+            <Navigation />
+            <img class="w-10" src="/images/dark-mode.png" alt="dark-mode">
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+        let lastScrollY = window.scrollY;
+        const header = document.querySelector('#main-header');
+
+        if (!header) return;
+
+        document.addEventListener('scroll', () => {
+            if (window.scrollY > lastScrollY) {
+            // Cache le header si on défile vers le bas
+            header.classList.add('-translate-y-full');
+            } else {
+            // Affiche le header si on défile vers le haut
+            header.classList.remove('-translate-y-full');
+            }
+
+            lastScrollY = window.scrollY;
+        });
+        });
+    </script>
+</header>

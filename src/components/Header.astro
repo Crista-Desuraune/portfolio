@@ -1,6 +1,49 @@
 ---
+import MenuBurger from './MenuBurger.astro';
 import  Navigation  from './Navigation.astro';
+import Burger from './ui/Burger.astro';
+
 ---
-<Navigation />
-<p class="font-heading text-3xl">header</p>
-<p class="font-base text-2xl">header 2</p>
+<header>
+    <div id="main-header" class="fixed transition-transform duration-750 z-2">
+        <div  class="w-screen relative top-0 lg:h-23 h-18 overflow-hidden">
+            <img src="/images/banniere.png" alt="banniere" class="w-screen">
+            <div class="bg-background-dark/50 w-screen lg:h-23 h-18 font-heading lg:py-2 py-4 mx-auto flex items-center justify-between lg:px-15 px-7 absolute top-0">
+                <Burger id="menu-burger"/>
+                <a href="/">
+                    <img class=" lg:w-32 w-20" src="/images/logo-crista-275.png" alt="logo-crista">
+                </a>
+                <Navigation/>
+                <img class="w-10" src="/images/dark-mode.png" alt="dark-mode">
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                let lastScrollY = window.scrollY;
+                const header = document.querySelector('#main-header');
+
+                if (!header) return;
+
+                document.addEventListener('scroll', () => {
+                    if (window.scrollY > lastScrollY) {
+                    header.classList.add('-translate-y-full');
+                    } else {
+                    header.classList.remove('-translate-y-full');
+                    }
+
+                    lastScrollY = window.scrollY;
+                });
+            });
+        </script>
+    </div>
+    <MenuBurger id="nav"/>
+    <script>
+        const burgerMenu = document.querySelector('#menu-burger');
+        const nav = document.querySelector('#nav');
+            if (burgerMenu && nav) {
+            burgerMenu.addEventListener('click', () => {
+                nav.classList.toggle('hidden');
+            });
+            }
+    </script>
+</header>

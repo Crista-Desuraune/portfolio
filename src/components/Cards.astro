@@ -1,0 +1,26 @@
+---
+import Card from './ui/Card.astro';
+
+type CardsType = {
+	label: string;
+	description: string;
+  	url: string;
+  	image: string;
+
+};
+
+const { id } = Astro.props;
+---
+<div class="grid lg:grid-cols-3 gap-5 py-2.5 grid-cols-1">
+    {
+        id &&
+        id.map((item: CardsType) => (
+            <Card
+                cardsTitle={item.label}
+                cardsDescription={item.description}
+                cardsUrl={item.url}
+                cardsImage={item.image}
+            />
+        ))
+    }
+</div>

@@ -1,8 +1,11 @@
 {
     "primary": [
+        {
+            "label": "Accueil",
+            "url": "/"
+        },
       {
         "label": "A propos de moi",
-        "description": "Programme et animation",
         "url": "/a-propos"
       },
       {
@@ -18,6 +21,116 @@
         "url": "/contact"
       }
     ],
+    "posts": {
+      "last" : [
+        {
+          "label": "Site Fleurs et Jardins, le Vaudreuil",
+          "description": "Refonte du site Fleurs et jardins du Vaudreuil en Astro.JS et TailwindCSS.",
+          "url": "/posts/fleurs-jardins",
+          "image":"/images/logo-fleurs-et-jardins.svg"
+        },
+        {
+          "label": "Site Portfolio",
+          "description": "Création d'un site web portfolio en HTLM/CSS et JS.",
+          "url": "/posts/portfolio",
+          "image":"/images/logo-crista-275.png"
+        },
+        {
+          "label": "Site Handisup",
+          "description": "Création d'un site WordPress pour une association qui accompagnent les jeunes en situation de Handicap dans les études supérieur.",
+          "url": "/posts/handisup",
+          "image":"/images/logo-handisup.png"
+        }
+      ],
+      "about" : [
+        {
+          "label": "Qui suis-je ?",
+          "description": "Qui suis-je? Découvrez la personne que je suis dans cette présentation.",
+          "url": "/posts/qui-suis-je",
+          "image":"/images/utilisateur.png"
+        },
+        {
+          "label": "Mon parcours",
+          "description": "Découvrez mon parcours jusqu'ici! Quels sont mes formations, mes expériences qui m'ont amené à aujourd'hui.",
+          "url": "/posts/parcours",
+          "image":"/images/casquette-de-graduation.png"
+        },
+        {
+          "label": "Ma charte graphique",
+          "description": "Découvrez l'univers visuel sur lequel s'appuie mon portfolio. Logo, couleurs et typographies qui reflètent mon identité.",
+          "url": "/posts/charte",
+          "image":"/images/crayon.png"
+        }
+      ],
+      "projects" : [
+        {
+          "label": "Site Fleurs et Jardins, le Vaudreuil",
+          "description": "Refonte du site Fleurs et jardins du Vaudreuil en Astro.JS et TailwindCSS.",
+          "url": "/posts/fleurs-jardins",
+          "image":"/images/logo-fleurs-et-jardins.svg"
+        },
+        {
+          "label": "Site Portfolio",
+          "description": "Création d'un site web portfolio en HTLM/CSS et JS.",
+          "url": "/posts/portfolio",
+          "image":"/images/logo-crista-275.png"
+        },
+        {
+          "label": "Site Handisup",
+          "description": "Création d'un site WordPress pour une association qui accompagnent les jeunes en situation de Handicap dans les études supérieur.",
+          "url": "/posts/handisup",
+          "image":"/images/logo-handisup.png"
+        },
+        {
+          "label": "Club Eco Saint Sever",
+          "description": "Découvrez toute l'identité visuel créée pour une association de quatier.",
+          "url": "/posts/ces",
+          "image":"/images/ces/logo-club-eco-st-sever.png"
+        },
+        {
+          "label": "SoundSpire",
+          "description": "Création d'un site web type blog en HTLM/CSS et JS.",
+          "url": "/posts/soundspire",
+          "image":"/images/soundspire.png"
+        },
+        {
+          "label": "Nexcent",
+          "description": "Reproduction une maquette Figma en HTML/CSS au pixel perfect.",
+          "url": "/posts/nexcent",
+          "image":"/images/nexcent.png"
+        },
+        {
+          "label": "Événement BDE",
+          "description": "création d'un événement pour le BDE de la Normandie Web School.",
+          "url": "/posts/bde",
+          "image":"/images/bde/logo_olympiades_anas.png"
+        },
+        {
+          "label": "Quartier Turtle",
+          "description": "Création d'une illustration d'un quartier avec la bibliothèque Turtle de Pyhton.",
+          "url": "/posts/quartier-turtle",
+          "image":"/images/logo/turtle-python.png"
+        },
+        {
+          "label": "Labyrinthe",
+          "description": "Création d'un mini jeu avec Python",
+          "url": "/posts/labyrinthe",
+          "image":"/images/logo/python.png"
+        },
+        {
+          "label": "Mes dessins",
+          "description": "Découvrez ma passion pour le dessin.",
+          "url": "/posts/dessins",
+          "image":"/images/crayon.png"
+        },
+        {
+          "label": "Interview avec un développeur",
+          "description": "Découvrez cette interview d'un année 3 à la Normandie Web School sur un metier du monde professionnel.",
+          "url": "/posts/interview",
+          "image":"/images/microphone.png"
+        }
+      ]
+    },
     "footer": [
       {
         "label": "Retour en haut de la page",
@@ -45,8 +158,8 @@
         "url": "/contact"
       },
       {
-            "label": "Mentions légales et politique",
-            "url": "/mentions"
+        "label": "Mentions légales et politique",
+        "url": "/mentions"
       }
     ]
 }

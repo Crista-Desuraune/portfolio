@@ -1,10 +1,12 @@
 ---
 import MenuBurger from './MenuBurger.astro';
 import  Navigation  from './Navigation.astro';
+import SocialNetworks from './SocialNetworks.astro';
 import Burger from './ui/Burger.astro';
+import configGeneral from "../data/infoGeneral.json";
 
 ---
-<header>
+<header id="top-page">
     <div id="main-header" class="fixed transition-transform duration-750 z-2">
         <div  class="w-screen relative top-0 lg:h-23 h-18 overflow-hidden">
             <img src="/images/banniere.png" alt="banniere" class="w-screen">
@@ -44,6 +46,6 @@ import Burger from './ui/Burger.astro';
             burgerMenu.addEventListener('click', () => {
                 nav.classList.toggle('hidden');
             });
-            }
+        }
     </script>
 </header>

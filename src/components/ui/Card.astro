@@ -2,18 +2,18 @@
 import Button from './Button.astro';
 const { cardsImage, cardsTitle, cardsDescription, cardsUrl } = Astro.props;
 ---
-<div class=" flex flex-col gap-4 rounded-lg bg-background p-5 w-auto font-base border-1 drop-shadow-lg/20 border-primary-accent text-center">
-  <div class="bg-primary-accent/10 border-1 drop-shadow-lg/20 border-primary-accent/10 p-3 w-full h-32 rounded-lg">
+<div class=" flex flex-col gap-4 rounded-lg bg-primary p-5 w-auto font-base border-1 drop-shadow-lg/20 border-primary-accent text-center">
+  <div class="bg-background  border-1 drop-shadow-lg/20 border-primary-accent/10 p-3 w-full h-32 rounded-lg">
     <img src={cardsImage} alt="image" class="size-full w-auto justify-self-center items-center">
     
   </div>
 
-  <h2 class="text-foreground text-2xl font-bold font-heading"> {cardsTitle}</h2>
+  <h2 class="text-primary-foreground text-2xl font-bold font-heading"> {cardsTitle}</h2>
 
-  <p class="font-base text-md line-clamp-2">
+  <p class="font-base text-primary-foreground text-md line-clamp-2">
     {cardsDescription}
   </p>
-  <Button variant="primary" size="small" class="mt-auto self-center" aria-label=`Voir le projet ${cardsTitle}` href={cardsUrl}>
+  <Button variant="default" size="small" class="mt-auto self-center" aria-label=`Voir le projet ${cardsTitle}` href={cardsUrl}>
     Voir
   </Button>
 </div>

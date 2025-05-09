@@ -1,10 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Cards from '../components/Cards.astro';
+import FeaturedPosts from '../components/FeaturedPosts.astro';
 import config from '../data/navigation.json';
 const { last, projects, about } = config.posts;
 ---
 
 <Layout>
-	<Cards id={last}/>
+	<FeaturedPosts postIds={last} excludedIds={["/posts/portfolio"]}  title="Mes plus belles creations"/>
+	<FeaturedPosts postIds={projects} excludedIds={last.map(post => post.url)}  title="Mes projets"/>
 </Layout>

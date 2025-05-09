@@ -1,0 +1,35 @@
+---
+import Card from './ui/Card.astro';
+
+type CardsType = {
+    label: string;
+    description: string;
+      url: string;
+      image: string;
+};
+
+const { postIds, title, excludedIds } = Astro.props;
+
+// Filtrer les posts pour exclure ceux présents dans excludedIds
+const filteredPosts = excludedIds
+  ? postIds.filter((post: CardsType) => !excludedIds.includes(post.url))
+  : postIds;
+---
+
+{filteredPosts &&
+<section>
+    {title && <h2 class="text-foreground text-2xl font-bold font-heading text-center mb-5">{title}</h2>} 
+    <div class="grid lg:grid-cols-3 gap-5 py-2.5 grid-cols-1">
+        {
+            filteredPosts.map((item: CardsType) => (
+                <Card
+                    cardsTitle={item.label}
+                    cardsDescription={item.description}
+                    cardsUrl={item.url}
+                    cardsImage={item.image}
+                />
+            ))
+        }
+    </div>
+</section>
+}

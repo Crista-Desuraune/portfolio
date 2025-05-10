@@ -1,0 +1,70 @@
+{
+    "skill": [
+        {
+            "label": "HTML/CSS", 
+            "img": "/images/logo/htmlcss.png"
+        },
+        {
+            "label": "Python", 
+            "img": "/images/logo/python.png"
+        },
+        {
+            "label": "Turtle graphics", 
+            "img": "/images/logo/turtle-python.png"  
+        },
+        {
+            "label": "MySQL", 
+            "img": "/images/logo/mysql.png"  
+        },
+        {
+            "label": "JavaScript", 
+            "img": "/images/logo/javascript.png"  
+        },
+        {
+            "label": "React.JS", 
+            "img": "/images/logo/React.webp"  
+        },
+        {
+            "label": "TailwindCSS", 
+            "img": "/images/logo/tailwindcss.png"  
+        },
+        {
+            "label": "Astro.JS", 
+            "img": "/images/logo/astro.svg"  
+        }
+    ],
+    "tools":[
+        {
+            "label": "Visual Studio Code", 
+            "img": "/images/logo/VSCode.png"  
+        },
+        {
+            "label": "GitHub", 
+            "img": "src/icons/github.svg"  
+        },
+        {
+            "label": "Figma", 
+            "img": "/images/logo/figma.png"  
+        },
+        {
+            "label": "Wordpress", 
+            "img": "/images/logo/WordPress.png"  
+        },
+        {
+            "label": "Illustrator", 
+            "img": "/images/logo/Adobe_Illustrator.png"  
+        },
+        {
+            "label": "Photoshop", 
+            "img": "/images/logo/Adobe-Photoshop-Logo.png"  
+        },
+        {
+            "label": "InDesign", 
+            "img": "/images/logo/Adobe_InDesign.png"  
+        },
+        {
+            "label": "Premiere Pro", 
+            "img": "/images/logo/premiere-pro.png"  
+        }
+    ]
+} 

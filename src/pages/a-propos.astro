@@ -1,8 +1,19 @@
 ---
+import Section from '../components/Section.astro';
 import Layout from '../layouts/Layout.astro';
-
 ---
-
 <Layout>
+    <Section sideImg="/images/logo-crista-275.png" sideAlt="alt-image-logo">
+        <h1 class="text-3xl font-bold mb-5">À propos de moi</h1>
+        <p class="text-base text-foreground">
+            Je suis un développeur web passionné par la création d'expériences numériques uniques. Mon parcours m'a permis d'acquérir une solide expertise dans le développement front-end et back-end, ainsi que dans la conception d'interfaces utilisateur intuitives.
+        </p>
+    </Section>
+    <Section reverse={true} sideImg="/images/logo-handisup.png" sideAlt="alt-image-logo">
+        <h1 class="text-3xl font-bold mb-5">À propos de moi</h1>
+        <p class="text-base text-foreground">
+            Je suis un développeur web passionné par la création d'expériences numériques uniques. Mon parcours m'a permis d'acquérir une solide expertise dans le développement front-end et back-end, ainsi que dans la conception d'interfaces utilisateur intuitives.
+        </p>
+    </Section>
+
 </Layout>
-a propos

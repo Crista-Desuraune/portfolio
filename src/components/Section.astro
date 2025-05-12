@@ -1,0 +1,10 @@
+---
+const { sideImg, sideAlt, reverse } = Astro.props;
+---
+<section class={`flex ${reverse ? 'flex-row-reverse' : 'flex-row'} gap-10 h-auto pt-10 pb-8`}>
+    
+    {sideImg && <img src={sideImg} alt={sideAlt} class="size-96 h-auto" />}
+    <div class="font-base text-foreground text-base">
+        <slot/>
+    </div>
+</section>

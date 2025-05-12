@@ -4,12 +4,14 @@ import FeaturedPosts from '../components/FeaturedPosts.astro';
 import config from '../data/navigation.json';
 import SkillsCard from '../components/ui/SkillsCard.astro';
 import Config from '../data/skills.json';
+import Dessins from '../components/Dessins.astro';
 
 const { skill, tools } = Config;
 const { last, projects, about } = config.posts;
 --- 
 
 <Layout>
+	<Dessins/>
 	<div class="flex gap-4">
 		<SkillsCard title="Mes compétences" skillsItems={skill}/>
 		<SkillsCard title="Mes outils" skillsItems={tools}/>

@@ -4,10 +4,7 @@ import Config from '../../data/skills.json';
 const { skill, tools } = Config;
 const { skillsItems, title } = Astro.props;
 
-type SkillsType = {
-    label: string;
-    img: string;
-};
+import type { SkillsType } from "../types";
 const competences = skillsItems
 ---
 {skillsItems &&

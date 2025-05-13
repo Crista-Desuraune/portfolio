@@ -1,40 +1,42 @@
 ---
-const { dimensions } = Astro.props;
+import type { CarouselType } from "../types";
+const { dimensions, items } = Astro.props;
 ---
 
+{items && 
 <div class="flex mx-auto my-5">
     <button class="prev p-3.5 text-6xl text-primary-accent/70 hover:text-primary-accent duration-200 ease-in-out inline">&#10096</button>
-    <div id="carousel" class={`border-2 ${dimensions} border-primary-accent overflow-hidden flex flex-row relative`}>
-        <slot />
+    <div class={`carousel border-2 ${dimensions} border-primary-accent overflow-hidden flex flex-row relative`}>
+        {items.map((item: CarouselType) => <img src={item.imageSrc} alt={item.imageAlt} /> )}
     </div>
     <button class="next p-3.5 text-6xl text-primary-accent/70 hover:text-primary-accent duration-200 ease-in-out">&#10097</button>
-    
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const carousel = document.querySelector('#carousel');
-            const nextButton = document.querySelector('.next');
-            const prevButton = document.querySelector('.prev');
+</div>
+}
 
-            if (!carousel) {
-                console.error('Carousel element not found!');
-                return;
-            }
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const carousels = document.querySelectorAll('.carousel');
+
+        carousels.forEach((carouselContainer) => {
+            const nextButton = carouselContainer.parentElement?.querySelector('.next');
+            const prevButton = carouselContainer.parentElement?.querySelector('.prev');
 
             nextButton?.addEventListener('click', () => {
-                carousel.scrollBy({
+                carouselContainer.scrollBy({
                     top: 0,
-                    left: carousel.clientWidth,
+                    left: carouselContainer.clientWidth,
                     behavior: 'smooth'
                 });
             });
 
             prevButton?.addEventListener('click', () => {
-                carousel.scrollBy({
+                carouselContainer.scrollBy({
                     top: 0,
-                    left: -carousel.clientWidth,
+                    left: -carouselContainer.clientWidth,
                     behavior: 'smooth'
                 });
             });
         });
-    </script>
-</div>
+    });
+</script>

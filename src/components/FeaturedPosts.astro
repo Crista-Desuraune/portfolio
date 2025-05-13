@@ -1,12 +1,7 @@
 ---
 import Card from './ui/Card.astro';
 
-type CardsType = {
-    label: string;
-    description: string;
-      url: string;
-      image: string;
-};
+import type { CardsType } from "../types";
 
 const { postIds, title, excludedIds } = Astro.props;
 

@@ -3,11 +3,7 @@ import { Icon } from "astro-icon/components";
 
 const { items } = Astro.props;
 
-type SocialItemType = {
-    label: string,
-    url: string,
-    icon: string
-}
+import type { SocialItemType } from "../types";
 ---
 
 {items && items.length > 0 && (

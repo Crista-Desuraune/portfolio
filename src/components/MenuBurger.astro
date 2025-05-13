@@ -4,10 +4,7 @@ import NavLink from './NavLink.astro';
 
 const { primary } = config;
 
-type LinkPrimaryType = {
-  url: string;
-  label: string;
-};
+import type { LinkPrimaryType } from "../types";
 const { id } = Astro.props;
 --- 
 <nav class="inset-x-4 w-64 top-0 z-3 left-0 fixed hidden" id={id}>

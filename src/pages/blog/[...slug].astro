@@ -26,9 +26,12 @@ const { title, description, status, date } = post?.data || {};
 
 ---
 <Layout>
-  <article id={post?.id}>
-    <h1>{title}</h1>
-    <p>{status}</p>
-    <Fragment set:html={post?.rendered?.html} />
+  <article class={`prose max-w-full prose-headings:font-heading prose-headings:font-bold prose-headings:text-foreground prose-h1:text-2xl prose-h1:max-w-2xl font-base post post-${post?.id}`} id={post?.id}>
+    <header class="post-header">
+      <h1>{title}</h1>
+      {description && <p class="text-center">{description}</p>}
+      {status && <p>{status}</p>}
+    </header>
+    <div class="post-content" set:html={post?.rendered?.html} />
   </article>
 </Layout>

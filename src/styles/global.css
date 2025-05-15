@@ -21,3 +21,15 @@
     --color-foreground: #080B0F;
     --color-foreground-light: #DAD8D8;
   }
+
+  @layer base {
+    article h1 {
+      @apply text-4xl font-bold font-heading text-foreground;
+    }
+    article h2 {
+      @apply text-2xl font-bold font-heading text-foreground;
+    }
+    article p{
+      @apply font-base;
+    }
+  }

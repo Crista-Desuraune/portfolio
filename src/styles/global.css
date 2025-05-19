@@ -40,4 +40,11 @@
     article ul{
       @apply list-disc ps-4 text-foreground;
     }
+    article em{
+      @apply font-heading text-lg;
+    }
+
+    h1{
+      @apply font-heading text-4xl text-center font-bold mt-15 mb-5;
+    }
   }

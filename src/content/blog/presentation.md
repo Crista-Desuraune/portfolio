@@ -4,7 +4,6 @@ title: "Qui suis-je?"
 slug: "presentation"
 description: "Qui suis-je? Découvrez la personne que je suis dans cette présentation."
 date: 2025-02-06
-status: "En pause"
 ---
 Je m'appelle Crista Desuraune-Cocu, j'ai 18 ans et je viens de Mont-Saint-Aignan. Actuellement je suis en première année d'un bachelor chef de projet digitaux à la Normandie Web School à Rouen. Ce bachelor me permet d'acquérir de solides bases dans le domaine du numérique tel que le marketing digital,le développement web et la communication graphique et digitale, et me permet également de développer des compétences telles que la création de charte graphique, mener une veille ou encore l’intégration web. Dans le futur j'aimerai me spécialiser dans le développement web.
 

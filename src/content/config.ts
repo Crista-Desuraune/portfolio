@@ -12,7 +12,7 @@ const blog = defineCollection({
         slug: z.string(),
         description: z.string(),
         date: z.date(),
-        status: z.enum(statusEnum),
+        status: z.enum(statusEnum).optional(),
     }),
 });
 

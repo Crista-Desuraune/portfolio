@@ -4,19 +4,36 @@ import FeaturedPosts from '../components/FeaturedPosts.astro';
 import config from '../data/navigation.json';
 import SkillsCard from '../components/ui/SkillsCard.astro';
 import Config from '../data/skills.json';
-import Dessins from '../components/Dessins.astro';
+import Section from '../components/Section.astro';
+import Button from '../components//ui/Button.astro';
 
 const { skill, tools } = Config;
 const { last, projects, about } = config.posts;
 --- 
 
 <Layout>
-	<Dessins/>
+	
+	<h1>Bienvenue sur mon portfolio !</h1>
+
+	<Section sideImg="/images/photo-work.png" sideAlt="photo de crista">
+		<p class="font-heading">Je m'appelle Crista Desuraune-Cocu, j'ai 18 ans et je viens de Mont-Saint-Aignan. Actuellement je suis en première année d'un bachelor 
+			chef de projet digitaux à la Normandie Web School à Rouen. Je suis passionnée par l'art du spectacle et les lieux culturels qui ont un 
+			rapport avec l'art.
+		J'étudie le marketing digital, la communication graphique et digitale et le développement web. Cela me permet de développer mes compétences 
+		dans le monde du numérique et renforcer mon intérêt pour le développement web car dans le future j'aimerai me spécialisé dans le développement
+		 web. J'ai découvert cet univers au lycée dans la spécialité NSI (Numérique et sciences de l'informatique) où j'ai pu apprendre les bases de 
+		 la programmation et du développement web.</p>
+		<div class="flex gap-4 mt-3">
+			<Button variant="primary" size="small">À propos de moi</Button>
+			<Button variant="secondary" size="small">Mon CV</Button>
+		</div>
+		
+	</Section>
+
+	<FeaturedPosts postIds={last} title="Mes derniers projets ou mes projets en cours"/>
+
 	<div class="flex gap-4">
 		<SkillsCard title="Mes compétences" skillsItems={skill}/>
 		<SkillsCard title="Mes outils" skillsItems={tools}/>
 	</div>
-	
-	<FeaturedPosts postIds={last} excludedIds={["/posts/portfolio"]}  title="Mes plus belles creations"/>
-	<FeaturedPosts postIds={projects} excludedIds={last.map(post => post.url)}  title="Mes projets"/>
 </Layout>

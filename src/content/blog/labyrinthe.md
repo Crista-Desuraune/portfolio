@@ -2,7 +2,7 @@
 layout: "../layouts/Layout.astro"
 title: "Le Jeu du Labyrinthe"
 slug: "labyrinthe"
-description: "Découvrez le mini jeu créer avec le langage de programmation Python"
+description: "Découvrez le mini jeu créer avec le langage de programmation Python."
 date: 2022-05-01
 status: "Terminé"
 ---

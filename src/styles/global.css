@@ -45,6 +45,6 @@
     }
 
     h1{
-      @apply font-heading text-4xl text-center font-bold mt-15 mb-5;
+      @apply font-heading text-4xl text-center font-bold mt-10 mb-5;
     }
   }

@@ -1,8 +1,12 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import FeaturedPosts from '../components/FeaturedPosts.astro';
+import config from '../data/navigation.json';
 
+const { projects } = config.posts;
 ---
-
 <Layout>
+    <h1>Pour mes projets...</h1>
+    <FeaturedPosts postIds={projects} description="Vous pouvez retrouver dans ces rubriques les projets que j'ai pu réalisé jusqu’ici, passant par les plus artistiques au plus complexe." />
 </Layout>
-projects
+

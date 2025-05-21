@@ -1,0 +1,37 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+import { getCollection, render } from 'astro:content';
+import type { PostType } from '../../types';
+import { getEntry } from 'astro:content';
+
+// 1. Génère un nouveau chemin pour chaque entrée de collection
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.data.slug }, // Utilisez "slug" ou un autre champ unique
+    props: { post: post.data },
+  }));
+}
+
+// 2. Pour votre modèle, vous pouvez obtenir l'entrée directement à partir de la propriété
+const {slug} = Astro.params
+
+
+
+const post = await getEntry('blog', slug);
+
+const { title, description, status, date } = post?.data || {};
+
+
+---
+<Layout>
+  <article class={`prose max-w-full prose-headings:font-heading prose-headings:font-bold prose-headings:text-foreground prose-h1:text-2xl prose-h1:max-w-2xl font-base post post-${post?.id}`} id={post?.id}>
+    <header class="post-header mt-15 mb-10">
+      <h1>{title}</h1>
+      {description && <p class="text-center">{description}</p>}
+      {status && <p>{status}</p>}
+    </header>
+    <div class="post-content" set:html={post?.rendered?.html} />
+  </article>
+</Layout>

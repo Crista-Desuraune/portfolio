@@ -4,5 +4,17 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
+    <title>Circular Page Transition - CSS</title>
+
+    <div id="page" class="z-99 relative bg-primary-accent/0">This is my page 
+        <div id="close">[Close me]</div>
+    </div>
+
+    <div id="circle" class="w-24 h-24  bg-secondary-accent rounded-full"></div>
+
+    <div id="circle second" class=""></div>
+
+    <script>
+        const circle = document.querySelector('.circle');
+    </script>
 </Layout>
-cv

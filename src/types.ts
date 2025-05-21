@@ -30,3 +30,11 @@ export type SkillsType = {
     label: string;
     img: string;
 }
+export type PostType = {
+    layout: string;
+    title: string;
+    slug: string;
+    description: string;
+    date: string;
+    status: [string, string];
+}

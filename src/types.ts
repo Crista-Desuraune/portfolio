@@ -40,7 +40,3 @@ export type PostType = {
     tags: [string, string, string, string, string, string, string, string, string, string, string];
 }
 
-export type TagsType = {
-    Astro: string;
-    ok: string;
-}

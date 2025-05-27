@@ -1,0 +1,21 @@
+---
+import { getCollection } from 'astro:content';
+import Button from '../../components/ui/Button.astro';
+
+const posts = await getCollection('blog');
+
+const allTags = Array.from(
+  new Set(
+    posts.flatMap(post => post.data.tags ?? [])
+  )
+);
+---
+
+
+<div class="flex flex-wrap gap-1 mb-4 justify-center">
+  {allTags.map(tag => (
+    <Button variant="tag" class="my-0" size ="small" href={`/blog/tags/${tag}`}>
+        {tag}
+    </Button>
+  ))}
+</div>

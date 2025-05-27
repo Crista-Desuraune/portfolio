@@ -5,6 +5,7 @@ slug: "handisup"
 description: "Découvrez la création d'un site WordPress pour une association qui accompagnent les jeunes en situation de Handicap dans les études supérieur."
 date: 2025-02-14
 status: "Terminé"
+tags: ["projet-de-groupe", "figma", "wordpress"]
 ---
 ## Présentation du projet
 

@@ -5,6 +5,7 @@ slug: "evenement-bde"
 description: "Découvrez la création d'un événement pour le BDE de la Normandie Web School."
 date: 2025-10-14
 status: "Terminé"
+tags: ["projet-de-groupe"]
 ---
 ## Présentation du projet
 

@@ -5,6 +5,7 @@ slug: "soundspire"
 description: "Décourvrez la création d'un site web type blog en HTLM/CSS et JS."
 date: 2024-12-14
 status: "Terminé"
+tags: ["html-css", "javascript","sur-github", "projet-de-groupe"]
 ---
 ## Présentation du projet
 

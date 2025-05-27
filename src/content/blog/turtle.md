@@ -5,6 +5,7 @@ slug: "turtle"
 description: "Découvrez la génération d'un dessin d'une rue grâce à Turtle Graphics."
 date: 2023-05-01
 status: "Terminé"
+tags: ["python", "projet-personnel"]
 ---
 ## Présentation du projet
 Au cours de mes deux années dans la spécialité NSI au lycée (Numérique et Siences Informatique) nous avons pu découvrir et apprendre le **langage de programmation Python** ainsi que ses librairies.

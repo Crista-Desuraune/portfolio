@@ -5,6 +5,7 @@ slug: "nexcent"
 description: "Reproduction une maquette Figma en HTML/CSS au pixel perfect."
 date: 2024-12-27
 status: "Terminé"
+tags: ["html-css","sur-github", "projet-personnel"]
 ---
 ## Présentation du projet
 

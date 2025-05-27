@@ -5,6 +5,7 @@ slug: "portfolio"
 description: "Décourvrez la création de mon portfolio en HTLM/CSS et JS."
 date: 2025-03-01
 status: "Terminé"
+tags: ["html-css", "javascript", "sur-github", "projet-personnel"]
 ---
 ## Présentation du projet 
 

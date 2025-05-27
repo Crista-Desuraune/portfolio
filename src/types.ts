@@ -36,5 +36,11 @@ export type PostType = {
     slug: string;
     description: string;
     date: string;
-    status: [string, string];
+    status: [string, string, string];
+    tags: [string, string, string, string, string, string, string, string, string, string, string];
+}
+
+export type TagsType = {
+    Astro: string;
+    ok: string;
 }

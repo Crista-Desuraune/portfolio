@@ -5,6 +5,7 @@ slug: "club-eco-saint-sever"
 description: "Découvrez toute l'identité visuel créée pour une association de quatier."
 date: 2024-11-20
 status: "Terminé"
+tags: ["projet-de-groupe"]
 ---
 
 Découvrez toute **l'identité visuel** créée pour une association de quatier.

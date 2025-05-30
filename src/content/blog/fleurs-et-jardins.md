@@ -1,11 +1,12 @@
 ---
 layout: "../layouts/Layout.astro"
-title: " site Fleurs et Jardins, le Vaudreuil"
+title: "Site Fleurs et Jardins, le Vaudreuil"
 slug: "fleurs-et-jardins"
 description: "Décourvrez la refonte du site web de l'association Fleurs & Jardins le Vaudreuil en Astro.JS, TailwindCSS accompagné de TinaCMS pour le backend."
+image: "/images/logo-fleurs-et-jardins.svg"
 date: 2025-05-01
 status: "Terminé"
-tags: ["astro", "tailwindcss", "projet-de-groupe"]
+tags: ["Astro.JS","Sur GitHub", "TailwindCSS", "Projet de Groupe"]
 ---
 ## Présentation du projet
 

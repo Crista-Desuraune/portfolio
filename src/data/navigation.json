@@ -47,19 +47,19 @@
           "label": "Qui suis-je ?",
           "description": "Qui suis-je? Découvrez la personne que je suis dans cette présentation.",
           "url": "/blog/qui-suis-je",
-          "image":"/images/utilisateur.png"
+          "image":"/images/utilisateur-noir.png"
         },
         {
           "label": "Mon parcours",
           "description": "Découvrez mon parcours jusqu'ici! Quels sont mes formations, mes expériences qui m'ont amené à aujourd'hui.",
           "url": "/blog/parcours",
-          "image":"/images/casquette-de-graduation.png"
+          "image":"/images/icon-parcours-noir.png"
         },
         {
           "label": "Ma charte graphique",
           "description": "Découvrez l'univers visuel sur lequel s'appuie mon portfolio. Logo, couleurs et typographies qui reflètent mon identité.",
           "url": "/blog/charte",
-          "image":"/images/crayon.png"
+          "image":"/images/crayon-noir.png"
         }
       ],
       "projects" : [
@@ -121,7 +121,7 @@
           "label": "Mes dessins",
           "description": "Découvrez ma passion pour le dessin.",
           "url": "/blog/dessins",
-          "image":"/images/crayon.png"
+          "image":"/images/crayon-noir.png"
         },
         {
           "label": "Interview avec un développeur",

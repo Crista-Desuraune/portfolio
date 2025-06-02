@@ -3,8 +3,10 @@ layout: "../layouts/Layout.astro"
 title: "SoundSpire"
 slug: "soundspire"
 description: "Décourvrez la création d'un site web type blog en HTLM/CSS et JS."
+image : "/images/soundspire.png"
 date: 2024-12-14
 status: "Terminé"
+tags: ["HTML-CSS", "JavaScript","Sur GitHub", "Projet de Groupe"]
 ---
 ## Présentation du projet
 

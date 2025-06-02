@@ -3,8 +3,10 @@ layout: "../layouts/Layout.astro"
 title: "Handisup"
 slug: "handisup"
 description: "Découvrez la création d'un site WordPress pour une association qui accompagnent les jeunes en situation de Handicap dans les études supérieur."
+image : "/images/logo-handisup.png"
 date: 2025-02-14
 status: "Terminé"
+tags: ["Projet de Groupe", "Figma", "Wordpress"]
 ---
 ## Présentation du projet
 

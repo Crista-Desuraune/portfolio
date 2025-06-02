@@ -3,8 +3,10 @@ layout: "../layouts/Layout.astro"
 title: "Nexcent"
 slug: "nexcent"
 description: "Reproduction une maquette Figma en HTML/CSS au pixel perfect."
+image : "/images/nexcent.png"
 date: 2024-12-27
 status: "Terminé"
+tags: ["HTML-CSS","Sur GitHub", "Projet Personnel"]
 ---
 ## Présentation du projet
 

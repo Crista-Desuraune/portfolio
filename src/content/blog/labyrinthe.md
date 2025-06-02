@@ -3,8 +3,10 @@ layout: "../layouts/Layout.astro"
 title: "Le Jeu du Labyrinthe"
 slug: "labyrinthe"
 description: "Découvrez le mini jeu créer avec le langage de programmation Python."
+image : "/images/logo/python.png"
 date: 2022-05-01
 status: "Terminé"
+tags: ["Python", "Projet Personnel"]
 ---
 ## La labyrinthe
 

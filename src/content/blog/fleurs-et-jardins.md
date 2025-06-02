@@ -1,10 +1,12 @@
 ---
 layout: "../layouts/Layout.astro"
-title: " site Fleurs et Jardins, le Vaudreuil"
+title: "Site Fleurs et Jardins, le Vaudreuil"
 slug: "fleurs-et-jardins"
 description: "Décourvrez la refonte du site web de l'association Fleurs & Jardins le Vaudreuil en Astro.JS, TailwindCSS accompagné de TinaCMS pour le backend."
+image: "/images/logo-fleurs-et-jardins.svg"
 date: 2025-05-01
 status: "Terminé"
+tags: ["Astro.JS","Sur GitHub", "TailwindCSS", "Projet de Groupe"]
 ---
 ## Présentation du projet
 
@@ -14,6 +16,7 @@ Au cours de mon stage chez Raphael Sanchez Design, nous avons eu pour projet de 
 
 ## Exemple d'un composant
 Voici un des composants que l'ont peut retrouver dans la partie aside du site.
+
 ![composant localisation](/images/fj-compo-localisation.png "composant localisation")
 
 ![code composant localisation](/images/fj-compo-localisation-code1.png "code composant localisation")

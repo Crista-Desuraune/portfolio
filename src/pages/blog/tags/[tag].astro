@@ -1,0 +1,42 @@
+---
+import Card from '../../../components/ui/Card.astro';
+import Layout from '../../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+import navigation from '../../../data/navigation.json';
+
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  const tags = Array.from(
+    new Set(posts.flatMap(post => post.data.tags ?? []))
+  );
+  return tags.map(tag => ({
+    params: { tag }
+  }));
+}
+
+const { tag } = Astro.params;
+const posts = await getCollection('blog');
+const filteredPosts = posts.filter(post => post.data.tags?.includes(tag));
+---
+
+<Layout>
+  <h1 class="">{tag}</h1>
+
+  {filteredPosts.length === 0 ? (
+    <p>Aucun article trouvé pour ce tag.</p>
+  ) : (
+    <div class="grid lg:grid-cols-3 gap-5 py-2.5 grid-cols-1">
+      {filteredPosts.map(post => (
+        <div>
+          <Card
+            cardsTitle={post.data.title}
+            cardsDescription={post.data.description}
+            cardsUrl={`/blog/${post.id.replace('blog/', '')}`}
+            cardsImage={post.data.image}
+          />
+        </div>
+      ))}
+    </div>
+  )}
+</Layout>

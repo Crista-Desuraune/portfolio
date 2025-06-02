@@ -3,8 +3,10 @@ layout: "../layouts/Layout.astro"
 title: "Portfolio"
 slug: "portfolio"
 description: "Décourvrez la création de mon portfolio en HTLM/CSS et JS."
+image : "/images/portfolio.png"
 date: 2025-03-01
 status: "Terminé"
+tags: ["HTML-CSS", "JavaScript", "Sur GitHub", "Projet Personnel"]
 ---
 ## Présentation du projet 
 

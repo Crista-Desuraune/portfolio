@@ -3,8 +3,10 @@ layout: "../layouts/Layout.astro"
 title: "Quartier Turtle"
 slug: "turtle"
 description: "Découvrez la génération d'un dessin d'une rue grâce à Turtle Graphics."
+image : "/images/logo/turtle-python.png"
 date: 2023-05-01
 status: "Terminé"
+tags: ["Python", "Projet Personnel"]
 ---
 ## Présentation du projet
 Au cours de mes deux années dans la spécialité NSI au lycée (Numérique et Siences Informatique) nous avons pu découvrir et apprendre le **langage de programmation Python** ainsi que ses librairies.

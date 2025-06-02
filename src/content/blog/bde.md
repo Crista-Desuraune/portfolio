@@ -3,8 +3,10 @@ layout: "../layouts/Layout.astro"
 title: "Événement BDE"
 slug: "evenement-bde"
 description: "Découvrez la création d'un événement pour le BDE de la Normandie Web School."
+image : "/images/bde/logo_olympiades_anas.png"
 date: 2025-10-14
 status: "Terminé"
+tags: ["Projet de Groupe"]
 ---
 ## Présentation du projet
 

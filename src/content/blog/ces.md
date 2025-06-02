@@ -4,7 +4,9 @@ title: "Club Eco Saint Sever"
 slug: "club-eco-saint-sever"
 description: "Découvrez toute l'identité visuel créée pour une association de quatier."
 date: 2024-11-20
+image : "/images/ces/logo-club-eco-st-sever.png"
 status: "Terminé"
+tags: ["Projet de Groupe"]
 ---
 
 Découvrez toute **l'identité visuel** créée pour une association de quatier.

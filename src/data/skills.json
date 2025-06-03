@@ -35,7 +35,7 @@
     ],
     "tools":[
         {
-            "label": "Visual Studio Code", 
+            "label": "VS Code", 
             "img": "/images/logo/VSCode.png"  
         },
         {

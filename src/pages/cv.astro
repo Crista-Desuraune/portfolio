@@ -7,10 +7,12 @@ import Data from "../data/infoGeneral.json";
 import Config from '../data/skills.json';
 import CvContent from '../components/ui/CvContent.astro';
 import HorizontalLine from '../components/ui/HorizontalLine.astro'
+import Button from '../components/ui/Button.astro';
 
 const { skill, tools } = Config;
 
 const { mail, phone, address } = Data.contact;
+const socials = Data.social;
 ---
 
 <Layout>
@@ -128,5 +130,21 @@ const { mail, phone, address } = Data.contact;
             </CvContent>
         </CvCircle>
     </div>
-    
+    <div class="mt-10 flex justify-between items-center">
+       
+        <div class="size-96 h-auto flex">
+            {socials.map((item) => (
+                <div class="flex flex-col">
+                    <a href={item.url} target="_blank" aria-label={`Retrouvez moi sur ${item.label}`}>
+                        <img src={`/images/qrcode${item.icon}.png`} alt={`qr-code-${item.label}`} />
+                    </a>
+                    <p class="font-base text-center">{item.label}</p> 
+                </div>
+            ))}
+        </div>
+        <Button variant="primary" size="small" class="font-heading h-10" href="../images/cv-crista-desuraune-cocu.pdf" download="cv-crista-desuraune-cocu.pdf">
+            Télécharger le CV
+        </Button>
+    </div>
+      
 </Layout>

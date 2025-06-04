@@ -1,9 +1,8 @@
 ---
 import MenuBurger from './MenuBurger.astro';
 import  Navigation  from './Navigation.astro';
-import SocialNetworks from './SocialNetworks.astro';
 import Burger from './ui/Burger.astro';
-import configGeneral from "../data/infoGeneral.json";
+import DarkMode from './DarkMode.astro';
 
 ---
 <header id="top-page">
@@ -16,7 +15,7 @@ import configGeneral from "../data/infoGeneral.json";
                     <img class=" lg:w-32 w-20" src="/images/logo-crista-275.png" alt="logo-crista">
                 </a>
                 <Navigation/>
-                <img class="w-10" src="/images/dark-mode.png" alt="dark-mode">
+                <DarkMode/>
             </div>
         </div>
         <script>

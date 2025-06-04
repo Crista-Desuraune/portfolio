@@ -23,7 +23,7 @@ const { Content, remarkPluginFrontmatter } = await render(post);
 
 <Layout>
   <article
-    class={`prose max-w-full prose-headings:font-heading prose-headings:font-bold prose-headings:text-foreground prose-h1:text-2xl prose-h1:max-w-2xl font-base post post-${post?.id}`}
+    class={`prose max-w-full prose-headings:font-heading prose-headings:font-bold prose-headings:text-foreground prose-headings:dark:text-background prose-h1:text-2xl prose-h1:max-w-2xl prose-strong:dark:text-background font-base post post-${post?.id}`}
     id={post?.id}
   >
     <header class="post-header mt-15 mb-10">
@@ -35,14 +35,14 @@ const { Content, remarkPluginFrontmatter } = await render(post);
           tags &&
             Array.isArray(tags) &&
             tags.map((tag) => (
-              <Button variant="tag" size="small" key={tag}>
+              <Button variant="tag" size="small" href={`/blog/tags/${tag}`} key={tag}>
                 {tag}
               </Button>
             ))
         }
       </div>
     </header>
-    <Content />
+    <Content/>
     <div class="post-content" set:html={post?.rendered?.html} />
     {status && <p class="justify-self-end">Statue du projet : {status}</p>}
   </article>

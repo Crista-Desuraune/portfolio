@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+@custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
     /* Fonts */
@@ -26,7 +27,7 @@
   @layer base {
 
     article h1 {
-      @apply text-xl uppercase text-center mx-auto;
+      @apply text-xl uppercase text-center mx-auto ;
     }
     article h2 {
       @apply text-2xl ;
@@ -35,13 +36,16 @@
       @apply text-xl ;
     }
     article p {
-      @apply text-foreground;
+      @apply text-foreground dark:text-background;
     }
     article ul{
-      @apply list-disc ps-4 text-foreground;
+      @apply list-disc ps-4 text-foreground dark:text-background;
     }
     article em{
-      @apply font-heading text-lg;
+      @apply font-heading text-lg dark:text-background;
+    }
+    article strong{
+      @apply dark:text-background;
     }
 
     h1{

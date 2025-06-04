@@ -23,11 +23,11 @@ const { Content, remarkPluginFrontmatter } = await render(post);
 
 <Layout>
   <article
-    class={`prose max-w-full prose-headings:font-heading prose-headings:font-bold prose-headings:text-foreground prose-h1:text-2xl prose-h1:max-w-2xl font-base post post-${post?.id}`}
+    class={`prose max-w-full prose-headings:font-heading prose-headings:font-bold prose-headings:text-foreground prose-h1:text-3xl prose-h1:max-w-3xl prose-img:mt-0 prose-img:mb-0 font-base post post-${post?.id}`}
     id={post?.id}
   >
-    <header class="post-header mt-15 mb-10">
-      <h1>{title} (from [...slug].astro)</h1>
+    <header class="post-header mt-15 mb-8">
+      <h1>{title}</h1>
       {description && <p class="text-center">{description}</p>}
 
       <div class="flex gap-1 justify-self-end">
@@ -43,7 +43,7 @@ const { Content, remarkPluginFrontmatter } = await render(post);
       </div>
     </header>
     <Content />
-    <div class="post-content" set:html={post?.rendered?.html} />
+
     {status && <p class="justify-self-end">Statue du projet : {status}</p>}
   </article>
 </Layout>

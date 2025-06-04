@@ -1,5 +1,4 @@
 ---
-layout: "../layouts/Layout.astro"
 title: "Qui suis-je?"
 slug: "presentation"
 description: "Qui suis-je? Découvrez la personne que je suis dans cette présentation."

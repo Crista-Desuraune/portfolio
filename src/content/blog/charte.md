@@ -1,5 +1,4 @@
 ---
-layout: "../layouts/Layout.astro"
 title: "Ma charte graphique"
 slug: "charte-graphique"
 description: "Découvrez l'univers visuel sur lequel s'appuie mon portfolio. Logo, couleurs et typographies qui reflètent mon identité."

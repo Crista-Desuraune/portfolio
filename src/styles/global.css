@@ -26,10 +26,10 @@
   @layer base {
 
     article h1 {
-      @apply text-xl uppercase text-center mx-auto;
+      @apply text-3xl uppercase text-center mx-auto;
     }
     article h2 {
-      @apply text-2xl ;
+      @apply text-3xl underline ;
     }
     article h3 {
       @apply text-xl ;

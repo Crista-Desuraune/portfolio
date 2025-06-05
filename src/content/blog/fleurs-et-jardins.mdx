@@ -1,5 +1,4 @@
 ---
-layout: "../layouts/Layout.astro"
 title: "Site Fleurs et Jardins, le Vaudreuil"
 slug: "fleurs-et-jardins"
 description: "Décourvrez la refonte du site web de l'association Fleurs & Jardins le Vaudreuil en Astro.JS, TailwindCSS accompagné de TinaCMS pour le backend."
@@ -8,35 +7,43 @@ date: 2025-05-01
 status: "Terminé"
 tags: ["Astro.JS","Sur GitHub", "TailwindCSS", "Projet de Groupe"]
 ---
+import Section from "../../components/Section.astro";
+
 ## Présentation du projet
 
+<Section sideImg="/images/fj-homepage.png" sideAlt="page home de la refonte" sideSize="size-96 h-auto self-center">
 Au cours de mon stage chez Raphael Sanchez Design, nous avons eu pour projet de faire la migration du site de l'association "Fleurs et Jardins, le Vaudreuil (27)". Cette association a pour but d'organiser des salon floral qui accueil plusieurs exposant le cours d'une journée. Nous l'avons migrier en Astro.JS et TailwindCSS et avons inclus un cms pour le backend pour que les organisateurs de l'événement puissent modifier des informations sur le site web simplement et à leur guise.
-
-![page home de la refonte](/images/fj-homepage.png "page home du site")
+</Section>
 
 ## Exemple d'un composant
+
 Voici un des composants que l'ont peut retrouver dans la partie aside du site.
+<div class="justify-self-center w-64">
+![composant localisation](/images/fj-compo-inscription.png "composant inscription")
+</div>
 
-![composant localisation](/images/fj-compo-localisation.png "composant localisation")
-
-![code composant localisation](/images/fj-compo-localisation-code1.png "code composant localisation")
-
-![code composant localisation](/images/fj-compo-localisation-code2.png "code composant localisation")
+<Section sideImg="/images/fj-compo-inscription-code1.png" sideAlt="code composant inscription" sideSize="size-69 w-auto self-center">
+![code composant localisation](/images/fj-compo-inscription-code2.png "code composant inscription")
+</Section>
 
 ## Exemple d'une page
-La page d'accueil ainsi que les autres page du sites sont en markdown.
-![code page d'accueil](/images/fj-homepage-code.png "code de la page d'accueil")
 
-![page d'accueil](/images/fj-homepage.png "page d'accueil")
+La page d'accueil ainsi que les autres page du sites sont en markdown.
+<Section sideImg="/images/fj-homepage.png" sideAlt="page d'accueil" sideSize="size-96 h-auto self-center">
+![code page d'accueil](/images/fj-homepage-code.png "code de la page d'accueil")
+</Section>
 
 ## Tina CMS
 Voici l'interface que les propriétaires du site pourront voir.
 
+<div class="justify-self-center w-xl">
 ![tina code navigation](/images/fj-tina-nav-code.png "code de la navigation sur tina")
-
+</div>
+<div class="justify-self-center w-3xl">
 ![tina navigation](/images/fj-tina-nav.png "navigation sur tina")
+</div>
 
 
-**Vous pouvez retrouver le code en entier ainsi que le lien pour vidialiser le résultat du projet sur mon GitHub!**
+**Vous pouvez retrouver le code en entier ainsi que le lien pour visualiser le résultat du projet sur mon GitHub!**
 
 [![logo github](/images/github.png "Logo GitHub")](https://github.com/Crista-Desuraune/assofleursetjardins)

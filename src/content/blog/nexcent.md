@@ -1,5 +1,4 @@
 ---
-layout: "../layouts/Layout.astro"
 title: "Nexcent"
 slug: "nexcent"
 description: "Reproduction une maquette Figma en HTML/CSS au pixel perfect."

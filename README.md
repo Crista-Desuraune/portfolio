@@ -1,48 +1,116 @@
-# Astro Starter Kit: Basics
+# Portfolio Personnel
+
+Mon portfolio construit avec [Astro.js](https://astro.build/) et [Tailwind CSS](https://tailwindcss.com/) pour présenter mes projets, compétences et expériences.
+
+## 📝 Description
+
+Ce portfolio est un site web statique rapide et moderne, développé avec Astro.js et stylisé avec Tailwind CSS.
+
+## 🚀 Structure
+
+```text
+/
+├── public/
+│   └── images/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   │   ├── ui/
+│   │   └── 
+│   ├── content/
+│   │   ├── blog/
+│   │   └── config.ts
+│   ├── data/
+│   ├── layouts/
+│   │   └── Layout.astro
+│   ├── pages/
+│   │   └── index.astro
+│   └── styles/
+│       └── global.css
+└── package.json
+```
+## Techologies utilisés
+
+- Astro.JS
+- Tailwind CSS
+- astro icon
+- MXD
+- MD
+- TypeScript
+- WEB3forms (formulaire)
+
+## 🚀 Fonctionnalités
+
+- Pages pour présenter mes projets, compétences, cv et contact
+- Design responsive adapté à tous les écrans
+- Navigation fluide et intuitive
+- Dark mode prêt à être activé (optionnel)
+
+## Créer un projet astro
+
+### Prérequis
+
+- Node.js (version 16 ou plus récente)
+- npm ou yarn
+
+### Commande
 
 ```sh
 npm create astro@latest -- --template basics
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## 🛠️ Installation et lancement local
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Prérequis
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- Node.js (version 16 ou plus récente)
+- npm
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
+### Étapes
+```bash
+git clone https://github.com/Crista-Desuraune/portfolio.git
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+#### Accéder au dossier
+```bash
+cd portfolio-astro
+```
 
-## 🧞 Commands
+#### Installer les dépendances
+```bash
+npm install
+```
 
-All commands are run from the root of the project, from a terminal:
+#### Démarrer le serveur local
+```bash
+npm run dev
+```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+Accède ensuite à http://localhost:4321
 
-## 👀 Want to learn more?
+### 🧞 Commandes
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+| Command                   | Action                                             |
+| :------------------------ | :------------------------------------------------- |
+| `npm install`             | Installe les dépendences                           |
+| `npm run dev`             | Lance le local `localhost:4321`                    |
+| `npm run build`           | Build ton site dans `./dist/`                      |
+| `npm run preview`         | Avant de déployer, preview ton build localement    |
+| `npm run astro ...`       | Lance commande CLI comme `astro add`, `astro check`|
+
+## 🤝 Contribuer
+Les contributions sont les bienvenues ! Pour contribuer :
+1. Fork le projet
+2. Crée une branche (`git checkout -b feature/ma-feature`)
+3. Commit tes changements (`git commit -am 'Ajoute ma feature'`)
+4. Push (`git push origin feature/ma-feature`)
+5. Ouvre une Pull Request
+
+## Déploiement
+Le site est déployé sur mon nom de domaine: crista-desuraunecocu.fr
+
+## Auteur
+**Crista DESURAUNE--COCU**
+
+## Remerciment
+- Merci à Raphaël Sanchez de m'avoir suivi, conseillé et aidé sur le projet

@@ -29,11 +29,11 @@ const baseStyles =
 const variants = {
   default: 'bg-background text-foreground hover:bg-background-button border',
   primary:
-    'bg-primary text-primary-foreground text-lg hover:bg-primary-accent hover:text-secondary-foreground',
+    'bg-primary text-primary-foreground text-lg hover:bg-primary-accent hover:text-secondary-foreground dark:bg-primary-accent dark:hover:bg-primary',
   secondary:
-    'bg-secondary text-foreground hover:bg-secondary-accent hover:text-secondary-foreground', 
+    'bg-secondary text-foreground hover:bg-secondary-accent hover:text-secondary-foreground dark:bg-secondary-accent dark:hover:bg-secondary dark:text-background dark:hover:text-foreground', 
   tag:
-    'bg-background border-2 border-secondary-accent text-sm w-auto font-heading text-secondary-accent hover:bg-secondary-accent hover:text-background', 
+    'bg-background dark:bg-secondary-accent border-2 dark:border-1 border-secondary-accent dark:border-background dark:hover:border-secondary-accent text-sm w-auto font-heading text-secondary-accent dark:text-secondary-foreground hover:bg-secondary-accent dark:hover:bg-background hover:text-background dark:hover:text-secondary-accent', 
 };
 
 // Styles des tailles

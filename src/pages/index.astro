@@ -24,15 +24,15 @@ const { last, projects, about } = config.posts;
 		 web. J'ai découvert cet univers au lycée dans la spécialité NSI (Numérique et sciences de l'informatique) où j'ai pu apprendre les bases de 
 		 la programmation et du développement web.</p>
 		<div class="flex gap-4 mt-3">
-			<Button variant="primary" size="small">À propos de moi</Button>
-			<Button variant="secondary" size="small">Mon CV</Button>
+			<Button variant="primary" size="small" class="font-heading" href="/a-propos">À propos de moi</Button>
+			<Button variant="default" size="small" class="font-heading" href="/cv">Mon CV</Button>
 		</div>
 		
 	</Section>
 
 	<FeaturedPosts postIds={last} title="Mes derniers projets ou mes projets en cours"/>
 
-	<div class="flex gap-4">
+	<div class="lg:flex lg:gap-4 block">
 		<SkillsCard title="Mes compétences" skillsItems={skill}/>
 		<SkillsCard title="Mes outils" skillsItems={tools}/>
 	</div>

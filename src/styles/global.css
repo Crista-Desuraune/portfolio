@@ -36,7 +36,7 @@
       @apply text-xl ;
     }
     article p {
-      @apply text-foreground dark:text-background;
+      @apply  text-foreground dark:text-background;
     }
     article ul{
       @apply list-disc ps-4 text-foreground dark:text-background;
@@ -46,6 +46,9 @@
     }
     article strong{
       @apply dark:text-background;
+    }
+    article img{
+      @apply max-lg:size-auto;
     }
 
     h1{

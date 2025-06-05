@@ -71,7 +71,7 @@ npm create astro@latest -- --template basics
 git clone https://github.com/tonpseudo/portfolio-astro.git
 ```
 
-### Accéder au dossier
+#### Accéder au dossier
 ```bash
 cd portfolio-astro
 ```

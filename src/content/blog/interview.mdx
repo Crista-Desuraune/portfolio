@@ -1,0 +1,25 @@
+---
+title: "Interview d'un professionnel"
+slug: "interview"
+description: "Il nous a été demandé d'interviewer une personne qui travaille dans le domaine que l'on souhaite intégrer dans le futur. N'ayant pas de contact dans le millieu du développement web j'ai donc interviewer une personne en 3ème année du bachelor chef de projet digitaux à la Normandie Web School qui à une alternance intéressante."
+image : "/images/microphone.png"
+date: 2024-10-31
+status: "Terminé"
+tags: ["Projet Personnel"]
+---
+import Carousel from "../../components/Carousel.astro";
+
+export const carouselData=[
+    {imageSrc:"/images/rachid/rachid1.jpg", imageAlt:"carousel-rachid1"},
+    {imageSrc:"/images/rachid/rachid2.jpg", imageAlt:"carousel-rachid2"},
+    {imageSrc:"/images/rachid/rachid3.jpg", imageAlt:"carousel-rachid3"},
+    {imageSrc:"/images/rachid/rachid4.jpg", imageAlt:"carousel-rachid4"},
+    {imageSrc:"/images/rachid/rachid5.jpg", imageAlt:"carousel-rachid5"},
+    {imageSrc:"/images/rachid/rachid6.jpg", imageAlt:"carousel-rachid6"},
+    {imageSrc:"/images/rachid/rachid7.jpg", imageAlt:"carousel-rachid7"},
+    {imageSrc:"/images/rachid/rachid8.jpg", imageAlt:"carousel-rachid8"},
+]
+
+<div class="justify-self-center">
+    <Carousel dimensions="lg:w-lg max-lg:w-auto max-lg:h-auto" items={carouselData} />
+</div>

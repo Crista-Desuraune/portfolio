@@ -1,0 +1,48 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Button from "../../components/ui/Button.astro";
+import { getCollection, getEntry } from "astro:content";
+import { render } from "astro:content";
+
+// Génère un chemin pour chaque post (slug unique)
+export async function getStaticPaths() {
+  const posts = await getCollection("blog");
+  return posts.map((post) => ({
+    params: { slug: post.data.slug },
+  }));
+}
+
+const { slug } = Astro.params;
+const post = await getEntry("blog", slug);
+
+if (!post) throw new Error(`Aucun post trouvé pour le slug "${slug}"`);
+
+const { title, description, status, tags, date } = post.data;
+const { Content, remarkPluginFrontmatter } = await render(post);
+---
+
+<Layout>
+  <article
+    class={`prose lg:max-w-full max-lg:max-w-auto prose-headings:font-heading prose-headings:font-bold prose-headings:text-foreground prose-headings:dark:text-background prose-h1:text-2xl lg:prose-h1:max-w-2xl max-lg:prose-h1:max-w-auto prose-strong:dark:text-background font-base post post-${post?.id}`}
+    id={post?.id}
+  >
+    <header class="post-header mt-15 mb-8">
+      <h1>{title}</h1>
+      {description && <p class="text-center">{description}</p>}
+
+      <div class="flex flex-wrap Qgap-1 justify-self-end">
+        {
+          tags &&
+            Array.isArray(tags) &&
+            tags.map((tag) => (
+              <Button variant="tag" size="small" href={`/blog/tags/${tag}`} key={tag}>
+                {tag}
+              </Button>
+            ))
+        }
+      </div>
+    </header>
+    <Content />
+    <!-- {status && <p class="justify-self-end">Statue du projet : {status}</p>} -->
+  </article>
+</Layout>

@@ -1,0 +1,62 @@
+---
+const { colorPage, colorCircle, titleCircle, returnButton } = Astro.props;
+---
+
+<div class="cv">
+    <div class={`page transition-transform duration-900 z-9999 hidden overflow-y-auto fixed top-0 left-0 ${colorPage} pt-5 pb-10 w-screen h-screen items-center justify-center`}>
+        <button class={`close absolute top-4 left-4 p-4 text-6xl ${returnButton} cursor-pointer rounded`}>
+            &#10096
+        </button>
+        <h2 class="font-heading  text-center text-3xl font-bold mt-10 mb-5">{titleCircle}</h2>
+        <div class=" font-base text-base max-w-5xl mx-auto px-8">
+            <slot/>
+        </div>
+    </div>
+    <div class={`circle transition hover:-translate-y-2 duration-700 ease-in-out drop-shadow-lg/30 hover:drop-shadow-xl/50 w-50 h-50 ${colorCircle} rounded-full content-center p-4 justify-items-center cursor-pointer`}>
+        <h2 class="font-heading title text-2xl  text-center">{titleCircle}</h2>
+    </div>
+</div>
+<style>
+    .circle.expand {
+        transform: scale(15); 
+        z-index: 51;
+        position: relative;
+    }
+</style>
+<script>
+   document.addEventListener('DOMContentLoaded', () => {
+        const cv = document.querySelectorAll('.cv');
+
+        cv.forEach((cvContainer) => {
+            const circle = cvContainer.querySelector('.circle');
+            const page = cvContainer.querySelector('.page');
+            const title = cvContainer.querySelector('.title');
+
+
+            circle?.addEventListener('click', () => {
+                if (page && circle && title ) {
+                circle.classList.add('expand');
+                title.classList.add('hidden')
+                setTimeout(() => {
+                    page.classList.remove('hidden');
+                    circle.classList.add('hidden');
+                    circle.classList.remove('expand');
+                    
+
+                }, 800); 
+            }
+            });
+            
+            const close = cvContainer.querySelector('.close');
+
+            close?.addEventListener('click', () => {
+                if (close && page && circle && title) {
+                    page.classList.add('hidden');
+                    circle.classList.remove('hidden');                   
+                    circle.classList.remove('decrease');
+                    title.classList.remove('hidden');
+                }
+            });      
+        });
+    });
+</script>

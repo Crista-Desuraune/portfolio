@@ -1,0 +1,27 @@
+---
+import "../styles/global.css";
+import '@fontsource/jacques-francois';
+import '@fontsource-variable/roboto-mono';
+import Header from '../components/Header.astro';
+import Footer from "../components/Footer.astro";
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" href="/images/logo-crista-60.png">
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro Portfolio</title>
+	</head>
+	<body class="bg-background text-foreground dark:bg-foreground dark:text-background ">
+		<Header />
+		<main class="pt-24 mx-auto grid max-w-5xl max-lg:px-7 lg:px-0">
+			<slot />
+			
+		</main>
+		<Footer/>	
+		
+	</body>
+</html>
+

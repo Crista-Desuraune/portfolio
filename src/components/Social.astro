@@ -1,0 +1,17 @@
+---
+import '../styles/global.css';
+import { Icon } from 'astro-icon/components';
+
+const { platform, url, icon } = Astro.props;
+---
+
+<a
+  class="hover:text-primary text-2xl"
+  href={url}
+  target="_blank"
+  rel="noopener noreferrer"
+  title={`Retrouvez-nous sur ${platform}`}
+  aria-label={`Retrouvez-nous sur ${platform}`}
+>
+  {icon ? <Icon name={icon} /> : platform}
+</a>

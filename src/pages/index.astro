@@ -1,0 +1,39 @@
+---
+import Layout from '../layouts/Layout.astro';
+import FeaturedPosts from '../components/FeaturedPosts.astro';
+import config from '../data/navigation.json';
+import SkillsCard from '../components/ui/SkillsCard.astro';
+import Config from '../data/skills.json';
+import Section from '../components/Section.astro';
+import Button from '../components//ui/Button.astro';
+
+const { skill, tools } = Config;
+const { last, projects, about } = config.posts;
+--- 
+
+<Layout>
+	
+	<h1>Bienvenue sur mon portfolio !</h1>
+
+	<Section sideImg="/images/photo-work.png" sideAlt="photo de crista">
+		<p class="font-heading dark:text-background">Je m'appelle Crista Desuraune-Cocu, j'ai 18 ans et je viens de Mont-Saint-Aignan. Actuellement je suis en première année d'un bachelor 
+			chef de projet digitaux à la Normandie Web School à Rouen. Je suis passionnée par l'art du spectacle et les lieux culturels qui ont un 
+			rapport avec l'art.
+		J'étudie le marketing digital, la communication graphique et digitale et le développement web. Cela me permet de développer mes compétences 
+		dans le monde du numérique et renforcer mon intérêt pour le développement web car dans le future j'aimerai me spécialisé dans le développement
+		 web. J'ai découvert cet univers au lycée dans la spécialité NSI (Numérique et sciences de l'informatique) où j'ai pu apprendre les bases de 
+		 la programmation et du développement web.</p>
+		<div class="flex gap-4 mt-3">
+			<Button variant="primary" size="small" class="font-heading" href="/a-propos">À propos de moi</Button>
+			<Button variant="default" size="small" class="font-heading" href="/cv">Mon CV</Button>
+		</div>
+		
+	</Section>
+
+	<FeaturedPosts postIds={last} title="Mes derniers projets ou mes projets en cours"/>
+
+	<div class="lg:flex lg:gap-4 block">
+		<SkillsCard title="Mes compétences" skillsItems={skill}/>
+		<SkillsCard title="Mes outils" skillsItems={tools}/>
+	</div>
+</Layout>

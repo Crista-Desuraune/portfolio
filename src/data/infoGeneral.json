@@ -1,0 +1,24 @@
+{
+    "site": {
+        "title": "Crista Desuraune-Cocu Portfolio",
+        "description": "",
+        "url": ""
+        },
+    "contact": {
+        "phone": "06 23 01 77 18",
+        "mail": "crista.desuraune@gmail.com",
+        "address": "1 rue du Maréchal de Lattre de Tassigny, 76130 Mont-Saint-Aignan, France"
+        },
+    "social": [
+        {
+            "label": "GitHub",
+            "icon": "github",
+            "url": "https://github.com/Crista-Desuraune"
+        },
+        {
+            "label": "LinkedIn",
+            "icon": "linkedin",
+            "url": "https://www.linkedin.com/in/crista-desuraune-cocu-503209333/"
+        }
+    ]   
+}

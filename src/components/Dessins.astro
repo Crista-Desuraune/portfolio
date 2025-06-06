@@ -1,0 +1,17 @@
+---
+import config from '../data/dessins.json'
+
+const dessins = config;
+
+import type { DessinsType } from "../types";
+---
+<div class="lg:columns-3 max-lg:columns-2 gap-7 mx-auto py-10">
+    {
+        dessins &&
+        dessins.map((item: DessinsType) => (
+            <div class="mb-7">
+                <img class="w-72 rounded-lg" src={item.img} alt={item.alt} />
+            </div>
+        ))
+    }
+</div>

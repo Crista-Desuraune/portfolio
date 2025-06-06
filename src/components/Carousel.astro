@@ -1,0 +1,42 @@
+---
+import type { CarouselType } from "../types";
+const { dimensions, items } = Astro.props;
+---
+
+{items && 
+<div class="flex mx-auto my-5">
+    <button class="prev lg:p-3.5 max-lg:p-1 text-6xl text-primary-accent/70 hover:text-primary-accent duration-200 ease-in-out inline">&#10096</button>
+    <div class={`carousel border-2 ${dimensions} border-primary-accent overflow-hidden flex flex-row relative`}>
+        {items.map((item: CarouselType) => <img src={item.imageSrc} alt={item.imageAlt} /> )}
+    </div>
+    <button class="next lg:p-3.5 max-lg:p-1 text-6xl text-primary-accent/70 hover:text-primary-accent duration-200 ease-in-out">&#10097</button>
+</div>
+}
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const carousels = document.querySelectorAll('.carousel');
+
+        carousels.forEach((carouselContainer) => {
+            const nextButton = carouselContainer.parentElement?.querySelector('.next');
+            const prevButton = carouselContainer.parentElement?.querySelector('.prev');
+
+            nextButton?.addEventListener('click', () => {
+                carouselContainer.scrollBy({
+                    top: 0,
+                    left: carouselContainer.clientWidth,
+                    behavior: 'smooth'
+                });
+            });
+
+            prevButton?.addEventListener('click', () => {
+                carouselContainer.scrollBy({
+                    top: 0,
+                    left: -carouselContainer.clientWidth,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    });
+</script>

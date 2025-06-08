@@ -48,7 +48,7 @@
       @apply dark:text-background;
     }
     article img{
-      @apply max-lg:size-auto;
+      @apply lg:w-auto rounded-lg max-lg:size-auto;
     }
 
     h1{

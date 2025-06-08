@@ -1,7 +1,7 @@
 ---
 const { sideImg, sideAlt, reverse, sideSize, noPadding } = Astro.props;
 ---
-<section class={`block lg:flex  ${reverse ? 'flex-row-reverse' : 'flex-row'}  lg:gap-10 w-full h-auto ${noPadding ? 'pt-0 pb-0' : 'pt-10 pb-8'}`}>
+<section class={`block lg:flex  ${reverse ? 'flex-row-reverse' : 'flex-row'}  lg:gap-10 w-full h-auto ${noPadding ? 'py-0' : 'pt-1 pb-1'}`}>
     
     {sideImg && <img src={sideImg} alt={sideAlt} class={sideSize} />}
     <div class="font-base lg:mt-0 mt-5 text-foreground text-base">

@@ -26,7 +26,7 @@ const filteredPosts = posts.filter(post => post.data.tags?.includes(tag));
   {filteredPosts.length === 0 ? (
     <p>Aucun article trouvé pour ce tag.</p>
   ) : (
-    <div class="flex flex-wrap gap-5 py-2.5">
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-5 py-2.5">
       {filteredPosts.map(post => (
         <div>
           <Card

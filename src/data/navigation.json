@@ -27,7 +27,7 @@
           "label": "Site Fleurs et Jardins, le Vaudreuil",
           "description": "Refonte du site Fleurs et jardins du Vaudreuil en Astro.JS et TailwindCSS.",
           "url": "/blog/fleurs-et-jardins",
-          "image":"/images/logo-fleurs-et-jardins.svg"
+          "image":"/images/fleur-et-jardin/logo-fleurs-et-jardins.svg"
         },
         {
           "label": "Site Portfolio",
@@ -39,7 +39,7 @@
           "label": "Site Handisup",
           "description": "Création d'un site WordPress pour une association qui accompagnent les jeunes en situation de Handicap dans les études supérieur.",
           "url": "/blog/handisup",
-          "image":"/images/logo-handisup.png"
+          "image":"/images/handisup/logo-handisup.png"
         }
       ],
       "about" : [
@@ -47,19 +47,19 @@
           "label": "Qui suis-je ?",
           "description": "Qui suis-je? Découvrez la personne que je suis dans cette présentation.",
           "url": "/blog/presentation",
-          "image":"/images/utilisateur-noir.png"
+          "image":"/images/icon/utilisateur-noir.png"
         },
         {
           "label": "Mon parcours",
           "description": "Découvrez mon parcours jusqu'ici! Quels sont mes formations, mes expériences qui m'ont amené à aujourd'hui.",
           "url": "/blog/parcours",
-          "image":"/images/casquette-de-graduation-noir.png"
+          "image":"/images/icon/casquette-de-graduation-noir.png"
         },
         {
           "label": "Ma charte graphique",
           "description": "Découvrez l'univers visuel sur lequel s'appuie mon portfolio. Logo, couleurs et typographies qui reflètent mon identité.",
           "url": "/blog/charte-graphique",
-          "image":"/images/crayon-noir.png"
+          "image":"/images/icon/crayon-noir.png"
         }
       ],
       "projects" : [
@@ -67,7 +67,7 @@
           "label": "Site Fleurs et Jardins, le Vaudreuil",
           "description": "Refonte du site Fleurs et jardins du Vaudreuil en Astro.JS et TailwindCSS.",
           "url": "/blog/fleurs-et-jardins",
-          "image":"/images/logo-fleurs-et-jardins.svg"
+          "image":"/images/fleur-et-jardin/logo-fleurs-et-jardins.svg"
         },
         {
           "label": "Site Portfolio",
@@ -79,7 +79,7 @@
           "label": "Site Handisup",
           "description": "Création d'un site WordPress pour une association qui accompagnent les jeunes en situation de Handicap dans les études supérieur.",
           "url": "/blog/handisup",
-          "image":"/images/logo-handisup.png"
+          "image":"/images/handisup/logo-handisup.png"
         },
         {
           "label": "Club Eco Saint Sever",
@@ -121,13 +121,13 @@
           "label": "Mes dessins",
           "description": "Découvrez ma passion pour le dessin.",
           "url": "/blog/dessins",
-          "image":"/images/crayon-noir.png"
+          "image":"/images/icon/crayon-noir.png"
         },
         {
           "label": "Interview avec un développeur",
           "description": "Découvrez cette interview d'un année 3 à la Normandie Web School sur un metier du monde professionnel.",
           "url": "/blog/interview",
-          "image":"/images/microphone.png"
+          "image":"/images/icon/microphone.png"
         }
       ]
     },

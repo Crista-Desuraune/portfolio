@@ -23,5 +23,5 @@ Au cours de mon bachelor chef de projet digitaux nos avons eu cours d'HTML , CSS
 
 **Vous pouvez retrouver le code en entier ainsi que le lien pour vidialiser le résultat du projet sur mon GitHub!**
 
-[![logo github](/images/github.png "Logo GitHub")](https://github.com/Crista-Desuraune/nexcent)
+[![logo github](/images/icon/github.png "Logo GitHub")](https://github.com/Crista-Desuraune/nexcent)
 

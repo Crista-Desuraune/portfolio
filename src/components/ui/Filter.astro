@@ -1,0 +1,13 @@
+---
+const { id } = Astro.props;
+
+---
+
+<button
+  id={id}
+  class="cursor-pointer mb-2.5"
+  aria-label="Ouvrir le menu principal"
+>
+  <img src="/images/icon/filter-noir.png" alt="filter-icon" class="w-8 h-8 dark:hidden">
+  <img src="/images/icon/filter.png" alt="filter-icon" class="w-8 h-8 hidden dark:block">
+</button>

@@ -4,19 +4,22 @@ import '@fontsource/jacques-francois';
 import '@fontsource-variable/roboto-mono';
 import Header from '../components/Header.astro';
 import Footer from "../components/Footer.astro";
+import Data from '../data/infoGeneral.json';
+
+const { title, favicon } = Data.site;
 ---
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" href="/images/logo-crista-60.png">
+		<link rel="icon" href={favicon}>
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro Portfolio</title>
+		<title>{title}</title>
 	</head>
 	<body class="bg-background text-foreground dark:bg-foreground dark:text-background ">
 		<Header />
-		<main class="pt-24 mx-auto grid max-w-5xl max-lg:px-7 lg:px-0">
+		<main class="pt-24 max-lg:pt-14 mx-auto grid max-w-5xl max-lg:px-7 lg:px-0">
 			<slot />
 			
 		</main>

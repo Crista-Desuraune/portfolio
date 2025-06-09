@@ -5,8 +5,8 @@ const { dimensions, items } = Astro.props;
 
 {items && 
 <div class="flex mx-auto my-5">
-    <button class="prev lg:p-3.5 max-lg:p-1 text-6xl text-primary-accent/70 hover:text-primary-accent duration-200 ease-in-out inline">&#10096</button>
-    <div class={`carousel border-2 ${dimensions} border-primary-accent overflow-hidden flex flex-row relative`}>
+    <button class="prev lg:p-3.5 max-lg:p-1 text-6xl text-primary-accent/70 hover:text-primary-accent focus:text-primary-accent active:text-primary-accent duration-200 ease-in-out inline">&#10096</button>
+    <div class={`carousel ${dimensions}  overflow-hidden flex flex-row relative`}>
         {items.map((item: CarouselType) => <img src={item.imageSrc} alt={item.imageAlt} /> )}
     </div>
     <button class="next lg:p-3.5 max-lg:p-1 text-6xl text-primary-accent/70 hover:text-primary-accent duration-200 ease-in-out">&#10097</button>

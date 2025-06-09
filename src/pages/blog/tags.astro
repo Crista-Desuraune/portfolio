@@ -12,9 +12,9 @@ const allTags = Array.from(
 ---
 
 
-<div class="flex flex-wrap gap-1 mb-4 justify-center">
+<div class="grid max-sm:grid-cols-1 max-md:grid-cols-2 grid-cols-4 2xl:grid-cols-1 max-2xl:bg-foreground-light w-auto dark:max-2xl:bg-neutral-800 py-5 px-8 rounded-lg gap-1 mb-4">
   {allTags.map(tag => (
-    <Button variant="tag" class="my-0" size ="small" href={`/blog/tags/${tag}`}>
+    <Button variant="tag" class="my-0 w-auto max-w-40 text-center" size ="small" href={`/blog/tags/${tag}`}>
         {tag}
     </Button>
   ))}

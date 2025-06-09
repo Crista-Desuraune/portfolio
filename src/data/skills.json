@@ -40,7 +40,7 @@
         },
         {
             "label": "GitHub", 
-            "img": "src/icons/github.svg"  
+            "img": "/src/icons/github.svg"  
         },
         {
             "label": "Figma", 

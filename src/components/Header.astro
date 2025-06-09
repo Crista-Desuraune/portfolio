@@ -3,16 +3,21 @@ import MenuBurger from './MenuBurger.astro';
 import  Navigation  from './Navigation.astro';
 import Burger from './ui/Burger.astro';
 import DarkMode from './DarkMode.astro';
+import Data from '../data/infoGeneral.json';
+
+const { logo, logoDark, banner, bannerDark} = Data.site;
 
 ---
 <header id="top-page">
     <div id="main-header" class="fixed transition-transform duration-750 z-2">
         <div  class="w-screen relative top-0 lg:h-23 h-18 overflow-hidden">
-            <img src="/images/banniere.png" alt="banniere" class="w-screen">
-            <div class="bg-background-dark/50 w-screen lg:h-23 h-18 font-heading lg:py-2 py-4 mx-auto flex items-center justify-between lg:px-15 px-7 absolute top-0">
+            <img src={banner} alt="banniere" class="w-screen dark:hidden rounded-none h-auto max-h-[475px] object-cover object-center">
+            <img src={bannerDark} alt="banniere" class="w-screen hidden rounded-none dark:block h-auto max-h-[475px] object-cover object-center">
+            <div class="bg-background-dark/40 w-screen lg:h-23 h-18 font-heading lg:py-2 py-4 mx-auto flex items-center justify-between lg:px-15 px-7 absolute top-0">
                 <Burger id="menu-burger"/>
                 <a href="/">
-                    <img class=" lg:w-32 w-20" src="/images/logo-crista-275.png" alt="logo-crista">
+                    <img class="w-auto h-18 max-lg:h-12 hidden dark:block" src={logo} alt="logo-crista">
+                    <img class="w-auto h-18 max-lg:h-12 dark:hidden" src={logo} alt="logo-crista">
                 </a>
                 <Navigation/>
                 <DarkMode/>

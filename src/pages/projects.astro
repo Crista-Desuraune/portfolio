@@ -2,14 +2,32 @@
 import Layout from '../layouts/Layout.astro';
 import FeaturedPosts from '../components/FeaturedPosts.astro';
 import config from '../data/navigation.json';
-import Tags from './blog/tags.astro';
+import TagsList from '../components/TagsList.astro';
+import Filter from '../components/ui/Filter.astro';
 
 const { projects } = config.posts;
 
 ---
 <Layout>
     <h1>Pour mes projets...</h1>
-    <Tags/>
-    <FeaturedPosts postIds={projects} description="Vous pouvez retrouver dans ces rubriques les projets que j'ai pu réalisé jusqu’ici, passant par les plus artistiques au plus complexe." />
+    <div class="flex flex-col gap-2">
+        <div class="self-end">
+            <Filter id="icon"/>
+        </div>
+        <div class="self-center">
+            <TagsList id="list"/>
+        </div>
+    </div>
+    
+    <script>
+        const list = document.querySelector('#list');
+        const icon = document.querySelector('#icon');
+            if (list && icon) {
+            icon.addEventListener('click', () => {
+                list.classList.toggle('hidden');
+            });
+        }
+    </script>
+    <FeaturedPosts postIds={projects} description="Vous pouvez retrouver dans ces rubriques les projets que j’ai réalisés jusqu’à présent, allant des plus artistiques aux plus complexes." />
 </Layout>
 

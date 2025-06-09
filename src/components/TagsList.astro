@@ -1,0 +1,8 @@
+---
+import Tags from '../pages//blog/tags.astro';
+
+const { id } = Astro.props;
+--- 
+<div class="inset-x-4 max-w-auto w-auto z-1 items-center 2xl:fixed 2xl:top-35 2xl:left-5 hidden" id={id}>
+        <Tags/>
+</div>

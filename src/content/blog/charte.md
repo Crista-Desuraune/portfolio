@@ -4,16 +4,16 @@ slug: "charte-graphique"
 description: "Découvrez l'univers visuel sur lequel s'appuie mon portfolio. Logo, couleurs et typographies qui reflètent mon identité."
 date: 2025-03-06
 ---
-![charte graphique 1](/images/charte/cg1.png)
-![charte graphique 2](/images/charte/cg2.png)
-![charte graphique 3](/images/charte/cg3.png)
-![charte graphique 4](/images/charte/cg4.png)
-![charte graphique 5](/images/charte/cg5.png)
-![charte graphique 6](/images/charte/cg6.png)
-![charte graphique 7](/images/charte/cg7.png)
-![charte graphique 8](/images/charte/cg8.png)
-![charte graphique 9](/images/charte/cg9.png)
-![charte graphique 10](/images/charte/cg10.png)
+![charte graphique 1](/images/charte/cg1.webp)
+![charte graphique 2](/images/charte/cg2.webp)
+![charte graphique 3](/images/charte/cg3.webp)
+![charte graphique 4](/images/charte/cg4.webp)
+![charte graphique 5](/images/charte/cg5.webp)
+![charte graphique 6](/images/charte/cg6.webp)
+![charte graphique 7](/images/charte/cg7.webp)
+![charte graphique 8](/images/charte/cg8.webp)
+![charte graphique 9](/images/charte/cg9.webp)
+![charte graphique 10](/images/charte/cg10.webp)
 
 ## Pourquoi ce logo ?
 J'ai choisi de réalisé mon logo sous la forme de pétale de fleurs. Bien qu'il n'y ait pas de rapport direct avec le développement web. Je trouvais dommage d'avoir une identité visuel qu'on imagine au premier abord pour un développeur web. Ma personnalité ne collant pas beaucoup avec le stéréotype d'une développeuse, j'ai alors préféré produire quelque chose qui me ressemble.

@@ -5,30 +5,32 @@ import SocialNetworks from './SocialNetworks.astro';
 
 const {footer} = configNav;
 const { about } = configNav.posts;
+const { logo, logoDark } = configGeneral.site;
 ---
 
 <footer class="mt-15 font-heading">
-    <div class="bg-secondary text-foreground py-5">
-        <div class="justify-center container mx-auto text-start text-2xl leading-8 lg:flex max-lg:flex-col">
-            <div class="flex flex-col lg:px-10 max-lg:mx-10 py-5 lg:border-r-2 max-lg:border-b-2 border-secondary-accent self-center">
-                <img src="/images/logo-crista-275.png" alt="logo-crista" class="w-40 h-auto my-5" />
+    <div class="bg-secondary text-secondary-foreground py-5">
+        <div class="justify-center container mx-auto text-start max-lg:text-2xl leading-8 lg:flex max-lg:flex-col">
+            <div class="flex flex-col lg:px-10 max-lg:mx-10 py-5 lg:border-r-2 max-lg:border-b-2 border-secondary-foreground self-center">
+                <img src={logo} alt="logo-crista" class="w-40 h-auto my-5 dark:hidden" />
+                <img src={logoDark} alt="logo-crista" class="w-40 h-auto my-5 hidden dark:block" />
             </div>
-            <div class="flex flex-col lg:px-10 max-lg:mx-10 py-5 lg:border-r-2 max-lg:border-b-2 border-secondary-accent">
+            <div class="flex flex-col lg:px-10 max-lg:mx-10 py-5 lg:border-r-2 max-lg:border-b-2 border-secondary-foreground">
                 {footer.map((item) => (
-                    <a href={item.url} class="focus:text-secondary-accent active:text-secondary-accent hover:text-secondary-accent max-lg:leading-7 duration-200 ease-in-out leading-5" aria-label={`Aller à ${item.label}`}>
+                    <a href={item.url} class="focus:text-primary-accent active:text-primary-accent hover:text-primary-accent max-lg:leading-7 duration-200 ease-in-out leading-5" aria-label={`Aller à ${item.label}`}>
                         {item.label}
                     </a>
                 ))}
             </div>
-            <div class="flex flex-col lg:px-10 max-lg:mx-10 py-5 lg:border-r-2 max-lg:border-b-2 border-secondary-accent">
+            <div class="flex flex-col lg:px-10 max-lg:mx-10 py-5 lg:border-r-2 max-lg:border-b-2 border-secondary-foreground">
                 {about.map((item) => (
-                    <a href={item.url} class="hover:text-secondary-accent focus:text-secondary-accent active:text-secondary-accent duration-200 ease-in-out leading-5 max-lg:leading-7" aria-label={`Aller à ${item.label}`}>
+                    <a href={item.url} class="hover:text-primary-accent focus:text-primary-accent active:text-primary-accent duration-200 ease-in-out leading-5 max-lg:leading-7" aria-label={`Aller à ${item.label}`}>
                         {item.label}
                     </a>
                 ))}
             </div>
-            <div class="flex flex-col px-10 py-5">
-                <h2 class="font-bold">Suivez-moi !</h2>
+            <div class="flex flex-col px-10 py-5 ">
+                <h2 class="font-bold text-lg text-start mt-0 mb-0">Suivez-moi !</h2>
                 <SocialNetworks items={configGeneral.social} />
             </div>
             

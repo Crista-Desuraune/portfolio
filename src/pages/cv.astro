@@ -17,8 +17,8 @@ const socials = Data.social;
 const primaryColor = "bg-primary text-background dark:bg-primary-accent dark:text-primary-foreground";
 const primaryColorButton = "text-primary-foreground hover:text-background/70 dark:hover:text-background/70";
 
-const secondaryColor = "bg-secondary text-foreground dark:bg-secondary-accent dark:text-secondary-foreground";
-const secondaryColorButton = "text-foreground hover:text-foreground/70 dark:text-secondary-foreground dark:hover:text-secondary-foreground/70";
+const secondaryColor = "bg-secondary text-secondary-foreground dark:bg-secondary-accent dark:text-secondary-foreground";
+const secondaryColorButton = "text-secondary-foreground hover:text-secondary-foreground/70 dark:text-secondary-foreground dark:hover:text-secondary-foreground/70";
 ---
 
 <Layout>
@@ -30,19 +30,19 @@ const secondaryColorButton = "text-foreground hover:text-foreground/70 dark:text
         <CvCircle titleCircle="Mes Coordonnées" colorPage={primaryColor} colorCircle={primaryColor} returnButton={primaryColorButton}>
             <div class="flex flex-col gap-6 items-center lg:mt-40 max-lg:mt-24">
                 <div class="flex max-lg:flex-col gap-4 items-center">
-                    <img src="/images/appel-telephonique.png" alt="telephone" class="size-10">
+                    <img src="/images/icon/appel-telephonique.png" alt="telephone" class="size-10">
                     <p class="text-xl">
                          {phone}
                     </p>
                 </div>
                 <div class="flex max-lg:flex-col gap-4 items-center">
-                    <img src="/images/enveloppe.png" alt="email" class="size-10">
+                    <img src="/images/icon/enveloppe.png" alt="email" class="size-10">
                     <p class="text-xl">
                          {mail}
                     </p>
                 </div>
                 <div class="flex max-lg:flex-col gap-4 items-start max-lg:items-center lg:w-xl max-lg:w-auto">
-                    <img src="/images/marqueur.png" alt="localisation" class="size-10">
+                    <img src="/images/icon/marqueur.png" alt="localisation" class="size-10">
                     <p class="lg:text-end max-lg:text-center text-xl">
                          {address}
                     </p>
@@ -53,21 +53,21 @@ const secondaryColorButton = "text-foreground hover:text-foreground/70 dark:text
         <CvCircle titleCircle="Langues" colorPage={secondaryColor} colorCircle={secondaryColor}  returnButton={secondaryColorButton}>
             <div class="flex flex-col gap-6 items-center mt-30">
                 <div class="flex gap-4 items-center">
-                    <img src="/images/flag-france.png" alt="drapeau de la france" class="size-20">
+                    <img src="/images/icon/flag-france.png" alt="drapeau de la france" class="size-20">
                     <p class="text-2xl">
                         Français
                     </p>
                 </div>
                 <div class="flex gap-4 items-center">
                     <p class="text-3xl">B1</p>
-                    <img src="/images/flag-england.png" alt="drapeau de l'angletterre" class="size-20">
+                    <img src="/images/icon/flag-england.png" alt="drapeau de l'angletterre" class="size-20">
                     <p class="text-2xl"> 
                         Anglais
                     </p>
                 </div>
                 <div class="flex gap-5 items-center">
                     <p class="text-3xl">A2</p>
-                    <img src="/images/flag-spain.png" alt="drapeau de l'espagne" class="size-20">
+                    <img src="/images/icon/flag-spain.png" alt="drapeau de l'espagne" class="size-20">
                     <p class="text-2xl">
                         Espagnol
                     </p>
@@ -77,10 +77,10 @@ const secondaryColorButton = "text-foreground hover:text-foreground/70 dark:text
 
         <CvCircle titleCircle="Centres d'intérêt" colorPage={primaryColor} colorCircle={primaryColor} returnButton={primaryColorButton} >
             <div class="columns-2 mx-5 mt-24 justify-items-center">
-                <img src="/images/headphone.png" alt="icon-headphone" class="lg:size-40 max-lg:size-auto self-center mb-14">
-                <img src="/images/clapperboard.png" alt="icon-clapperboard" class="lg:size-40 max-lg:size-auto self-center">
-                <img src="/images/crayon.png" alt="icon-crayon" class="lg:size-40 max-lg:size-auto self-center mb-14">
-                <img src="/images/runer.png" alt="icon-runer" class="lg:size-40 max-lg:size-auto self-center">
+                <img src="/images/icon/headphone.png" alt="icon-headphone" class="lg:size-40 max-lg:size-auto self-center mb-14">
+                <img src="/images/icon/clapperboard.png" alt="icon-clapperboard" class="lg:size-40 max-lg:size-auto self-center">
+                <img src="/images/icon/crayon.png" alt="icon-crayon" class="lg:size-40 max-lg:size-auto self-center mb-14">
+                <img src="/images/icon/runer.png" alt="icon-runer" class="lg:size-40 max-lg:size-auto self-center">
             </div>
         </CvCircle>
 
@@ -92,7 +92,7 @@ const secondaryColorButton = "text-foreground hover:text-foreground/70 dark:text
         </CvCircle>
 
         <CvCircle titleCircle="Formations" colorPage={primaryColor} colorCircle={primaryColor} returnButton={primaryColorButton} >
-            <Section sideImg="/images/NWS-blanc.png" sideAlt="logo-normandie-web-school" sideSize="lg:size-54 max-lg:size-auto w-auto self-center">
+            <Section sideImg="/images/logo/NWS-blanc.png" sideAlt="logo-normandie-web-school" sideSize="size-54 max-lg:size-auto w-auto self-center">
                 <CvContent title="Bachelor cheffe de projets digitaux" place="Normandie Web School - Rouen" date="2024-2027">
                     <li>Communication graphique et digital</li>
                     <li>Intégration web</li>
@@ -102,13 +102,13 @@ const secondaryColorButton = "text-foreground hover:text-foreground/70 dark:text
                 </CvContent>
 	        </Section>
             <HorizontalLine/>
-            <Section reverse="true" sideImg="/images/casquette-de-graduation.png" sideAlt="icone-diplôme" sideSize="lg:size-64 max-lg:size-auto h-auto" >
+            <Section reverse="true" sideImg="/images/icon/casquette-de-graduation.png" sideAlt="icone-diplôme" sideSize="size-64 max-lg:size-40 h-auto" >
                 <CvContent title="DIPLÔME BAFA" place="Céméa - Brémontier-Merval/Darnétal" date="2023-2025">
                     <li>Approfondissement: Accueuil en centre de loisirs</li>
                 </CvContent>
 	        </Section>
             <HorizontalLine/>
-            <Section sideImg="/images/photo-lycee.jpg" sideAlt="lycée-delamare-deboutteville" sideSize="lg:size-96 max-lg:size-auto h-auto">
+            <Section sideImg="/images/photo-lycee.jpg" sideAlt="lycée-delamare-deboutteville" sideSize="size-80 max-lg:size-auto h-auto">
                 <CvContent title="Baccalauréat général nsi et llce" place="Lycée Delamare Deboutteville - Forges-les-Eaux" date="2021-2024">
                     <li>Numérique et Sciences de l'Informatique</li>
                     <li>Langues, Littérature et Cultures Étrangères</li>
@@ -141,7 +141,7 @@ const secondaryColorButton = "text-foreground hover:text-foreground/70 dark:text
             </CvContent>
         </CvCircle>
     </div>
-    <div class="mt-10 lg:flex max-lg:flex-col lg:justify-between items-center">
+    <div class="mt-10 max-lg:mt-20 lg:flex max-lg:flex-col lg:justify-between items-center">
        
         <div class="size-auto sm:size-96 h-auto flex">
             {socials.map((item) => (
@@ -153,7 +153,7 @@ const secondaryColorButton = "text-foreground hover:text-foreground/70 dark:text
                 </div>
             ))}
         </div>
-        <Button variant="primary" size="small" class="font-heading h-10 text-center" href="../images/cv-crista-desuraune-cocu.pdf" download="cv-crista-desuraune-cocu.pdf">
+        <Button variant="primary" size="small" class="font-heading max-lg:mt-16 h-10 text-center" href="../images/cv-crista-desuraune-cocu.pdf" download="cv-crista-desuraune-cocu.pdf">
             Télécharger le CV
         </Button>
     </div>

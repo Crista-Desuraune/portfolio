@@ -30,7 +30,7 @@
       @apply text-xl uppercase text-center mx-auto ;
     }
     article h2 {
-      @apply text-3xl underline ;
+      @apply text-3xl underline text-start;
     }
     article h3 {
       @apply text-xl ;

@@ -1,0 +1,13 @@
+---
+import config from '../data/navigation.json';
+import NavLink from './NavLink.astro';
+import Tags from '../pages//blog/tags.astro';
+
+const { primary } = config;
+
+import type { LinkPrimaryType } from "../types";
+const { id } = Astro.props;
+--- 
+<div class="inset-x-4 max-w-auto w-auto z-1 items-center hidden 2xl:fixed 2xl:top-35 2xl:left-5" id={id}>
+        <Tags/>
+</div>

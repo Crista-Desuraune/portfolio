@@ -12,9 +12,9 @@
     --color-primary-accent: #780000;
     --color-primary-foreground: var(--color-neutral-50);
 
-    --color-secondary: #728c3b;
-    --color-secondary-accent: #57733c;
-    --color-secondary-foreground: #080B0F;
+    --color-secondary: #5b722a;
+    --color-secondary-accent: #0C5920;
+    --color-secondary-foreground: var(--color-neutral-50);
   
     --color-background: var(--color-neutral-50);
     --color-background-button: #fdf0d5;

@@ -17,8 +17,8 @@ const socials = Data.social;
 const primaryColor = "bg-primary text-background dark:bg-primary-accent dark:text-primary-foreground";
 const primaryColorButton = "text-primary-foreground hover:text-background/70 dark:hover:text-background/70";
 
-const secondaryColor = "bg-secondary text-foreground dark:bg-secondary-accent dark:text-foreground";
-const secondaryColorButton = "text-foreground hover:text-foreground/70 dark:text-secondary-foreground dark:hover:text-secondary-foreground/70";
+const secondaryColor = "bg-secondary text-secondary-foreground dark:bg-secondary-accent dark:text-secondary-foreground";
+const secondaryColorButton = "text-secondary-foreground hover:text-secondary-foreground/70 dark:text-secondary-foreground dark:hover:text-secondary-foreground/70";
 ---
 
 <Layout>
@@ -92,7 +92,7 @@ const secondaryColorButton = "text-foreground hover:text-foreground/70 dark:text
         </CvCircle>
 
         <CvCircle titleCircle="Formations" colorPage={primaryColor} colorCircle={primaryColor} returnButton={primaryColorButton} >
-            <Section sideImg="/images/logo/NWS-blanc.png" sideAlt="logo-normandie-web-school" sideSize="lg:size-54 max-lg:size-auto w-auto self-center">
+            <Section sideImg="/images/logo/NWS-blanc.png" sideAlt="logo-normandie-web-school" sideSize="size-54 max-lg:size-auto w-auto self-center">
                 <CvContent title="Bachelor cheffe de projets digitaux" place="Normandie Web School - Rouen" date="2024-2027">
                     <li>Communication graphique et digital</li>
                     <li>Intégration web</li>
@@ -108,7 +108,7 @@ const secondaryColorButton = "text-foreground hover:text-foreground/70 dark:text
                 </CvContent>
 	        </Section>
             <HorizontalLine/>
-            <Section sideImg="/images/photo-lycee.jpg" sideAlt="lycée-delamare-deboutteville" sideSize="lg:size-96 max-lg:size-auto h-auto">
+            <Section sideImg="/images/photo-lycee.jpg" sideAlt="lycée-delamare-deboutteville" sideSize="size-80 max-lg:size-auto h-auto">
                 <CvContent title="Baccalauréat général nsi et llce" place="Lycée Delamare Deboutteville - Forges-les-Eaux" date="2021-2024">
                     <li>Numérique et Sciences de l'Informatique</li>
                     <li>Langues, Littérature et Cultures Étrangères</li>

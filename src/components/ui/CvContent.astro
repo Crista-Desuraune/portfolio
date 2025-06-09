@@ -1,7 +1,7 @@
 ---
 const { title, place, date, reverse, secondaryTextColor } = Astro.props;
 ---
-<div class={`${reverse ? 'text-end' : 'flex-row'} ${secondaryTextColor? 'dark:text-primary-foreground text-foreground' : 'text-background' }  gap-10 h-auto pt-10 pb-8`}>
+<div class={`${reverse ? 'text-end' : 'flex-row'} ${secondaryTextColor? 'dark:text-foreground text-foreground' : 'text-background' }  gap-10 h-auto pt-10 pb-8`}>
     <h3 class="font-heading font-bold uppercase text-lg">
         {title}
     </h3>

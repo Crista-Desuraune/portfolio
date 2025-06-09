@@ -12,9 +12,9 @@
     --color-primary-accent: #780000;
     --color-primary-foreground: var(--color-neutral-50);
 
-    --color-secondary: #8BA8DD;
-    --color-secondary-accent: #003049;
-    --color-secondary-foreground: var(--color-neutral-50);
+    --color-secondary: #728c3b;
+    --color-secondary-accent: #57733c;
+    --color-secondary-foreground: #080B0F;
   
     --color-background: var(--color-neutral-50);
     --color-background-button: #fdf0d5;
@@ -53,5 +53,17 @@
 
     h1{
       @apply font-heading text-4xl text-center font-bold mt-10 mb-5;
+    }
+    h2{
+      @apply font-heading text-3xl text-center font-bold mt-10 mb-5;
+    }
+    h3{
+      @apply font-heading text-xl font-bold mt-5 mb-5;
+    }
+    p{
+      @apply font-base
+    }
+    img{
+      @apply rounded-lg;
     }
   }

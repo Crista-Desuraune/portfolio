@@ -11,7 +11,7 @@ tags: ["HTML-CSS","Sur GitHub", "Projet Personnel"]
 
 ![maquette figma](/images/nexcent-figma.png)
  
-Au cours de mon bachelor chef de projet digitaux nos avons eu cours d'HTML , CSS et JavaScript. Cette reproduction d'une maquette figma nous a alors été demandé de faire pour appliquer les connaissances acquises lors de ces cours. Répliquer cette maquette nous ainsi permis de nous preparer à pouvoir collaborer avec des designers ou maquettistes.
+Au cours de mon bachelor chef de projet digitaux, nous avons eu cours d'HTML, CSS et JavaScript. Cette reproduction d'une maquette Figma nous a alors été demandée de faire pour appliquer les connaissances acquises lors de ces cours. Répliquer cette maquette nous a ainsi permis de nous préparer à pouvoir collaborer avec des designers ou maquettistes.
 
 ### Le code
 

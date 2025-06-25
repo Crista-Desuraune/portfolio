@@ -24,6 +24,12 @@
     "posts": {
       "last" : [
         {
+          "label": "Site Lunedit Packaking",
+          "description": "Migration du site Lunedit Packaking de WIX vers Astro.JS et TailwindCSS.",
+          "url": "/blog/lunedit",
+          "image":"/images/logo-lunedit.png"
+        },
+        {
           "label": "Site Fleurs et Jardins, le Vaudreuil",
           "description": "Refonte du site Fleurs et jardins du Vaudreuil en Astro.JS et TailwindCSS.",
           "url": "/blog/fleurs-et-jardins",
@@ -34,12 +40,6 @@
           "description": "Création d'un site web portfolio en HTLM/CSS et JS.",
           "url": "/blog/portfolio",
           "image":"/images/logo-old-version.png"
-        },
-        {
-          "label": "Site Handisup",
-          "description": "Création d'un site WordPress pour une association qui accompagnent les jeunes en situation de Handicap dans les études supérieur.",
-          "url": "/blog/handisup",
-          "image":"/images/handisup/logo-handisup.png"
         }
       ],
       "about" : [
@@ -63,6 +63,12 @@
         }
       ],
       "projects" : [
+        {
+          "label": "Site Lunedit Packaking",
+          "description": "Migration du site Lunedit Packaking de WIX vers Astro.JS et TailwindCSS.",
+          "url": "/blog/lunedit",
+          "image":"/images/logo-lunedit.png"
+        },
         {
           "label": "Site Fleurs et Jardins, le Vaudreuil",
           "description": "Refonte du site Fleurs et jardins du Vaudreuil en Astro.JS et TailwindCSS.",

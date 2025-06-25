@@ -29,9 +29,27 @@ const { logo, logoDark } = configGeneral.site;
                     </a>
                 ))}
             </div>
-            <div class="flex flex-col px-10 py-5 ">
-                <h2 class="font-bold text-lg text-start mt-0 mb-0">Suivez-moi !</h2>
-                <SocialNetworks items={configGeneral.social} />
+            <div class="flex flex-col px-10 py-5 gap-1">
+                <div class="flex flex-col">
+                    <h2 class="font-bold text-lg text-start mt-0 mb-0">Suivez-moi !</h2>
+                    <SocialNetworks items={configGeneral.social} />
+                </div>
+                <div class="flex flex-col">
+                    <h2 class="font-bold text-lg text-start mt-0 mb-0">Contactez-moi !</h2>
+                    <address class="not-italic text-start flex flex-col">
+                        {configGeneral.contact.mail && (
+                            <a href={`mailto:${configGeneral.contact.mail}`} class="leading-8 lg:leading-5 hover:text-primary-accent focus:text-primary-accent active:text-primary-accent duration-200 ease-in-out">
+                                {configGeneral.contact.mail}
+                            </a>
+                        )}
+                        {configGeneral.contact.phone && (
+                            <a href={`tel:${configGeneral.contact.phone}`} class="leading-8 lg:leading-5 hover:text-primary-accent focus:text-primary-accent active:text-primary-accent duration-200 ease-in-out">
+                                {configGeneral.contact.phone}   
+                            </a>
+                        )}
+                    </address>
+                </div>
+                
             </div>
             
         </div>

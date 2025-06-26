@@ -17,33 +17,33 @@ const { logo, logoDark } = configGeneral.site;
             </div>
             <div class="flex flex-col lg:px-10 max-lg:mx-10 py-5 lg:border-r-2 max-lg:border-b-2 border-secondary-foreground">
                 {footer.map((item) => (
-                    <a href={item.url} class="focus:text-primary-accent active:text-primary-accent hover:text-primary-accent max-lg:leading-7 duration-200 ease-in-out leading-5" aria-label={`Aller à ${item.label}`}>
+                    <a href={item.url} class="focus:text-primary-accent active:text-primary-accent hover:text-primary-accent max-lg:leading-9 duration-200 ease-in-out leading-5" aria-label={`Aller à ${item.label}`}>
                         {item.label}
                     </a>
                 ))}
             </div>
             <div class="flex flex-col lg:px-10 max-lg:mx-10 py-5 lg:border-r-2 max-lg:border-b-2 border-secondary-foreground">
                 {about.map((item) => (
-                    <a href={item.url} class="hover:text-primary-accent focus:text-primary-accent active:text-primary-accent duration-200 ease-in-out leading-5 max-lg:leading-7" aria-label={`Aller à ${item.label}`}>
+                    <a href={item.url} class="hover:text-primary-accent focus:text-primary-accent active:text-primary-accent duration-200 ease-in-out leading-5 max-lg:leading-9" aria-label={`Aller à ${item.label}`}>
                         {item.label}
                     </a>
                 ))}
             </div>
             <div class="flex flex-col px-10 py-5 gap-1">
                 <div class="flex flex-col">
-                    <h2 class="font-bold text-lg text-start mt-0 mb-0">Suivez-moi !</h2>
+                    <h2 class="text-background font-bold text-lg text-start mt-0 mb-0">Suivez-moi !</h2>
                     <SocialNetworks items={configGeneral.social} />
                 </div>
                 <div class="flex flex-col">
-                    <h2 class="font-bold text-lg text-start mt-0 mb-0">Contactez-moi !</h2>
+                    <h2 class="text-background font-bold text-lg text-start mt-0 mb-0">Contactez-moi !</h2>
                     <address class="not-italic text-start flex flex-col">
                         {configGeneral.contact.mail && (
-                            <a href={`mailto:${configGeneral.contact.mail}`} class="leading-8 lg:leading-5 hover:text-primary-accent focus:text-primary-accent active:text-primary-accent duration-200 ease-in-out">
+                            <a href={`mailto:${configGeneral.contact.mail}`} class="leading-9 lg:leading-5 hover:text-primary-accent focus:text-primary-accent active:text-primary-accent duration-200 ease-in-out">
                                 {configGeneral.contact.mail}
                             </a>
                         )}
                         {configGeneral.contact.phone && (
-                            <a href={`tel:${configGeneral.contact.phone}`} class="leading-8 lg:leading-5 hover:text-primary-accent focus:text-primary-accent active:text-primary-accent duration-200 ease-in-out">
+                            <a href={`tel:${configGeneral.contact.phone}`} class="leading-9 lg:leading-5 hover:text-primary-accent focus:text-primary-accent active:text-primary-accent duration-200 ease-in-out">
                                 {configGeneral.contact.phone}   
                             </a>
                         )}

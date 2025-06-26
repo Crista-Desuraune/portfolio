@@ -27,38 +27,40 @@
   @layer base {
 
     article h1 {
-      @apply text-xl uppercase text-center mx-auto ;
+      @apply text-xl uppercase dark:text-foreground-light text-center mx-auto ;
     }
     article h2 {
-      @apply text-3xl underline text-start;
+      @apply text-3xl underline dark:text-foreground-light text-start;
     }
     article h3 {
-      @apply text-xl ;
+      @apply text-xl dark:text-foreground-light ;
     }
     article p {
-      @apply  text-foreground dark:text-background;
+      @apply  text-foreground dark:text-foreground-light;
     }
     article ul{
       @apply list-disc ps-4 text-foreground dark:text-background;
     }
     article em{
-      @apply font-heading text-lg dark:text-background;
+      @apply font-heading text-lg dark:text-foreground-light;
     }
     article strong{
-      @apply dark:text-background;
+      @apply dark:text-foreground-light;
     }
     article img{
       @apply lg:w-auto rounded-lg max-lg:size-auto;
     }
-
+    h1, h2, h3 {
+      @apply dark:text-foreground-light font-heading font-bold mb-5;
+    }
     h1{
-      @apply font-heading text-4xl text-center font-bold mt-10 mb-5;
+      @apply text-4xl text-center mt-10;
     }
     h2{
-      @apply font-heading text-3xl text-center font-bold mt-10 mb-5;
+      @apply text-3xl text-center mt-10;
     }
     h3{
-      @apply font-heading text-xl font-bold mt-5 mb-5;
+      @apply text-xl mt-5;
     }
     p{
       @apply font-base

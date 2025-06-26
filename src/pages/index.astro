@@ -18,7 +18,7 @@ const { last } = config.posts;
 	<h2 class="font-base text-xl font-normal pb-3 mt-5 mb-0">Étudiante à la recherche d'une alternance à partir de septembre 2025 et passionnée par l'univers du codage, je me présente moi et mes projets passant des plus créatifs auc plus complexe.</h2>
 
 	<Section sideImg="/images/photo-work.png" sideAlt="photo de crista">
-		<p class="font-heading dark:text-background">Je m'appelle Crista Desuraune--Cocu, j'ai 18 ans et je viens de Mont-Saint-Aignan. Actuellement, je suis en première année de bachelor Chef de projet digital à la Normandie Web School, à Rouen. Je suis passionnée par l’art du spectacle et les lieux culturels en lien avec l’art.
+		<p class="font-heading dark:text-foreground-light">Je m'appelle Crista Desuraune--Cocu, j'ai 18 ans et je viens de Mont-Saint-Aignan. Actuellement, je suis en première année de bachelor Chef de projet digital à la Normandie Web School, à Rouen. Je suis passionnée par l’art du spectacle et les lieux culturels en lien avec l’art.
 		J’étudie le marketing digital, la communication graphique et digitale, ainsi que le développement web. Cela me permet de développer mes compétences dans le domaine du numérique et de renforcer mon intérêt pour le développement web, car à l’avenir, j’aimerais me spécialiser dans ce domaine. J’ai découvert cet univers au lycée, dans la spécialité NSI (Numérique et Sciences de l’Informatique), où j’ai pu apprendre les bases de la programmation et du développement web.</p>
 		<div class="flex gap-4 mt-3">
 			<Button variant="primary" size="small" class="font-heading" href="/a-propos">À propos de moi</Button>
@@ -26,7 +26,7 @@ const { last } = config.posts;
 		</div>
 	</Section>
 
-	<FeaturedPosts postIds={last} title="Mes derniers projets ou mes projets en cours"/>
+	<FeaturedPosts postIds={last} button="true" title="Mes derniers projets ou mes projets en cours"/>
 
 	<div class="lg:flex lg:gap-4 block">
 		<SkillsCard title="Mes compétences" skillsItems={skill}/>

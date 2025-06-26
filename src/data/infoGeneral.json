@@ -3,11 +3,11 @@
         "title": "Crista Desuraune-Cocu Portfolio",
         "description": "Étudiante et passionnée par l'univers du codage, je me présente moi et mes projets passant des plus créatifs auc plus complexe",
         "url": "https://crista-desuraune.fr",
-        "logo": "/images/logo-noir.svg",
-        "logoDark": "/images/logo-blanc.svg",
+        "logo": "/images/logo.svg",
+        "logoDark": "/images/logo.svg",
         "banner": "/images/banner.webp",
         "bannerDark": "/images/banner-dark.webp",
-        "favicon": "/images/logo-noir.svg"
+        "favicon": "/images/logo.svg"
         },
     "contact": {
         "phone": "06 23 01 77 18",

@@ -10,9 +10,9 @@ const competences = skillsItems
 {skillsItems &&
 <div class="container mx-auto text-center lg:py-10 pt-10 pb-0">
     <h2 class="text-3xl font-heading font-bold mb-5">{title}</h2>
-    <div class="grid grid-cols-2 md:grid-cols-2 gap-2 p-2 rounded-lg border-secondary bg-background shadow-secondary-accent shadow-xl">
+    <div class="grid grid-cols-2 md:grid-cols-2 gap-2 p-2 rounded-lg border-secondary bg-background dark:bg-foreground shadow-secondary-accent shadow-xl">
         {skillsItems.map((item:SkillsType) => (
-            <div class=" text-secondary-foreground max-lg:text-foreground p-5 rounded-lg h-auto hover:bg-secondary/80  transition duration-300 ease-in-out">
+            <div class=" text-foreground dark:text-foreground-light p-5 rounded-lg h-auto transition duration-300 ease-in-out">
                 <h3 class="text-xl font-semibold font-base pb-1.5 mt-0 mb-0">{item.label}</h3>
                 <img src={item.img} alt={`logo-${item.label}`} class="size-16 w-auto mx-auto" />
             </div>

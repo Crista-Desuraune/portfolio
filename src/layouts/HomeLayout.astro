@@ -5,6 +5,7 @@ import '@fontsource-variable/roboto-mono';
 import Header from '../components/Header.astro';
 import Footer from "../components/Footer.astro";
 import Data from '../data/infoGeneral.json';
+import TopIndex from "../components/TopIndex.astro";
 
 const { title, banner, bannerDark, favicon } = Data.site;
 ---
@@ -21,13 +22,7 @@ const { title, banner, bannerDark, favicon } = Data.site;
 		<Header />
         <img src={banner} alt="bannière de bienvenue" class="relative dark:hidden w-full h-auto max-h-[475px] object-cover object-center" />
         <img src={bannerDark} alt="bannière de bienvenue" class="relative hidden dark:block w-full h-auto max-h-[475px] object-cover object-center" />
-		<div class="absolute top-35 max-md:top-25 left-1/2 -translate-x-1/2 z-1 text-center items-center flex max-md:flex-col gap-14">
-			<div class="flex flex-col gap-2 max-md:mb-10">
-				<p class="font-heading font-bold text-4xl max-lg:text-3xl max-md:text-2xl text-primary-foreground">Crista Desuraune--Cocu</p>
-				<p class="text-center text-lg max-md:text-base text-primary-foreground">Développeuse Web</p>
-			</div>
-			<img src="/images/photo-crista-rond1.png" alt="photo de Crista Desuraune--Cocu" class="w-auto h-40 max-md:hidden" />
-		</div>
+		<TopIndex/>	
 		<main class="pt-8 max-lg:pt-0 mx-auto max-w-5xl max-lg:px-7 lg:px-0">
 			<slot />
 			

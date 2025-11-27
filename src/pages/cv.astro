@@ -24,7 +24,7 @@ const secondaryColorButton = "text-secondary-foreground hover:text-secondary-for
 <Layout>
     <h1>Crista Desuraune--Cocu</h1>
     <h2 class="font-base dark:text-background font-bold text-center text-foreground text-[28px]">Développeuse Web</h2>
-    <p class="rounded-lg dark:text-background font-bold text-foreground text-lg hover:shadow-primary dark:hover:shadow-primary-accent transition hover:-translate-y-1 duration-700 ease-in-out hover:shadow-2xl font-base justify-self-center mt-5 lg:px-10 max-lg:px-0 py-2.5 text-center lg:w-3xl md:w-xl w-auto">Je suis à la recherche d'une alternance en tant que développeuse web à partir de septembre 2025</p>
+    <p class="rounded-lg dark:text-background font-bold text-foreground text-lg font-base justify-self-center mt-5 lg:px-10 max-lg:px-0 py-2.5 text-center lg:w-3xl md:w-xl w-auto">Je suis à la recherche d'une alternance en tant que développeuse web à partir de septembre 2025</p>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-15 mt-15 items-center justify-items-center">
 
         <CvCircle titleCircle="Mes Coordonnées" colorPage={primaryColor} colorCircle={primaryColor} returnButton={primaryColorButton}>
@@ -96,9 +96,10 @@ const secondaryColorButton = "text-secondary-foreground hover:text-secondary-for
                 <CvContent title="Bachelor cheffe de projets digitaux" place="Normandie Web School - Rouen" date="2024-2027">
                     <li>Communication graphique et digital</li>
                     <li>Intégration web</li>
-                    <li>Charte graphique</li>
                     <li>Wordpress</li>
                     <li>Développement Web</li>
+                    <li>Front End</li>
+                    <li>Back End</li>
                 </CvContent>
 	        </Section>
             <HorizontalLine/>
@@ -117,14 +118,19 @@ const secondaryColorButton = "text-secondary-foreground hover:text-secondary-for
         </CvCircle>
 
         <CvCircle titleCircle="Expériences Professionnelles" colorPage={secondaryColor} colorCircle={secondaryColor}  returnButton={secondaryColorButton} >
-            <CvContent title="PORTFOLIO" place="Rouen" date="mai 2025 - juin 2025" secondaryTextColor="true">
-                <li>Création d’un site web portfolio en HTML/CSS et JavaScript (Actuellement en refonte)</li>
+            <CvContent reverse="true" title="PORTFOLIO" place="Rouen" date="mai 2025 - juin 2025" secondaryTextColor="true">
+                <li>Refonte et migration de mon portfolio en Astro.js</li>
             </CvContent>
-            <CvContent reverse="true" title="STAGE" place="Raphael Sanchez Design - Rouen" date="10 Mars 2025- 20 Juin 2025" secondaryTextColor="true">
+            <HorizontalLine/>
+            <CvContent  title="STAGE" place="Raphael Sanchez Design - Rouen" date="10 Mars 2025- 20 Juin 2025" secondaryTextColor="true">
                 <li>Frontend</li>
                 <li>GitHub utilisé en équipe</li>
-                <li>Wordpress</li>
                 <li>PHP</li>
+                <li>Réalisation de sites web</li>
+            </CvContent>
+            <HorizontalLine/>
+            <CvContent reverse="true" title="PORTFOLIO" place="Rouen" date="janvier 2025 - mars 2025" secondaryTextColor="true">
+                <li>Création d’un site web portfolio en HTML/CSS et JavaScript (Actuellement en refonte)</li>
             </CvContent>
             <HorizontalLine/>
             <CvContent title="PROJET HANDISUP" place="Normandie Web School - Rouen" date="13 Janvier 2025 - 14 Février 2025" secondaryTextColor="true">
@@ -139,7 +145,7 @@ const secondaryColorButton = "text-secondary-foreground hover:text-secondary-for
                 <li>Création d’une charte graphique pour un club d’entreprises du quartier de Saint Sever</li>
             </CvContent>
             <HorizontalLine/>
-            <CvContent reverse="true" title="animatrice" place="Crèches Liberty - Gournay-en-Bray" date="2024-2025" secondaryTextColor="true">
+            <CvContent reverse="true" title="ANIMATRICE" place="Crèches Liberty - Gournay-en-Bray" date="2024-2025" secondaryTextColor="true">
                 <li>Accueil des enfants en centre de loisirs</li>
             </CvContent>
         </CvCircle>

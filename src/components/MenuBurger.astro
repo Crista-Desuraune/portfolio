@@ -7,16 +7,19 @@ const { primary } = config;
 import type { LinkPrimaryType } from "../types";
 const { id } = Astro.props;
 --- 
-<nav class="inset-x-4 w-64 top-0 z-3 left-0 fixed hidden" id={id}>
+<nav class="inset-x-4 w-64 top-0 z-3 left-0 fixed hidden" id={id} role="navigation" aria-label="Menu mobile">
     <div
       class="text-primary-foreground bg-secondary dark:bg-secondary-accent h-screen lg:hidden text-4xl font-heading p-5 gap-10"
       id="nav"
+      role="menu"
+      aria-expanded="false"
     >
     <a
         class="font-base text-4xl pb-5 text-right hover:text-primary-accent focus:text-primary-accent active:text-primary-accent duration-200 ease-in-out" 
         id="close"
-        aria-label="Ouvrir le menu principal">
-        x
+        aria-label="Fermer le menu"
+        type="button">
+        <span aria-hidden="true">×</span>
     </a>
       {
           primary &&

@@ -1,18 +1,18 @@
 [
     {
         "alt": "dessins-vanneuse",
-        "img": "/images/dessins/dessin-vanneuse.png"
+        "img": "/images/dessins/dessin-vanneuse.webp"
     },
     {
         "alt": "dessins-mains",
-        "img": "/images/dessins/dessin-mains.jpg"
+        "img": "/images/dessins/dessin-mains.webp"
     },
     {
         "alt": "dessins-tournesols",
-        "img": "/images/dessins/dessin-tournesols.png"
+        "img": "/images/dessins/dessin-tournesols.webp"
     },
     {
         "alt": "dessins-femme",
-        "img": "/images/dessins/dessin-femme.jpg"
+        "img": "/images/dessins/dessin-femme.webp"
     }
 ]

@@ -24,22 +24,22 @@
     "posts": {
       "last" : [
         {
-          "label": "Site Lunedit Packaking",
-          "description": "Migration du site Lunedit Packaking de WIX vers Astro.JS et TailwindCSS.",
-          "url": "/blog/lunedit",
-          "image":"/images/logo-lunedit.png"
+          "label": "Dashboard",
+          "description": "Créarion d'un dashboard fictif",
+          "url": "/blog/dashboard",
+          "image":"/images/icon/dashboard.png"
+        },
+        {
+          "label": "Maquette Ebook",
+          "description": "Intégration d'une maquette Figma en HTML/CSS et JS",
+          "url": "/blog/maquette-ebook",
+          "image":"/images/maquette-ebook/maquette-ebook.webp"
         },
         {
           "label": "Site Fleurs et Jardins, le Vaudreuil",
           "description": "Refonte du site Fleurs et jardins du Vaudreuil en Astro.JS et TailwindCSS.",
           "url": "/blog/fleurs-et-jardins",
           "image":"/images/fleur-et-jardin/logo-fleurs-et-jardins.svg"
-        },
-        {
-          "label": "Site Portfolio",
-          "description": "Création d'un site web portfolio en HTLM/CSS et JS.",
-          "url": "/blog/portfolio",
-          "image":"/images/logo-old-version.png"
         }
       ],
       "about" : [
@@ -63,6 +63,18 @@
         }
       ],
       "projects" : [
+        {
+          "label": "Dashboard",
+          "description": "Créarion d'un dashboard fictif",
+          "url": "/blog/dashboard",
+          "image":"/images/icon/dashboard.png"
+        },
+        {
+          "label": "Maquette ebook",
+          "description": "Intégration d'une maquette Figma en HTML/CSS et JS",
+          "url": "/blog/maquette-ebook",
+          "image":"/images/maquette-ebook/maquette-ebook.webp"
+        },
         {
           "label": "Site Lunedit Packaking",
           "description": "Migration du site Lunedit Packaking de WIX vers Astro.JS et TailwindCSS.",
@@ -97,13 +109,13 @@
           "label": "SoundSpire",
           "description": "Création d'un site web type blog en HTLM/CSS et JS.",
           "url": "/blog/soundspire",
-          "image":"/images/soundspire.png"
+          "image":"/images/soundspire.webp"
         },
         {
           "label": "Nexcent",
           "description": "Reproduction une maquette Figma en HTML/CSS au pixel perfect.",
           "url": "/blog/nexcent",
-          "image":"/images/nexcent.png"
+          "image":"/images/nexcent.webp"
         },
         {
           "label": "Événement BDE",

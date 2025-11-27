@@ -11,13 +11,13 @@ const { logo, logoDark, banner, bannerDark} = Data.site;
 <header id="top-page">
     <div id="main-header" class="main-header fixed transition-transform duration-750 z-2">
         <div  class="w-screen relative top-0 lg:h-23 h-18 overflow-hidden">
-            <img src={banner} alt="banniere" class="w-screen dark:hidden rounded-none h-auto max-h-[475px] object-cover object-center">
-            <img src={bannerDark} alt="banniere" class="w-screen hidden rounded-none dark:block h-auto max-h-[475px] object-cover object-center">
+            <img src={banner} alt="Bannière du site en mode clair" class="w-screen dark:hidden rounded-none h-auto max-h-[475px] object-cover object-center">
+            <img src={bannerDark} alt="Bannière du site en mode sombre" class="w-screen hidden rounded-none dark:block h-auto max-h-[475px] object-cover object-center ">
             <div class="bg-background-dark/40 w-screen lg:h-23 h-18 font-heading lg:py-2 py-4 mx-auto flex items-center justify-between lg:px-15 px-7 absolute top-0">
-                <Burger id="menu-burger"/>
-                <a href="/">
-                    <img class="w-auto h-18 max-lg:h-12 hidden dark:block" src={logo} alt="logo-crista">
-                    <img class="w-auto h-18 max-lg:h-12 dark:hidden" src={logo} alt="logo-crista">
+                <Burger id="menu-burger" aria-label="Menu de navigation"/>
+                <a href="/" aria-label="Retour à l'accueil">
+                    <img class="w-auto h-18 max-lg:h-12 hidden dark:block" src={logo} alt="Logo Crista - Mode sombre">
+                    <img class="w-auto h-18 max-lg:h-12 dark:hidden" src={logo} alt="Logo Crista - Mode clair">
                 </a>
                 <Navigation/>
                 <DarkMode/>

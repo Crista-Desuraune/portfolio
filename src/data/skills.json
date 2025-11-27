@@ -31,6 +31,10 @@
         {
             "label": "Astro.JS", 
             "img": "/images/logo/astro.svg"  
+        },
+        {
+            "label": "PHP", 
+            "img": "/images/logo/php.png"
         }
     ],
     "tools":[
@@ -52,19 +56,23 @@
         },
         {
             "label": "Illustrator", 
-            "img": "/images/logo/Adobe_Illustrator.png"  
+            "img": "/images/logo/adobe-illustrator.png"  
         },
         {
             "label": "Photoshop", 
-            "img": "/images/logo/Adobe-Photoshop-Logo.png"  
+            "img": "/images/logo/adobe-photoshop.png"  
         },
         {
             "label": "InDesign", 
-            "img": "/images/logo/Adobe_InDesign.png"  
+            "img": "/images/logo/adobe-indesing.png"  
         },
         {
             "label": "Premiere Pro", 
             "img": "/images/logo/premiere-pro.png"  
+        },
+        {
+            "label":"ClickUp",
+            "img": "/images/logo/clickup.png"
         }
     ]
 } 

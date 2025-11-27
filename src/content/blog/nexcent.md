@@ -9,19 +9,19 @@ tags: ["HTML-CSS","Sur GitHub", "Projet Personnel"]
 ---
 ## Présentation du projet
 
-![maquette figma](/images/nexcent-figma.png)
+![maquette figma](/images/nexcent-figma.webp)
  
 Au cours de mon bachelor chef de projet digitaux, nous avons eu cours d'HTML, CSS et JavaScript. Cette reproduction d'une maquette Figma nous a alors été demandée de faire pour appliquer les connaissances acquises lors de ces cours. Répliquer cette maquette nous a ainsi permis de nous préparer à pouvoir collaborer avec des designers ou maquettistes.
 
 ### Le code
 
-![code du projet](/images/nexcent-code.png)
+![code du projet](/images/nexcent-code.webp)
 
 ### Le résultat
 
-![résultat maquette](/images/nexcent.png)
+![résultat maquette](/images/nexcent.webp)
 
-**Vous pouvez retrouver le code en entier ainsi que le lien pour vidialiser le résultat du projet sur mon GitHub!**
+**Vous pouvez retrouver le code en entier ainsi que le lien pour visualiliser le résultat du projet sur mon GitHub!**
 
 [![logo github](/images/icon/github.png "Logo GitHub")](https://github.com/Crista-Desuraune/nexcent)
 

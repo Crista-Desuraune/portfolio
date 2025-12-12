@@ -11,7 +11,7 @@ services:
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.astro.rule=Host(`portfolio.crista-desuraune.fr`)"
-      - "traefik.http.routers.astro.entrypoints=web"
+      - "traefik.http.routers.astro.entrypoints=websecure"
       - "traefik.http.services.astro.loadbalancer.server.port=4321"
   
   traefik:

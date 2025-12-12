@@ -26,10 +26,10 @@ services:
       - "--entrypoints.web.http.redirections.entrypoint.to=websecure"
       - "--entrypoints.web.http.redirections.entrypoint.scheme=https"
       # Let's Encrypt (désactivé par défaut)
-      # - "--certificatesresolvers.le.acme.httpchallenge=true"
-      # - "--certificatesresolvers.le.acme.httpchallenge.entrypoint=web"
-      # - "--certificatesresolvers.le.acme.email=you@example.com"
-      # - "--certificatesresolvers.le.acme.storage=/letsencrypt/acme.json"
+      - "--certificatesresolvers.le.acme.httpchallenge=true"
+      - "--certificatesresolvers.le.acme.httpchallenge.entrypoint=web"
+      - "--certificatesresolvers.le.acme.email=you@example.com"
+      - "--certificatesresolvers.le.acme.storage=/letsencrypt/acme.json"
     ports:
       - "80:80"
       - "8080:8080"

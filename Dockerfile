@@ -18,5 +18,5 @@ COPY --from=builder /app/dist ./dist
 # Installer un petit serveur statique
 RUN npm install -g serve
 
-EXPOSE 3000
+EXPOSE 4321
 CMD ["serve", "-s", "dist", "-l", "4321"]

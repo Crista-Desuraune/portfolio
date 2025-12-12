@@ -2,9 +2,12 @@
 
 Mon portfolio construit avec [Astro.js](https://astro.build/) et [Tailwind CSS](https://tailwindcss.com/) pour présenter mes projets, compétences et expériences.
 
+Ce projet est un site statique moderne, rapide et optimisé, déployé via Docker et Traefik sur mon VPS personnel.
+
 ## 📝 Description
 
-Ce portfolio est un site web statique rapide et moderne, développé avec Astro.js et stylisé avec Tailwind CSS.
+Ce portfolio est développé avec Astro.js, stylisé grâce à Tailwind CSS, et utilise divers outils modernes (TypeScript, MDX, Web3Forms…).
+Le site est entièrement responsive et conçu pour offrir une navigation fluide.
 
 ## 🚀 Structure
 
@@ -34,7 +37,7 @@ Ce portfolio est un site web statique rapide et moderne, développé avec Astro.
 - Astro.JS
 - Tailwind CSS
 - astro icon
-- MXD
+- MDX
 - MD
 - TypeScript
 - WEB3forms (formulaire)
@@ -44,7 +47,8 @@ Ce portfolio est un site web statique rapide et moderne, développé avec Astro.
 - Pages pour présenter mes projets, compétences, cv et contact
 - Design responsive adapté à tous les écrans
 - Navigation fluide et intuitive
-- Dark mode prêt à être activé (optionnel)
+- Dark mode prêt à être activé
+- Formulaire de contact via Web3Forms
 
 ## Créer un projet astro
 
@@ -106,8 +110,28 @@ Les contributions sont les bienvenues ! Pour contribuer :
 4. Push (`git push origin feature/ma-feature`)
 5. Ouvre une Pull Request
 
-## Déploiement
-Le site est déployé sur mon nom de domaine: crista-desuraunecocu.fr
+## Déploiement sur VPS (Docker + Traefik)
+
+### Le site est déployé sur un VPS personnel en utilisant :
+
+- Docker pour containeriser le build Astro
+- Traefik comme reverse-proxy avec SSL Let’s Encrypt automatique
+
+### Stack de production
+- Docker Compose pour orchestrer l’ensemble
+- Un container Traefik
+- HTTPS automatique avec Let’s Encrypt
+- Routage basé sur mon domaine : crista-desuraune.fr
+
+Les fichiers utilisés comprennent :
+
+- Dockerfile (build Astro)
+- docker-compose.yml (Traefik + site)
+
+## Site en ligne
+
+Mon portfolio est disponible ici :
+https://crista-desuraune.fr
 
 ## Auteur
 **Crista DESURAUNE--COCU**

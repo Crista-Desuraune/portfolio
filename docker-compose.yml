@@ -10,7 +10,7 @@ services:
       - web
     labels:
       - "traefik.enable=true"
-      - "traefik.http.routers.astro.rule=Host(`portfolio.crista-desuraune.fr`)"
+      - "traefik.http.routers.astro.rule=Host(`crista-desuraune.fr`)"
       - "traefik.http.routers.astro.entrypoints=websecure"
       - "traefik.http.services.astro.loadbalancer.server.port=4321"
   
@@ -28,7 +28,7 @@ services:
       # Let's Encrypt (désactivé par défaut)
       - "--certificatesresolvers.le.acme.httpchallenge=true"
       - "--certificatesresolvers.le.acme.httpchallenge.entrypoint=web"
-      - "--certificatesresolvers.le.acme.email=you@example.com"
+      - "--certificatesresolvers.le.acme.email=cristadsrn@gmail.com"
       - "--certificatesresolvers.le.acme.storage=/letsencrypt/acme.json"
     ports:
       - "80:80"

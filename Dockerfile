@@ -12,11 +12,9 @@ FROM node:20-alpine
 
 WORKDIR /app
 
-# Astro build output
 COPY --from=builder /app/dist ./dist
 
-# Installer un petit serveur statique
 RUN npm install -g serve
 
-EXPOSE 4321
-CMD ["serve", "-s", "dist", "-l", "4321"]
+EXPOSE 80
+CMD ["serve", "-l", "80", "dist"]

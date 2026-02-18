@@ -6,6 +6,7 @@ import SocialNetworks from './SocialNetworks.astro';
 const {footer} = configNav;
 const { about } = configNav.posts;
 const { logo, logoDark } = configGeneral.site;
+const anneeActuelle = new Date().getFullYear();
 ---
 
 <footer class="mt-15 font-heading">
@@ -55,6 +56,6 @@ const { logo, logoDark } = configGeneral.site;
         </div>
     </div>
   <div class="mx-auto text-center bg-secondary-accent text-secondary-foreground max-lg:px-14 px-auto py-5">
-    <p>&copy; 2025 Desuraune--Cocu Crista. Tout droit réservé.</p>
+    <p>&copy; {anneeActuelle} Desuraune--Cocu Crista. Tout droit réservé.</p>
   </div>
 </footer>
